@@ -1,24 +1,85 @@
-# Compiled class file
+# ========================
+#   FICHIERS IDE
+# ========================
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+
+# VS Code
+.vscode/
+
+# ========================
+#   BUILD / COMPILATION
+# ========================
+
+# Fichiers compilés
 *.class
 
-# Log file
+# Dossiers de build
+bin/
+build/
+target/
+
+# ========================
+#   LOGS / TEMPORAIRES
+# ========================
+
 *.log
+*.tmp
+*.temp
+tmp/
+*.swp
 
-# BlueJ files
-*.ctxt
+# ========================
+#   SYSTEME / OS
+# ========================
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# macOS
+.DS_Store
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
+# Windows
+Thumbs.db
+
+# Linux
+*~
+
+# ========================
+#   MAVEN
+# ========================
+
+# Dossier Maven
+.mvn/
+# Fichier de lock
+.mvn/wrapper/maven-wrapper.jar
+
+# ========================
+#   GRADLE
+# ========================
+
+.gradle/
+gradle-app.setting
+gradle.properties
+
+# Wrapper
+gradle/wrapper/
+!gradle/wrapper/gradle-wrapper.jar
+
+# ========================
+#   AUTRES
+# ========================
+
+# Archives
 *.zip
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+# Clés / config privées
+*.env
