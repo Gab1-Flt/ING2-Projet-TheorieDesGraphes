@@ -17,7 +17,7 @@ public class Reseau {
     }
 
     //Getter
-    public Map<String, Intersection> getReseauStation(){
+    public Map<String, Intersection> getReseauRues(){
         return ReseauRues;
     }
 }
