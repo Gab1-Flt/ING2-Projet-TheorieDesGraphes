@@ -8,6 +8,7 @@ public class Adresse {
     public String getNumero() {
         return numero;
     }
+
     public void setNumero(int numero) {}
     public Arc getAr() {return ar;}
     public void setAr(Arc ar) {}
