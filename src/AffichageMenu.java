@@ -3,15 +3,17 @@ import java.util.Scanner;
 public class AffichageMenu {
     public void affichage(){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Qui etes-vous ? \n(C) : Collectivité\n(E) : Entreprise");
-        String choix1 = sc.nextLine();
-        String choix2;
-        String choix3;
-        String choix4;
-        int erreur = 0;
+        int backMenu = 0;
 
         do{
-            erreur = 0;
+            System.out.println("Qui etes-vous ? \n(C) : Collectivité\n(E) : Entreprise\n(Q) : Quitter");
+            String choix1 = sc.nextLine();
+            String choix2;
+            String choix3;
+            String choix4;
+
+
+            backMenu = 0;
             if(choix1.equals("C")){
                 System.out.println("Que voulez-vous faire :");
                 System.out.println("1. Soumettre le plan de la commune.");
@@ -23,6 +25,13 @@ public class AffichageMenu {
 
                 if(choix2.equals("1")){
                     //Rentrer un nouveau graphe dans le programme
+
+                    //Affichage du plan (Test pour le moment)
+                    System.out.println("\n-------------------------------\n");
+                    Reseau Plan = Chargement.load("Plan.txt");
+                    System.out.println("Le plan a été enrergistré.");
+                    System.out.println("-------------------------------\n");
+                    backMenu = 1;
                 }
                 else if(choix2.equals("2")){
                     //Modifier un graphe ? Permettre l'ajout ou la modification des rues (sens unique, travaux temporaires, etc.) ?
@@ -34,11 +43,11 @@ public class AffichageMenu {
                     //Afficher les données d'après les collectes précédentes s'il y en a eu une
                 }
                 else if(choix2.equals("5")){
-
+                    //Gérer les demandes d'encombrants -> Permettre l'enregistrement des demandes individuelles
                 }
                 else {
                     System.out.println("Veuillez choisir une choix valide.");
-                    erreur = 1;
+                    backMenu = 1;
                     break;
                 }
             }
@@ -69,7 +78,7 @@ public class AffichageMenu {
                         }
                         else {
                             System.out.println("Veuillez choisir une choix valide.");
-                            erreur = 1;
+                            backMenu = 1;
                             break;
                         }
                     }
@@ -84,7 +93,7 @@ public class AffichageMenu {
                     }
                     else {
                         System.out.println("Veuillez choisir une choix valide.");
-                        erreur = 1;
+                        backMenu = 1;
                         break;
                     }
                 }
@@ -102,21 +111,33 @@ public class AffichageMenu {
                     }
                     else {
                         System.out.println("Veuillez choisir une choix valide.");
-                        erreur = 1;
+                        backMenu = 1;
                         break;
                     }
                 }
                 else {
                     System.out.println("Veuillez choisir une choix valide.");
-                    erreur = 1;
+                    backMenu = 1;
                     break;
                 }
+            } else if (choix1.equals("Q")) {
+                break;
             }
             else if(choix1.equals("T")){
                 //affichage Teste
-            }
-        }while(erreur==1);
+                Reseau Plan = Chargement.load("test.txt");
 
+                System.out.println("-------------------------------");
+                //Affichage du plan (Test pour le moment)
+                System.out.println("Nombre d'intersections: " + Plan.getReseauRues().size());
+                for (Intersection i : Plan.getReseauRues().values()) {
+                    System.out.println("-> Intersection : " + i.getNom() + "| -> Nom de rue : " + i.getArcsSortants());
+                }
+
+                System.out.println("\nLe plan a été enrergistré.");
+                System.out.println("-------------------------------\n");
+            }
+        }while(backMenu==1);
 
     }
 }
