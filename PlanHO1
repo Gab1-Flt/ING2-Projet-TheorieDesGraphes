@@ -1,0 +1,70 @@
+Rue de la République;Int_01;Int_02;800;10;22;38;55
+Rue d'Arras;Int_02;Int_03;600;5;17;29
+Rue de Péronne;Int_01;Int_04;700;12;20;28
+Rue de Cambrai;Int_03;Int_05;900;3;15;27;40
+Rue de Douai;Int_05;Int_06;750;8;19;33
+Rue d'Albert;Int_04;Int_07;650;4;18;26
+Rue de Metz;Int_07;Int_08;500;2;9;21
+Rue de Lens;Int_08;Int_09;620;6;14;30
+Rue d'Amiens;Int_09;Int_10;550;1;11;25
+Rue du Faubourg d’Arras;Int_10;Int_11;900;7;23;31;41
+Rue de Foncquevillers;Int_11;Int_12;800;2;16;34
+Rue du Général Leclerc;Int_12;Int_13;850;10;24;36
+Rue du Général de Gaulle;Int_06;Int_14;780;3;8;20;29
+Rue des Casernes;Int_14;Int_15;500;6;12
+Rue de la Gare;Int_15;Int_16;650;5;9;17
+Rue du Four;Int_16;Int_01;300;1;7
+Rue Lucien Langlet;Int_03;Int_13;550;4;13;22
+Rue Marcellin Gaudefroy;Int_04;Int_12;520;8;14;18
+Rue d'Hérinas;Int_07;Int_15;480;3;10;21
+Rue de Wailly;Int_11;Int_05;760;6;12;27
+Rue de la Madeleine;Int_09;Int_14;530;2;11;19
+Rue du Mont Saint-Quentin;Int_10;Int_08;690;4;18;31
+Rue de l'Église;Int_13;Int_06;400;3;9
+Rue de la Paix;Int_02;Int_07;420;2;15
+Rue des Écoles;Int_01;Int_05;450;6;8;10
+Rue de la Résistance;Int_16;Int_14;630;2;11;24
+Rue du Marais;Int_15;Int_03;710;7;18;33
+Rue des Acacias;Int_04;Int_09;480;5;16;22
+Rue du Coquelicot;Int_05;Int_10;550;3;12
+Rue des Bleuets;Int_06;Int_11;500;7;14;25
+Rue du Château;Int_12;Int_01;620;8;21;28
+Rue du Sergent Rumeau;Int_13;Int_02;570;9;19
+Rue du Général Maud'huy;Int_08;Int_04;510;4;13
+Rue des Fossés;Int_14;Int_09;460;2;11;16
+Rue de la Fontaine;Int_03;Int_16;390;6;9;14
+Rue de la République;Int_02;Int_01;800;10;22;38;55
+Rue d'Arras;Int_03;Int_02;600;5;17;29
+Rue de Péronne;Int_04;Int_01;700;12;20;28
+Rue de Cambrai;Int_05;Int_03;900;3;15;27;40
+Rue de Douai;Int_06;Int_05;750;8;19;33
+Rue d'Albert;Int_07;Int_04;650;4;18;26
+Rue de Metz;Int_08;Int_07;500;2;9;21
+Rue de Lens;Int_09;Int_08;620;6;14;30
+Rue d'Amiens;Int_10;Int_09;550;1;11;25
+Rue du Faubourg d’Arras;Int_11;Int_10;900;7;23;31;41
+Rue de Foncquevillers;Int_12;Int_11;800;2;16;34
+Rue du Général Leclerc;Int_13;Int_12;850;10;24;36
+Rue du Général de Gaulle;Int_14;Int_06;780;3;8;20;29
+Rue des Casernes;Int_15;Int_14;500;6;12
+Rue de la Gare;Int_16;Int_15;650;5;9;17
+Rue du Four;Int_01;Int_16;300;1;7
+Rue Lucien Langlet;Int_13;Int_03;550;4;13;22
+Rue Marcellin Gaudefroy;Int_12;Int_04;520;8;14;18
+Rue d'Hérinas;Int_15;Int_07;480;3;10;21
+Rue de Wailly;Int_05;Int_11;760;6;12;27
+Rue de la Madeleine;Int_14;Int_09;530;2;11;19
+Rue du Mont Saint-Quentin;Int_08;Int_10;690;4;18;31
+Rue de l'Église;Int_06;Int_13;400;3;9
+Rue de la Paix;Int_07;Int_02;420;2;15
+Rue des Écoles;Int_05;Int_01;450;6;8;10
+Rue de la Résistance;Int_14;Int_16;630;2;11;24
+Rue du Marais;Int_03;Int_15;710;7;18;33
+Rue des Acacias;Int_09;Int_04;480;5;16;22
+Rue du Coquelicot;Int_10;Int_05;550;3;12
+Rue des Bleuets;Int_11;Int_06;500;7;14;25
+Rue du Château;Int_01;Int_12;620;8;21;28
+Rue du Sergent Rumeau;Int_02;Int_13;570;9;19
+Rue du Général Maud'huy;Int_04;Int_08;510;4;13
+Rue des Fossés;Int_09;Int_14;460;2;11;16
+Rue de la Fontaine;Int_16;Int_03;390;6;9;14
