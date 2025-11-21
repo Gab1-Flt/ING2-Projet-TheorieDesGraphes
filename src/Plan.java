@@ -27,6 +27,7 @@ public class Plan {
                 String rue = elements[0].trim();
                 String intersectionDepart = elements[1].trim();
                 String intersectionArrivee = elements[2].trim();
+                Double distance = Double.parseDouble(elements[3].trim());
 
                 List<Adresse> adresses = new ArrayList<>();
 
@@ -34,21 +35,22 @@ public class Plan {
                 Arc arc = new Arc(
                         new Intersection(intersectionDepart),
                         new Intersection(intersectionArrivee),
-                        rue,
-                        adresses
+                        rue,distance
+                        , adresses
                 );
 
                 // Adresses à partir de l’indice 3
-                for (int u = 3; u < elements.length; u++) {
+                for (int u = 4; u < elements.length; u++) {
                     String numero = elements[u].trim();
                     if (numero.isEmpty()) {
                         continue;
                     }
                     Adresse a = new Adresse(numero, arc);
                     adresses.add(a);
+                    reseau.indexerAdresse(a);
                 }
 
-                reseau.addArcOriente(intersectionDepart, intersectionArrivee, rue, adresses);
+                reseau.addArcOriente(intersectionDepart, intersectionArrivee, rue, distance,adresses);
             }
 
         } catch (IOException e) {
