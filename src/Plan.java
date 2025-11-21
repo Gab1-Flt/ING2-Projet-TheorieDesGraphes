@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Chargement {
+public class Plan {
 
     public static Reseau load(String fichier) {
         Reseau reseau = new Reseau();

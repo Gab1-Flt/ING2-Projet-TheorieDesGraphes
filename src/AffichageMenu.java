@@ -4,6 +4,7 @@ public class AffichageMenu {
     public void affichage(){
         Scanner sc = new Scanner(System.in);
         int backMenu = 0;
+        Reseau PlanVille = null;
 
         do{
             System.out.println("Qui etes-vous ? \n(C) : Collectivité\n(E) : Entreprise\n(Q) : Quitter");
@@ -27,8 +28,8 @@ public class AffichageMenu {
                     //Rentrer un nouveau graphe dans le programme
 
                     //Affichage du plan (Test pour le moment)
-                    System.out.println("\n-------------------------------\n");
-                    Reseau Plan = Chargement.load("PlanHO1.txt");
+                    System.out.println("\n-------------------------------");
+                    PlanVille = Plan.load("test.txt");
                     System.out.println("Le plan a été enrergistré.");
                     System.out.println("-------------------------------\n");
                     backMenu = 1;
@@ -42,6 +43,19 @@ public class AffichageMenu {
 
                     if(choix3.equals("1")){
                         //supprimer la rue
+                        System.out.println("Indiquer le nom de la rue barrée :");
+                        choix4 = sc.nextLine();
+                        if (PlanVille.getReseauRues() == null){
+                            System.out.println("Aucun plan de ville n'a été enregistré.");
+                        }
+                        else if (PlanVille.getReseauRues().containsKey(choix4)){
+                            Intersection rueRemoved = PlanVille.getReseauRues().remove(choix4);
+                            System.out.println("La rue " + choix4 + " est maintenant bloquée !");
+                        }
+                        else {
+                            System.out.println("La rue \"" + choix4 + "\" n'existe pas !");
+                        }
+                        backMenu = 1;
                     }
                     else if(choix3.equals("2")){
                         //Ajouter la rue (Dans un sens ou deux)
@@ -141,12 +155,12 @@ public class AffichageMenu {
             }
             else if(choix1.equals("T")){
                 //affichage Teste
-                Reseau Plan = Chargement.load("test.txt");
+                PlanVille = Plan.load("test.txt");
 
                 System.out.println("\n-------------------------------");
                 //Affichage du plan (Test pour le moment)
-                System.out.println("Nombre d'intersections: " + Plan.getReseauRues().size());
-                for (Intersection i : Plan.getReseauRues().values()) {
+                System.out.println("Nombre d'intersections: " + PlanVille.getReseauRues().size());
+                for (Intersection i : PlanVille.getReseauRues().values()) {
                     System.out.println("-> Intersection : " + i.getNom() + "| -> Nom de rue : " + i.getArcsSortants());
                 }
 
