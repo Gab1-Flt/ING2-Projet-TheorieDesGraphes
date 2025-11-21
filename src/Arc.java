@@ -5,7 +5,7 @@ public class Arc {
     private Intersection depart;
     private Intersection arrivee;
     private String rue;
-    private final double distance;
+    private double distance;
     private List<Adresse> adresses = new ArrayList<>();
     public Arc (Intersection depart, Intersection arrivee, String rue, double distance, List<Adresse> adresses) {
         this.depart = depart;
