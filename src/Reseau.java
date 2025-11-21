@@ -25,6 +25,20 @@ public class Reseau {
         return ReseauRues.computeIfAbsent(nom, Intersection::new);
     }
 
+    public List<Arc> getArcsParRue(String nomRue) {
+        List<Arc> resultat = new ArrayList<>();
+        String cible = nomRue.trim().toLowerCase();
+
+        for (Intersection inter : ReseauRues.values()) {
+            for (Arc arc : inter.getArcsSortants()) {
+                if (arc.getRue().trim().toLowerCase().equals(cible)) {
+                    resultat.add(arc);
+                }
+            }
+        }
+        return resultat;
+    }
+
     Arc addArcOriente(String depart, String arrivee, String NomRue, double distance, List<Adresse> adresses){
         Intersection d = intersection(depart);
         Intersection a = intersection(arrivee);
