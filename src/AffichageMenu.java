@@ -44,12 +44,16 @@ public class AffichageMenu {
                     if(choix3.equals("1")){
                         //supprimer la rue
                         System.out.println("Indiquer le nom de la rue barrée :");
-                        choix4 = sc.nextLine();
-                        if (PlanVille.getReseauRues() == null){
+                        choix4 = sc.nextLine().trim();
+                        if (PlanVille.getReseauIntersections() == null){
                             System.out.println("Aucun plan de ville n'a été enregistré.");
                         }
-                        else if (PlanVille.getReseauRues().containsKey(choix4)){
-                            Intersection rueRemoved = PlanVille.getReseauRues().remove(choix4);
+                        else if (PlanVille.getReseauIntersections().containsKey(choix4)){
+                            //trouver les intersections par le nom de la rue:
+                            Intersection intersectionDepart = PlanVille.getReseauIntersections();
+
+
+                            Intersection rueRemoved = PlanVille.getReseauIntersections().remove(choix4);
                             System.out.println("La rue " + choix4 + " est maintenant bloquée !");
                         }
                         else {
@@ -159,13 +163,22 @@ public class AffichageMenu {
 
                 System.out.println("\n-------------------------------");
                 //Affichage du plan (Test pour le moment)
-                System.out.println("Nombre d'intersections: " + PlanVille.getReseauRues().size());
-                for (Intersection i : PlanVille.getReseauRues().values()) {
+                System.out.println("Nombre d'intersections: " + PlanVille.getReseauIntersections().size());
+                for (Intersection i : PlanVille.getReseauIntersections().values()) {
                     System.out.println("-> Intersection : " + i.getNom() + "| -> Nom de rue : " + i.getArcsSortants());
                 }
 
                 System.out.println("\nLe plan a été enrergistré.");
                 System.out.println("-------------------------------\n");
+            }
+            else if (choix1.equals("T2")){
+                PlanVille = Plan.load("test.txt");
+
+                Intersection intersectionDepart = PlanVille.getReseauIntersections().get("Int_01");
+                Intersection intersectionArrivee = PlanVille.getReseauIntersections().get("Int_04");
+
+                Itineraire itineraire = PlanVille.itineraireVersAdresse(intersectionDepart, "14", "Rue Marcellin Gaudefroy");
+                System.out.println(itineraire);
             }
         }while(backMenu==1);
 

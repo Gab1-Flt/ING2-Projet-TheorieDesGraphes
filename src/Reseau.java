@@ -3,7 +3,7 @@ import java.util.Map;
 import java.util.*;
 
 public class Reseau {
-    private Map<String, Intersection> ReseauRues = new HashMap<>();
+    private Map<String, Intersection> ReseauIntersections = new HashMap<>();
     private Map<String, Adresse> adressesParCle = new HashMap<>();
     private Map<String, Arc> IntersectionsDecouvertes = new HashMap<>();
 
@@ -22,7 +22,7 @@ public class Reseau {
     }
 
     Intersection intersection(String nom){
-        return ReseauRues.computeIfAbsent(nom, Intersection::new);
+        return ReseauIntersections.computeIfAbsent(nom, Intersection::new);
     }
 
     Arc addArcOriente(String depart, String arrivee, String NomRue, double distance, List<Adresse> adresses){
@@ -33,12 +33,12 @@ public class Reseau {
         return e;
     }
 
-    public Map<String, Intersection> getReseauRues(){
-        return ReseauRues;
+    public Map<String, Intersection> getReseauIntersections(){
+        return ReseauIntersections;
     }
 
     public Intersection getIntersection(String nom) {
-        return ReseauRues.get(nom);
+        return ReseauIntersections.get(nom);
     }
 
     public Itineraire djikstra(Intersection depart, Intersection destination) {
@@ -52,7 +52,7 @@ public class Reseau {
         }
 
         Map<String, Double> distance = new HashMap<>();
-        for (String nom : ReseauRues.keySet()) {
+        for (String nom : ReseauIntersections.keySet()) {
             distance.put(nom, Double.POSITIVE_INFINITY);
         }
         distance.put(depart.getNom(), 0.0);
