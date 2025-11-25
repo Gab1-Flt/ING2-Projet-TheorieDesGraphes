@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class AffichageMenu {
@@ -45,24 +47,32 @@ public class AffichageMenu {
                         //supprimer la rue
                         System.out.println("Indiquer le nom de la rue barrée :");
                         choix4 = sc.nextLine().trim();
-                        if (PlanVille.getReseauIntersections() == null){
-                            System.out.println("Aucun plan de ville n'a été enregistré.");
-                        }
-                        else if (PlanVille.getReseauIntersections().containsKey(choix4)){
-                            //trouver les intersections par le nom de la rue:
-                            Intersection intersectionDepart = PlanVille.getReseauIntersections();
-
-
-                            Intersection rueRemoved = PlanVille.getReseauIntersections().remove(choix4);
-                            System.out.println("La rue " + choix4 + " est maintenant bloquée !");
-                        }
-                        else {
-                            System.out.println("La rue \"" + choix4 + "\" n'existe pas !");
-                        }
+                        PlanVille.bloquerRue(choix4); //Bloquage de la rue
                         backMenu = 1;
                     }
                     else if(choix3.equals("2")){
                         //Ajouter la rue (Dans un sens ou deux)
+                        System.out.println("Indiquer le nom de la Rue :");
+                        String nomRue = sc.nextLine().trim();
+                        System.out.println("Indiquer le nom de l'intersection 1 :");
+                        String nomIntersection1 = sc.nextLine().trim();
+                        System.out.println("Indiquer le nom de l'intersection 2 :");
+                        String nomIntersection2 = sc.nextLine().trim();
+                        System.out.println("Indiquer la longueur de la rue : ");
+                        double distanceRue = Double.parseDouble(sc.nextLine());
+
+                        List<String> numeros = new ArrayList<>();
+                        System.out.println("Numéros d'adresse (tapez ENTER pour finir) : ");
+                        while (true) {
+                            System.out.print("→ ");
+                            String num = sc.nextLine().trim();
+                            if (num.isEmpty()) break;
+                            numeros.add(num);
+                        }
+
+                        PlanVille.ajouterRue(nomRue,nomIntersection1,nomIntersection2,distanceRue,numeros);
+                        System.out.println("Rue \"" + nomRue + "\" ajoutée entre " + nomIntersection1 + " et " + nomIntersection2);
+                        backMenu = 1;
                     }
                     else {
                         System.out.println("Veuillez choisir une choix valide.");
@@ -105,9 +115,94 @@ public class AffichageMenu {
                         choix4 = sc.nextLine();
 
                         if (choix4.equals("1")) {
+                            if(PlanVille != null){
+                                //SUPPOSER QUE L'INTERSECTION DE DEPART EST TOUJOURS INT_01 !!!
+                                Intersection intersectionDepart = PlanVille.getReseauIntersections().get("Int_01");
 
+                                System.out.println("Saisir le nom de la rue du particulier : ");
+                                String nomRue = sc.nextLine().trim();
+                                System.out.println("Saisir le numero d'adresse du particulier :");
+                                String numAdresse = sc.nextLine().trim();
+
+                                Itineraire itineraire = PlanVille.itineraireVersAdresse(intersectionDepart,nomRue,numAdresse);
+                                System.out.println("Voici l'itinéraire le plus court pour se rendre " + numAdresse + " " + nomRue + " :");
+                                System.out.println(itineraire);
+                            }
+                            else {
+                                System.out.println("Veuillez enregister le plan d'une ville d'abord.");
+                            }
+                            backMenu = 1;
                         }
                         else if (choix4.equals("2")) {
+                            //Faire liste d'adresse
+                            //Faire djikstra depuis le départ pour chaque adresse
+                            //Trouver le plus proche du point de départ
+                            //Recommencer djikstra pour chaque adresse restante en prenant la dernière adresse comme départ
+                            // et trouver le plus court
+                            //Recommencer jusqu'a reconstituer la liste
+                            if(PlanVille != null){
+                                Intersection intersectionDepart = null;
+
+                                List<String> numeros = new ArrayList<>();
+                                List<String> nomRue = new ArrayList<>();
+                                System.out.println("Entrez le numéros d'adresse et le nom de Rue (tapez ENTER pour finir) : ");
+                                while (true || (numeros.size() == 10)) {
+                                    System.out.print("Numéro → ");
+                                    String num = sc.nextLine().trim();
+                                    System.out.println("Nom -> ");
+                                    String nom = sc.nextLine().trim();
+                                    if (num.isEmpty() || nom.isEmpty()) break;
+                                    numeros.add(num);
+                                    nomRue.add(nom);
+                                }
+
+                                List<Itineraire> itineraires = new ArrayList<>();
+                                double distance = 0.0;
+                                for(int j=0;j < numeros.size();j++) {
+                                    for (int i = 0; i < numeros.size(); i++) {
+                                        if (j==0){
+                                            //SUPPOSER QUE L'INTERSECTION DE DEPART EST TOUJOURS INT_01 !!!
+                                            intersectionDepart = PlanVille.getReseauIntersections().get("Int_01");
+                                        }
+                                        else {
+                                            intersectionDepart = itineraires.get(j-1).getArrivee();
+                                        }
+                                        Itineraire itineraire = PlanVille.itineraireVersAdresse(intersectionDepart, numeros.get(i), nomRue.get(i));
+                                        if (itineraire.getDistanceTotale() < distance || distance == 0.0) {
+                                            distance = itineraire.getDistanceTotale();
+                                            itineraires.set(j,itineraire);
+                                        }
+                                    }
+                                }
+
+                                System.out.println("Voici l'itinéraire le plus court pour la tournée des particuliers : ");
+                                System.out.println(itineraires);
+                            }
+                            else {
+                                System.out.println("Veuillez enregister le plan d'une ville d'abord.");
+                            }
+                            backMenu = 1;
+                        }
+                        else {
+                            System.out.println("Veuillez choisir une choix valide.");
+                            backMenu = 1;
+                        }
+                    }
+                    else if (choix3.equals("2")) {
+                        //calcul de l'itinéraire de collecte pour les poubelles aux pieds des habitations
+                        //Doit passer par toutes les habitations de toutes les rues dans chaque sens
+                        //Rendre le graphe Eulerien ??
+                    }
+                    else if (choix3.equals("3")) {
+                        System.out.println("Quelle approche voulez-vous utiliser pour calculer la tournée :");
+                        System.out.println("1. Plus Proche Voisin.");
+                        System.out.println("2. MST.");
+                        choix4 = sc.nextLine();
+
+                        if(choix4.equals("1")) {
+
+                        }
+                        else if(choix4.equals("2")) {
 
                         }
                         else {
@@ -115,15 +210,6 @@ public class AffichageMenu {
                             backMenu = 1;
                             break;
                         }
-                    }
-                    else if (choix3.equals("2")) {
-
-                    }
-                    else if (choix3.equals("3")) {
-                        System.out.println("Quelle approche voulez-vous utiliser pour calculer la tournée :");
-                        System.out.println("1. Plus Proche Voisin.");
-                        System.out.println("2. MST.");
-
                     }
                     else {
                         System.out.println("Veuillez choisir une choix valide.");
@@ -175,9 +261,16 @@ public class AffichageMenu {
                 PlanVille = Plan.load("test.txt");
 
                 Intersection intersectionDepart = PlanVille.getReseauIntersections().get("Int_01");
-                Intersection intersectionArrivee = PlanVille.getReseauIntersections().get("Int_04");
+                Intersection intersectionArrivee = PlanVille.getReseauIntersections().get("Int_13");
 
-                Itineraire itineraire = PlanVille.itineraireVersAdresse(intersectionDepart, "14", "Rue Marcellin Gaudefroy");
+                Itineraire itineraire = PlanVille.djikstra(intersectionDepart, intersectionArrivee);
+                System.out.println(itineraire);
+
+                System.out.println("Indiquer le nom de la rue barrée :");
+                String choix = "Rue de la Fontaine";
+                PlanVille.bloquerRue(choix); //Bloquage de la rue
+
+                itineraire = PlanVille.djikstra(intersectionDepart, intersectionArrivee);
                 System.out.println(itineraire);
             }
         }while(backMenu==1);

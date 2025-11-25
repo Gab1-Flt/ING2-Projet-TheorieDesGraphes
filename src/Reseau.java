@@ -29,7 +29,7 @@ public class Reseau {
         List<Arc> resultat = new ArrayList<>();
         String cible = nomRue.trim().toLowerCase();
 
-        for (Intersection inter : ReseauRues.values()) {
+        for (Intersection inter : ReseauIntersections.values()) {
             for (Arc arc : inter.getArcsSortants()) {
                 if (arc.getRue().trim().toLowerCase().equals(cible)) {
                     resultat.add(arc);
@@ -38,6 +38,65 @@ public class Reseau {
         }
         return resultat;
     }
+
+    public boolean rueExiste(String nomRue) {
+        if (nomRue == null || nomRue.trim().isEmpty()) {
+            return false;
+        }
+        String rueRecherche = nomRue.trim();
+        for (Intersection i : ReseauIntersections.values()) {
+            for (Arc arc : i.getArcsSortants()) {
+                if (arc.getRue().equalsIgnoreCase(rueRecherche)) {
+                }
+            }
+        }
+        return false;
+    }
+
+    public void bloquerRue(String nomRue) {
+        if (nomRue == null || nomRue.trim().isEmpty()) {
+            System.out.println("Nom de rue invalide.");
+            return;
+        }
+
+        String rueRecherche = nomRue.trim();
+        boolean trouve = false;
+
+        for (Intersection i : ReseauIntersections.values()) {
+            for (Arc arc : i.getArcsSortants()) {
+                if (arc.getRue().equalsIgnoreCase(rueRecherche)) {
+                    arc.setBloque(true);
+                    trouve = true;
+                }
+            }
+        }
+
+        if (trouve) {
+            System.out.println("La rue \"" + nomRue + "\" a été bloquée.");
+        } else {
+            System.out.println("La rue \"" + nomRue + "\" n'existe pas dans le réseau.");
+        }
+    }
+
+    public void ajouterRue(String rue, String departNom, String arriveeNom, double distance, List<String> numeros) {
+
+        List<Adresse> adresses = new ArrayList<>();
+
+        Intersection d = intersection(departNom);
+        Intersection a = intersection(arriveeNom);
+
+        Arc arc = new Arc(d, a, rue, distance, adresses);
+
+        for (String numero : numeros) {
+            Adresse ad = new Adresse(numero, arc);
+            adresses.add(ad);
+            indexerAdresse(ad);
+        }
+
+        d.getArcsSortants().add(arc);
+    }
+
+
 
     Arc addArcOriente(String depart, String arrivee, String NomRue, double distance, List<Adresse> adresses){
         Intersection d = intersection(depart);
@@ -78,10 +137,7 @@ public class Reseau {
         PriorityQueue<Intersection> file = new PriorityQueue<>(new Comparator<Intersection>() {
             @Override
             public int compare(Intersection i1, Intersection i2) {
-                return Double.compare(
-                        distFinal.get(i1.getNom()),
-                        distFinal.get(i2.getNom())
-                );
+                return Double.compare(distFinal.get(i1.getNom()), distFinal.get(i2.getNom()));
             }
         });
 
@@ -100,6 +156,10 @@ public class Reseau {
             }
 
             for (Arc arc : courant.getArcsSortants()) {
+                if (arc.isBloque()) {
+                    continue;
+                }
+
                 Intersection voisin = arc.getArrivee();
                 double nouvelleDist = distCourant + arc.getDistance();
 

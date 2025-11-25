@@ -7,12 +7,22 @@ public class Arc {
     private String rue;
     private double distance;
     private List<Adresse> adresses = new ArrayList<>();
+    private boolean bloque = false;
+
     public Arc (Intersection depart, Intersection arrivee, String rue, double distance, List<Adresse> adresses) {
         this.depart = depart;
         this.arrivee = arrivee;
         this.rue= rue;
         this.distance = distance;
         this.adresses = adresses;
+    }
+
+    public boolean isBloque() {
+        return bloque;
+    }
+
+    public void setBloque(boolean bloque) {
+        this.bloque = bloque;
     }
 
     @Override
