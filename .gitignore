@@ -83,3 +83,5 @@ gradle/wrapper/
 
 # Clés / config privées
 *.env
+
+.idea\workspace.xml
