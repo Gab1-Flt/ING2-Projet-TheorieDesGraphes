@@ -230,7 +230,7 @@ public class AffichageMenu {
         }
     }
 
-    private void itinerairePoubelles(){
+    private void itinerairePoubelles() {
         //calcul de l'itinéraire de collecte pour les poubelles aux pieds des habitations
         //Doit passer par toutes les habitations de toutes les rues dans chaque sens
         //Rendre le graphe Eulerien ??
