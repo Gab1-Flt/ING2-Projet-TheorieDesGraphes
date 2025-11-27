@@ -50,6 +50,7 @@ public class Plan {
                     reseau.indexerAdresse(a);
                 }
 
+                reseau.addArcNonOriente(intersectionDepart, intersectionArrivee, rue, distance,adresses);
                 reseau.addArcOriente(intersectionDepart, intersectionArrivee, rue, distance,adresses);
             }
 

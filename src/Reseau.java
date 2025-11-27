@@ -6,6 +6,7 @@ public class Reseau {
     private Map<String, Intersection> ReseauIntersections = new HashMap<>();
     private Map<String, Adresse> adressesParCle = new HashMap<>();
     private Map<String, Arc> IntersectionsDecouvertes = new HashMap<>();
+    private Map<String, Arc> Rues = new HashMap<>();
 
     private String cleAdresse(String numero, String rue) {
         return numero.trim() + "|" + rue.trim().toLowerCase();
@@ -93,6 +94,7 @@ public class Reseau {
         }
 
         d.getArcsSortants().add(arc);
+
     }
 
 
@@ -103,6 +105,17 @@ public class Reseau {
         Arc e = new Arc(d, a, NomRue, distance, adresses);
         d.getArcsSortants().add(e);
         return e;
+    }
+    Arc addArcNonOriente(String depart, String arrivee, String NomRue, double distance, List<Adresse> adresses){
+        Intersection d = intersection(depart);
+        Intersection a = intersection(arrivee);
+        Arc e = new Arc(d, a, NomRue, distance, adresses);
+
+        Rues.putIfAbsent(NomRue, e);
+        return e;
+    }
+    public int getNbRues(){
+        return Rues.size();
     }
 
     public Map<String, Intersection> getReseauIntersections(){
@@ -197,6 +210,54 @@ public class Reseau {
         return new Itineraire(depart, destination, chemin);
     }
 
+    public List<Arc> euler(Intersection depart) {
+        int stop=0;
+        Map<Intersection, List<Arc>> adj = new HashMap<>();
+        for (Intersection inter : ReseauIntersections.values()) {
+            adj.put(inter, new ArrayList<>());
+        }
+
+        for (Arc rueArc : Rues.values()){
+            Intersection a = rueArc.getDepart();
+            Intersection b = rueArc.getArrivee();
+            adj.computeIfAbsent(a, key->new ArrayList<>()).add(rueArc);
+            adj.computeIfAbsent(b, key->new ArrayList<>()).add(rueArc);
+        }
+        Deque<Intersection> pileIntersections = new ArrayDeque<>();
+        Deque<Arc> pileRues = new ArrayDeque<>();
+        List<Arc> circuitFinal = new ArrayList<>();
+        pileIntersections.push(depart);
+        while (!pileIntersections.isEmpty()) {
+            Intersection courant = pileIntersections.peek();
+            List<Arc> ruesDisponibles = adj.get(courant);
+            Arc rueChoisie=null;
+            while (ruesDisponibles !=null && !ruesDisponibles.isEmpty()) {
+                rueChoisie = ruesDisponibles.remove(ruesDisponibles.size() - 1);
+                if (rueChoisie !=null){break;}
+            }
+            if (rueChoisie != null) {
+                Intersection voisin;
+                if (rueChoisie.getDepart().equals(courant)) {
+                    voisin = rueChoisie.getArrivee();
+                } else {
+                    voisin = rueChoisie.getDepart();
+                }
+                adj.get(voisin).remove(rueChoisie);
+                pileIntersections.push(voisin);
+                pileRues.push(rueChoisie);
+            }else {
+
+                // Cul-de-sac : on remonte
+                pileIntersections.pop();
+
+                if (!pileRues.isEmpty()) {
+                    circuitFinal.add(pileRues.pop());
+                }
+            }
+        }
+        Collections.reverse(circuitFinal);
+        return circuitFinal;
+    }
 
     public Itineraire itineraireVersAdresse(Intersection depart, String numero, String rue) {
         Adresse adresse = getAdresse(numero, rue);  // <<< on utilise this.getAdresse
