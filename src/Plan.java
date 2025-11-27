@@ -32,12 +32,10 @@ public class Plan {
                 List<Adresse> adresses = new ArrayList<>();
 
                 // Un seul Arc pour toutes les adresses de cette ligne
-                Arc arc = new Arc(
-                        new Intersection(intersectionDepart),
-                        new Intersection(intersectionArrivee),
-                        rue,distance
-                        , adresses
-                );
+                Intersection depart = reseau.intersection(intersectionDepart);
+                Intersection arrivee = reseau.intersection(intersectionArrivee);
+
+                Arc arc = new Arc(depart, arrivee, rue, distance, adresses);
 
                 // Adresses à partir de l’indice 3
                 for (int u = 4; u < elements.length; u++) {
@@ -50,8 +48,12 @@ public class Plan {
                     reseau.indexerAdresse(a);
                 }
 
-                reseau.addArcNonOriente(intersectionDepart, intersectionArrivee, rue, distance,adresses);
-                reseau.addArcOriente(intersectionDepart, intersectionArrivee, rue, distance,adresses);
+                // Ajouter l'arc dans le graphe
+                depart.getArcsSortants().add(arc);
+
+                // Ajouter arc inverse pour bidirectionnel
+                Arc arcInverse = new Arc(arrivee, depart, rue, distance, adresses);
+                arrivee.getArcsSortants().add(arcInverse);
             }
 
         } catch (IOException e) {

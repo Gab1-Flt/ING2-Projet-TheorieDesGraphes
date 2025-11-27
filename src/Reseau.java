@@ -289,4 +289,52 @@ public class Reseau {
 
         return new Itineraire(depart, intersectionAtteinte, chemin);
     }
+
+
+    public List<Itineraire> itineraireVersListAdresseTSP(Intersection depart, List<Adresse> adresses) {
+        //Chercher l'adresse la plus proche avec Djikstra parmis liste d'adresse non visité
+        //Marqué la plus proche comme visité et la mettre comme point de départ du prochain Djikstra
+        //Répéter jusqu'au bout
+
+        if (depart == null || adresses == null || adresses.isEmpty()) {
+            System.out.println("Départ ou liste d'adresses invalide.");
+            return null;
+        }
+
+        List<Boolean> visite = new ArrayList<>(Collections.nCopies(adresses.size(), false));
+        List<Itineraire> resultats = new ArrayList<>();
+        Intersection courant = depart;
+
+        for (int k = 0; k < adresses.size(); k++) {
+            Itineraire meilleurItineraire = null;
+            int meilleurIndex = -1;
+            double distanceMin = Double.POSITIVE_INFINITY;
+
+            for (int i = 0; i < adresses.size(); i++) {
+                if (visite.get(i)) continue;
+
+                Adresse ad = adresses.get(i);
+                Itineraire it = this.itineraireVersAdresse(courant, ad.getNumero(), ad.getAr().getRue());
+                if (it == null) continue;
+
+                if (it.getDistanceTotale() < distanceMin) {
+                    distanceMin = it.getDistanceTotale();
+                    meilleurItineraire = it;
+                    meilleurIndex = i;
+                }
+            }
+
+            if (meilleurItineraire == null) {
+                System.out.println("Impossible de calculer une tournée complète, certaines adresses sont inaccessibles.");
+                return null;
+            }
+
+            visite.set(meilleurIndex, true);
+            resultats.add(meilleurItineraire);
+            courant = meilleurItineraire.getArrivee();
+        }
+
+        return resultats;
+    }
+
 }
