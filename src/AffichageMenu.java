@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -169,7 +170,7 @@ public class AffichageMenu {
                     System.out.println("Saisir le numero d'adresse du particulier :");
                     String numAdresse = sc.nextLine().trim();
 
-                    Itineraire itineraire = PlanVille.itineraireVersAdresse(intersectionDepart,nomRue,numAdresse);
+                    Itineraire itineraire = PlanVille.itineraireVersAdresse(intersectionDepart,numAdresse,nomRue);
                     System.out.println("Voici l'itinéraire le plus court pour se rendre " + numAdresse + " " + nomRue + " :");
                     System.out.println(itineraire);
                 }
@@ -184,46 +185,102 @@ public class AffichageMenu {
                 //Recommencer djikstra pour chaque adresse restante en prenant la dernière adresse comme départ
                 // et trouver le plus court
                 //Recommencer jusqu'a reconstituer la liste
-                if(PlanVille != null){
-                    Intersection intersectionDepart = null;
+                if (PlanVille == null) {
+                    System.out.println("Veuillez enregistrer le plan d'une ville d'abord.");
+                    return;
+                }
 
-                    List<String> numeros = new ArrayList<>();
-                    List<String> nomRue = new ArrayList<>();
-                    System.out.println("Entrez le numéros d'adresse et le nom de Rue (tapez ENTER pour finir) : ");
-                    while (true || (numeros.size() == 10)) {
-                        System.out.print("Numéro → ");
-                        String num = sc.nextLine().trim();
-                        System.out.println("Nom -> ");
-                        String nom = sc.nextLine().trim();
-                        if (num.isEmpty() || nom.isEmpty()) break;
-                        numeros.add(num);
-                        nomRue.add(nom);
+                Intersection depot = PlanVille.getReseauIntersections().get("Int_01");
+
+                List<String> numeros = new ArrayList<>();
+                List<String> rues = new ArrayList<>();
+                System.out.println("Entrez les adresses (max 10 — ENTER pour finir) :");
+
+                while (numeros.size() < 10) {
+                    System.out.print("Numéro → ");
+                    String num = sc.nextLine().trim();
+                    if (num.isEmpty()) break;
+                    System.out.print("Rue → ");
+                    String rue = sc.nextLine().trim();
+                    if (rue.isEmpty()) break;
+                    numeros.add(num);
+                    rues.add(rue);
+                }
+
+                if (numeros.isEmpty()) {
+                    System.out.println("Aucune adresse saisie.");
+                    return;
+                }
+
+                // 1️⃣ Créer la liste des sommets (dépôt + adresses)
+                List<Intersection> sommets = new ArrayList<>();
+                sommets.add(depot);
+
+                for (int i = 0; i < numeros.size(); i++) {
+                    Adresse ad = PlanVille.getAdresse(numeros.get(i), rues.get(i));
+                    if (ad == null) {
+                        System.out.println("Adresse introuvable : " + numeros.get(i) + " " + rues.get(i));
+                        return;
                     }
+                    // On choisit l'intersection la plus proche pour chaque adresse
+                    Arc arc = ad.getAr();
+                    sommets.add(arc.getDepart()); // tu peux choisir arc.getArrivee() si besoin
+                }
 
-                    List<Itineraire> itineraires = new ArrayList<>();
-                    double distance = 0.0;
-                    for(int j=0;j < numeros.size();j++) {
-                        for (int i = 0; i < numeros.size(); i++) {
-                            if (j==0){
-                                //SUPPOSER QUE L'INTERSECTION DE DEPART EST TOUJOURS INT_01 !!!
-                                intersectionDepart = PlanVille.getReseauIntersections().get("Int_01");
-                            }
-                            else {
-                                intersectionDepart = itineraires.get(j-1).getArrivee();
-                            }
-                            Itineraire itineraire = PlanVille.itineraireVersAdresse(intersectionDepart, numeros.get(i), nomRue.get(i));
-                            if (itineraire.getDistanceTotale() < distance || distance == 0.0) {
-                                distance = itineraire.getDistanceTotale();
-                                itineraires.set(j,itineraire);
-                            }
+                int n = sommets.size();
+                double[][] distances = new double[n][n];
+
+                // 2️⃣ Calculer toutes les distances entre sommets
+                for (int i = 0; i < n; i++) {
+                    for (int j = 0; j < n; j++) {
+                        if (i == j) distances[i][j] = 0;
+                        else {
+                            Itineraire it = PlanVille.djikstra(sommets.get(i), sommets.get(j));
+                            if (it == null) distances[i][j] = Double.POSITIVE_INFINITY;
+                            else distances[i][j] = it.getDistanceTotale();
                         }
                     }
-
-                    System.out.println("Voici l'itinéraire le plus court pour la tournée des particuliers : ");
-                    System.out.println(itineraires);
                 }
-                else {
-                    System.out.println("Veuillez enregister le plan d'une ville d'abord.");
+
+                // 3️⃣ Appliquer l'heuristique Plus Proche Voisin
+                List<Integer> ordreVisite = new ArrayList<>();
+                boolean[] visite = new boolean[n];
+                int actuel = 0; // départ
+                ordreVisite.add(actuel);
+                visite[actuel] = true;
+
+                for (int k = 1; k < n; k++) {
+                    double minDist = Double.POSITIVE_INFINITY;
+                    int prochain = -1;
+                    for (int i = 1; i < n; i++) { // on ne considère pas le dépôt
+                        if (!visite[i] && distances[actuel][i] < minDist) {
+                            minDist = distances[actuel][i];
+                            prochain = i;
+                        }
+                    }
+                    if (prochain == -1) {
+                        System.out.println("Impossible de calculer une tournée complète, certaines adresses sont inaccessibles.");
+                        return;
+                    }
+                    ordreVisite.add(prochain);
+                    visite[prochain] = true;
+                    actuel = prochain;
+                }
+
+                // 4️⃣ Reconstituer les itinéraires réels
+                List<Itineraire> itineraireTournée = new ArrayList<>();
+                for (int i = 0; i < ordreVisite.size() - 1; i++) {
+                    Itineraire it = PlanVille.djikstra(
+                            sommets.get(ordreVisite.get(i)),
+                            sommets.get(ordreVisite.get(i + 1))
+                    );
+                    itineraireTournée.add(it);
+                }
+
+                // 5️⃣ Affichage
+                System.out.println("\n--- Tournée optimisée (Plus Proche Voisin) ---");
+                for (Itineraire it : itineraireTournée) {
+                    System.out.println(it);
                 }
             }
             default -> System.out.println("Choix invalide.");
@@ -294,11 +351,11 @@ public class AffichageMenu {
         Itineraire itineraire = PlanVille.djikstra(intersectionDepart, intersectionArrivee);
         System.out.println(itineraire);
 
-        System.out.println("Indiquer le nom de la rue barrée :");
+        //System.out.println("Indiquer le nom de la rue barrée :");
         String choix = "Rue de la Fontaine";
-        PlanVille.bloquerRue(choix); //Bloquage de la rue
+        //PlanVille.bloquerRue(choix); //Bloquage de la rue
 
-        itineraire = PlanVille.djikstra(intersectionDepart, intersectionArrivee);
+        itineraire = PlanVille.itineraireVersAdresse(intersectionDepart, "6", choix);
         System.out.println(itineraire);
     }
 

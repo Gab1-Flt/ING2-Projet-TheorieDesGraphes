@@ -80,11 +80,10 @@ public class Reseau {
 
     public void ajouterRue(String rue, String departNom, String arriveeNom, double distance, List<String> numeros) {
 
-        List<Adresse> adresses = new ArrayList<>();
-
         Intersection d = intersection(departNom);
         Intersection a = intersection(arriveeNom);
 
+        List<Adresse> adresses = new ArrayList<>();
         Arc arc = new Arc(d, a, rue, distance, adresses);
 
         for (String numero : numeros) {
@@ -223,12 +222,10 @@ public class Reseau {
             return null;
         }
 
+        Intersection intersectionAtteinte = meilleur.getArrivee();
         List<Arc> chemin = new ArrayList<>(meilleur.getArcs()); // ou getArcs()
+        chemin.add(arcAdresse);
 
-        if (chemin.isEmpty() || chemin.get(chemin.size() - 1) != arcAdresse) {
-            chemin.add(arcAdresse);
-        }
-
-        return new Itineraire(depart, adresse.getAr().getArrivee(), chemin);
+        return new Itineraire(depart, intersectionAtteinte, chemin);
     }
 }
