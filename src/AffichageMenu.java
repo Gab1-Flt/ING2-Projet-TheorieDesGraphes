@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class AffichageMenu {
 
     private Reseau PlanVille = null;
+    private GrapheSecteurs grapheSecteurs = null;  // <-- pour le thème 3
     private final Scanner sc = new Scanner(System.in);
 
     public void affichage() {
@@ -255,20 +256,84 @@ public class AffichageMenu {
     }
 
     private void planningCollectes(){
-        System.out.println("Quel type de collecte :");
-        System.out.println("1. Sans contrainte de capacité.");
-        System.out.println("2. Avec contrainte de capacité et nombre de camions.");
+        // Si aucun graphe de secteurs n'est défini, on propose d'en créer un de test
+        if (grapheSecteurs == null) {
+            System.out.println("Aucun graphe de secteurs n'est encore défini.");
+            System.out.println("Voulez-vous utiliser un graphe d'exemple ? (O/N)");
+            String rep = sc.nextLine().trim().toUpperCase();
+            if (rep.equals("O")) {
+                grapheSecteurs = creerGrapheSecteursExemple();
+                System.out.println("Graphe de secteurs d'exemple créé.");
+            } else {
+                System.out.println("Pour le moment, le programme ne gère que l'exemple de test.");
+                return;
+            }
+        }
+
+        System.out.println("\n--- PLANIFIER LES COLLECTES (THÈME 3) ---");
+        System.out.println("1. Sans contrainte de capacité (Hypothèse 1).");
+        System.out.println("2. Avec contrainte de capacité et nombre de camions (Hypothèse 2).");
         String choix = sc.nextLine();
 
         switch (choix) {
-            case "1" ->{
-
-            }
-            case "2" ->{
-            }
-            default -> System.out.println("Choix invalide.");
+            case "1" -> planningSansCapacites();
+            case "2" -> planningAvecCapacites();
+            default  -> System.out.println("Choix invalide.");
         }
     }
+
+
+
+    /**
+     * Crée un petit graphe de secteurs de test pour le thème 3.
+     * S1-S5 avec voisinages et quantités, comme dans le rapport.
+     */
+    private GrapheSecteurs creerGrapheSecteursExemple() {
+        GrapheSecteurs g = new GrapheSecteurs();
+
+        // Ajout des secteurs (id, nom, quantité estimée de déchets)
+        g.ajouterSecteur("S1", "Secteur 1", 4);
+        g.ajouterSecteur("S2", "Secteur 2", 5);
+        g.ajouterSecteur("S3", "Secteur 3", 3);
+        g.ajouterSecteur("S4", "Secteur 4", 6);
+        g.ajouterSecteur("S5", "Secteur 5", 4);
+
+        // Voisinages géographiques (non orientés)
+        g.ajouterVoisinage("S1", "S2");
+        g.ajouterVoisinage("S1", "S3");
+        g.ajouterVoisinage("S2", "S4");
+        g.ajouterVoisinage("S3", "S4");
+        g.ajouterVoisinage("S4", "S5");
+
+        return g;
+    }
+    private void planningSansCapacites() {
+        System.out.println("\n--- Hypothèse 1 : sans contraintes de capacité ---");
+
+        int nbJours = grapheSecteurs.colorierWelshPowell();
+        System.out.println("Nombre de jours utilisés : " + nbJours);
+
+        grapheSecteurs.afficherPlanningSimple();
+    }
+    private void planningAvecCapacites() {
+        System.out.println("\n--- Hypothèse 2 : avec capacités ---");
+
+        try {
+            System.out.print("Capacité d'un camion (C) : ");
+            int capaciteCamion = Integer.parseInt(sc.nextLine().trim());
+
+            System.out.print("Nombre de camions disponibles (N) : ");
+            int nbCamions = Integer.parseInt(sc.nextLine().trim());
+
+            int nbJours = grapheSecteurs.planifierAvecCapacites(capaciteCamion, nbCamions);
+            System.out.println("Nombre de jours utilisés : " + nbJours);
+
+            grapheSecteurs.afficherPlanningAvecCapacites(capaciteCamion, nbCamions);
+        } catch (NumberFormatException e) {
+            System.out.println("Valeur incorrecte, veuillez entrer des nombres entiers.");
+        }
+    }
+
 
     private void test1(){
         //affichage Teste
