@@ -239,6 +239,7 @@ public class AffichageMenu {
         Itineraire it = new Itineraire (depot,depot,chemin);
         System.out.println(it);
         System.out.println("(non implémenté)");
+        System.out.println("pipi caca");
     }
 
     private void itinerairePointDeCollecte(){
