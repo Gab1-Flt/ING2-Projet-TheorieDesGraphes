@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -7,7 +6,6 @@ public class AffichageMenu {
 
     private Reseau PlanVille = null;
     private final Scanner sc = new Scanner(System.in);
-    protected List<Adresse> adressesPtsCollecte = new ArrayList<>();
 
     public void affichage() {
         int continuer;
@@ -45,7 +43,7 @@ public class AffichageMenu {
         System.out.println("2. Signaler une modification de circulation.");
         System.out.println("3. Indiquer des contraintes horaire.");
         System.out.println("4. Consulter la quantité de déchets récoltés.");
-        System.out.println("5. Situer les points de collecte.");
+        System.out.println("5. Gérer les demandes d'encombrants.");
         String choix = sc.nextLine();
 
         switch (choix) {
@@ -53,7 +51,7 @@ public class AffichageMenu {
             case "2" -> modifierCirculation();
             case "3" -> contraintesHoraires();
             case "4" -> consulterDechets();
-            case "5" -> situerPtsDeCollecte();
+            case "5" -> gererEncombrants();
             default -> System.out.println("Choix invalide.");
         }
     }
@@ -119,29 +117,8 @@ public class AffichageMenu {
         System.out.println("(non implémenté)");
     }
 
-    private void situerPtsDeCollecte() {
-        //Definir la liste d'adresse des pts de collecte
-
-        List<String> numeros = new ArrayList<>();
-        List<String> rues = new ArrayList<>();
-        System.out.println("Entrez les adresses:");
-
-        while (numeros.size() < 10) {
-            System.out.print("Numéro → ");
-            String num = sc.nextLine().trim();
-            if (num.isEmpty()) break;
-            System.out.print("Rue → ");
-            String rue = sc.nextLine().trim();
-            if (rue.isEmpty()) break;
-
-            numeros.add(num);
-            rues.add(rue);
-        }
-
-        for (int i = 0; i < numeros.size(); i++) {
-            Adresse ad = PlanVille.getAdresse(numeros.get(i), rues.get(i));
-            if (ad != null) adressesPtsCollecte.add(ad);
-        }
+    private void gererEncombrants() {
+        System.out.println("(non implémenté)");
     }
 
 
@@ -192,7 +169,7 @@ public class AffichageMenu {
                     System.out.println("Saisir le numero d'adresse du particulier :");
                     String numAdresse = sc.nextLine().trim();
 
-                    Itineraire itineraire = PlanVille.itineraireVersAdresse(intersectionDepart,numAdresse,nomRue);
+                    Itineraire itineraire = PlanVille.itineraireVersAdresse(intersectionDepart,nomRue,numAdresse);
                     System.out.println("Voici l'itinéraire le plus court pour se rendre " + numAdresse + " " + nomRue + " :");
                     System.out.println(itineraire);
                 }
@@ -201,51 +178,52 @@ public class AffichageMenu {
                 }
             }
             case "2" ->{
-                if (PlanVille != null) {
-                    Intersection depot = PlanVille.getReseauIntersections().get("Int_01");
-                    if (depot == null) {
-                        System.out.println("Impossible de trouver l'intersection de départ.");
-                        return;
-                    }
+                //Faire liste d'adresse
+                //Faire djikstra depuis le départ pour chaque adresse
+                //Trouver le plus proche du point de départ
+                //Recommencer djikstra pour chaque adresse restante en prenant la dernière adresse comme départ
+                // et trouver le plus court
+                //Recommencer jusqu'a reconstituer la liste
+                if(PlanVille != null){
+                    Intersection intersectionDepart = null;
 
                     List<String> numeros = new ArrayList<>();
-                    List<String> rues = new ArrayList<>();
-                    System.out.println("Entrez les adresses (max 10 — ENTER pour finir) :");
-
-                    while (numeros.size() < 10) {
+                    List<String> nomRue = new ArrayList<>();
+                    System.out.println("Entrez le numéros d'adresse et le nom de Rue (tapez ENTER pour finir) : ");
+                    while (true || (numeros.size() == 10)) {
                         System.out.print("Numéro → ");
                         String num = sc.nextLine().trim();
-                        if (num.isEmpty()) break;
-                        System.out.print("Rue → ");
-                        String rue = sc.nextLine().trim();
-                        if (rue.isEmpty()) break;
-
+                        System.out.println("Nom -> ");
+                        String nom = sc.nextLine().trim();
+                        if (num.isEmpty() || nom.isEmpty()) break;
                         numeros.add(num);
-                        rues.add(rue);
+                        nomRue.add(nom);
                     }
 
-                    if (numeros.isEmpty()) {
-                        System.out.println("Aucune adresse saisie.");
-                        return;
-                    }
-
-                    List<Adresse> adresses = new ArrayList<>();
-                    for (int i = 0; i < numeros.size(); i++) {
-                        Adresse ad = PlanVille.getAdresse(numeros.get(i), rues.get(i));
-                        if (ad != null) adresses.add(ad);
-                    }
-
-                    List<Itineraire> tournee = PlanVille.itineraireVersListAdresseTSP(depot, adresses);
-
-                    if (tournee != null) {
-                        System.out.println("Itinéraire de la tournée :");
-                        for (Itineraire it : tournee) {
-                            System.out.println(it);
+                    List<Itineraire> itineraires = new ArrayList<>();
+                    double distance = 0.0;
+                    for(int j=0;j < numeros.size();j++) {
+                        for (int i = 0; i < numeros.size(); i++) {
+                            if (j==0){
+                                //SUPPOSER QUE L'INTERSECTION DE DEPART EST TOUJOURS INT_01 !!!
+                                intersectionDepart = PlanVille.getReseauIntersections().get("Int_01");
+                            }
+                            else {
+                                intersectionDepart = itineraires.get(j-1).getArrivee();
+                            }
+                            Itineraire itineraire = PlanVille.itineraireVersAdresse(intersectionDepart, numeros.get(i), nomRue.get(i));
+                            if (itineraire.getDistanceTotale() < distance || distance == 0.0) {
+                                distance = itineraire.getDistanceTotale();
+                                itineraires.set(j,itineraire);
+                            }
                         }
                     }
 
-                } else {
-                    System.out.println("Veuillez enregistrer le plan d'une ville d'abord.");
+                    System.out.println("Voici l'itinéraire le plus court pour la tournée des particuliers : ");
+                    System.out.println(itineraires);
+                }
+                else {
+                    System.out.println("Veuillez enregister le plan d'une ville d'abord.");
                 }
             }
             default -> System.out.println("Choix invalide.");
@@ -260,6 +238,8 @@ public class AffichageMenu {
         List<Arc> chemin = PlanVille.euler(depot);
         Itineraire it = new Itineraire (depot,depot,chemin);
         System.out.println(it);
+        System.out.println("(non implémenté)");
+        System.out.println("pipi caca");
     }
 
     private void itinerairePointDeCollecte(){
@@ -270,21 +250,6 @@ public class AffichageMenu {
 
         switch (choix) {
             case "1" ->{
-                if(PlanVille != null) {
-                    //Plus proche voisin (TSP)
-                    Intersection depot = PlanVille.getReseauIntersections().get("Int_01");
-                    List<Itineraire> tournee = PlanVille.itineraireVersListAdresseTSP(depot, adressesPtsCollecte);
-
-                    if (tournee != null) {
-                        System.out.println("Itinéraire de la tournée :");
-                        for (Itineraire it : tournee) {
-                            System.out.println(it);
-                        }
-                    }
-                }
-                else {
-                    System.out.println("Veuillez enregistrer le plan d'une ville d'abord.");
-                }
             }
             case "2" ->{
 
@@ -334,11 +299,11 @@ public class AffichageMenu {
         Itineraire itineraire = PlanVille.djikstra(intersectionDepart, intersectionArrivee);
         System.out.println(itineraire);
 
-        //System.out.println("Indiquer le nom de la rue barrée :");
+        System.out.println("Indiquer le nom de la rue barrée :");
         String choix = "Rue de la Fontaine";
-        //PlanVille.bloquerRue(choix); //Bloquage de la rue
+        PlanVille.bloquerRue(choix); //Bloquage de la rue
 
-        itineraire = PlanVille.itineraireVersAdresse(intersectionDepart, "6", choix);
+        itineraire = PlanVille.djikstra(intersectionDepart, intersectionArrivee);
         System.out.println(itineraire);
     }
 
