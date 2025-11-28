@@ -260,7 +260,6 @@ public class AffichageMenu {
         List<Arc> chemin = PlanVille.euler(depot);
         Itineraire it = new Itineraire (depot,depot,chemin);
         System.out.println(it);
-        System.out.println("(non implémenté)");
     }
 
     private void itinerairePointDeCollecte(){
@@ -273,6 +272,7 @@ public class AffichageMenu {
             case "1" ->{
                 if(PlanVille != null) {
                     //Plus proche voisin (TSP)
+                    Intersection depot = PlanVille.getReseauIntersections().get("Int_01");
                     List<Itineraire> tournee = PlanVille.itineraireVersListAdresseTSP(depot, adressesPtsCollecte);
 
                     if (tournee != null) {
