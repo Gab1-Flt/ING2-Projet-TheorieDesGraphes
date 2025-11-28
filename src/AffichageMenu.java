@@ -234,6 +234,10 @@ public class AffichageMenu {
         //calcul de l'itinéraire de collecte pour les poubelles aux pieds des habitations
         //Doit passer par toutes les habitations de toutes les rues dans chaque sens
         //Rendre le graphe Eulerien ??
+        Intersection depot = PlanVille.getReseauIntersections().get("Int_01");
+        List<Arc> chemin = PlanVille.euler(depot);
+        Itineraire it = new Itineraire (depot,depot,chemin);
+        System.out.println(it);
         System.out.println("(non implémenté)");
     }
 
@@ -245,9 +249,9 @@ public class AffichageMenu {
 
         switch (choix) {
             case "1" ->{
-
             }
             case "2" ->{
+
             }
             default -> System.out.println("Choix invalide.");
         }
