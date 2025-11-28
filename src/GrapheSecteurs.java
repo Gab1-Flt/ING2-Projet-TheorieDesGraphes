@@ -10,6 +10,10 @@ public class GrapheSecteurs {
         return s;
     }
 
+    public Secteur getSecteur(String id) {
+        return secteurs.get(id);
+    }
+
     public void ajouterVoisinage(String id1, String id2) {
         Secteur s1 = secteurs.get(id1);
         Secteur s2 = secteurs.get(id2);
@@ -24,12 +28,15 @@ public class GrapheSecteurs {
         return secteurs.values();
     }
 
-    // ======= HYPOTHÈSE 1 : Welsh-Powell =======
+    // ======= HYPOTHÈSE 1 : Welsh-Powell (coloration) =======
+
     public int colorierWelshPowell() {
+        // reset
         for (Secteur s : secteurs.values()) {
             s.setJour(-1);
         }
 
+        // trier par degré décroissant
         List<Secteur> liste = new ArrayList<>(secteurs.values());
         liste.sort((a, b) -> Integer.compare(b.getVoisins().size(), a.getVoisins().size()));
 
@@ -38,8 +45,10 @@ public class GrapheSecteurs {
         for (Secteur s : liste) {
             if (s.getJour() != -1) continue;
 
+            // nouveau jour
             s.setJour(jourCourant);
 
+            // essayer de mettre d'autres sommets sur ce jour
             for (Secteur autre : liste) {
                 if (autre.getJour() == -1 && peutAffecterJour(autre, jourCourant)) {
                     autre.setJour(jourCourant);
@@ -77,6 +86,7 @@ public class GrapheSecteurs {
     }
 
     // ======= HYPOTHÈSE 2 : avec capacités =======
+
     public int planifierAvecCapacites(int capaciteCamion, int nbCamions) {
         if (capaciteCamion <= 0 || nbCamions <= 0) {
             throw new IllegalArgumentException("Capacités invalides");
@@ -84,10 +94,12 @@ public class GrapheSecteurs {
 
         int capaciteMaxParJour = capaciteCamion * nbCamions;
 
+        // reset jours
         for (Secteur s : secteurs.values()) {
             s.setJour(-1);
         }
 
+        // trier par quantité décroissante
         List<Secteur> liste = new ArrayList<>(secteurs.values());
         liste.sort((a, b) -> Integer.compare(b.getQuantite(), a.getQuantite()));
 
@@ -97,6 +109,7 @@ public class GrapheSecteurs {
         for (Secteur s : liste) {
             boolean affecte = false;
 
+            // essayer sur les jours existants
             for (int jour = 0; jour < nbJours; jour++) {
                 int chargeActuelle = chargeParJour.getOrDefault(jour, 0);
                 if (chargeActuelle + s.getQuantite() <= capaciteMaxParJour
@@ -108,6 +121,7 @@ public class GrapheSecteurs {
                 }
             }
 
+            // sinon, créer un nouveau jour
             if (!affecte) {
                 int nouveauJour = nbJours;
                 s.setJour(nouveauJour);
