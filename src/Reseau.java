@@ -211,7 +211,6 @@ public class Reseau {
     }
 
     public List<Arc> euler(Intersection depart) {
-        int stop=0;
         Map<Intersection, List<Arc>> adj = new HashMap<>();
         for (Intersection inter : ReseauIntersections.values()) {
             adj.put(inter, new ArrayList<>());

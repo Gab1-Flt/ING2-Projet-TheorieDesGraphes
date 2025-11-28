@@ -7,6 +7,8 @@ public class AffichageMenu {
 
     private Reseau PlanVille = null;
     private final Scanner sc = new Scanner(System.in);
+    protected Intersection depot = null;
+    protected List<Adresse> adressesPtsCollecte = new ArrayList<>();
 
     public void affichage() {
         int continuer;
@@ -44,7 +46,7 @@ public class AffichageMenu {
         System.out.println("2. Signaler une modification de circulation.");
         System.out.println("3. Indiquer des contraintes horaire.");
         System.out.println("4. Consulter la quantité de déchets récoltés.");
-        System.out.println("5. Gérer les demandes d'encombrants.");
+        System.out.println("5. Situer les points de collecte.");
         String choix = sc.nextLine();
 
         switch (choix) {
@@ -52,7 +54,7 @@ public class AffichageMenu {
             case "2" -> modifierCirculation();
             case "3" -> contraintesHoraires();
             case "4" -> consulterDechets();
-            case "5" -> gererEncombrants();
+            case "5" -> situerPtsDeCollecte();
             default -> System.out.println("Choix invalide.");
         }
     }
@@ -65,6 +67,8 @@ public class AffichageMenu {
         PlanVille = Plan.load("test.txt");
         System.out.println("Le plan a été enrergistré.");
         System.out.println("-------------------------------\n");
+
+        depot = PlanVille.getReseauIntersections().get("Int_01");
 
     }
 
@@ -118,8 +122,29 @@ public class AffichageMenu {
         System.out.println("(non implémenté)");
     }
 
-    private void gererEncombrants() {
-        System.out.println("(non implémenté)");
+    private void situerPtsDeCollecte() {
+        //Definir la liste d'adresse des pts de collecte
+
+        List<String> numeros = new ArrayList<>();
+        List<String> rues = new ArrayList<>();
+        System.out.println("Entrez les adresses:");
+
+        while (numeros.size() < 10) {
+            System.out.print("Numéro → ");
+            String num = sc.nextLine().trim();
+            if (num.isEmpty()) break;
+            System.out.print("Rue → ");
+            String rue = sc.nextLine().trim();
+            if (rue.isEmpty()) break;
+
+            numeros.add(num);
+            rues.add(rue);
+        }
+
+        for (int i = 0; i < numeros.size(); i++) {
+            Adresse ad = PlanVille.getAdresse(numeros.get(i), rues.get(i));
+            if (ad != null) adressesPtsCollecte.add(ad);
+        }
     }
 
 
@@ -163,14 +188,13 @@ public class AffichageMenu {
             case "1" ->{
                 if(PlanVille != null){
                     //SUPPOSER QUE L'INTERSECTION DE DEPART EST TOUJOURS INT_01 !!!
-                    Intersection intersectionDepart = PlanVille.getReseauIntersections().get("Int_01");
 
                     System.out.println("Saisir le nom de la rue du particulier : ");
                     String nomRue = sc.nextLine().trim();
                     System.out.println("Saisir le numero d'adresse du particulier :");
                     String numAdresse = sc.nextLine().trim();
 
-                    Itineraire itineraire = PlanVille.itineraireVersAdresse(intersectionDepart,numAdresse,nomRue);
+                    Itineraire itineraire = PlanVille.itineraireVersAdresse(depot,numAdresse,nomRue);
                     System.out.println("Voici l'itinéraire le plus court pour se rendre " + numAdresse + " " + nomRue + " :");
                     System.out.println(itineraire);
                 }
@@ -233,8 +257,7 @@ public class AffichageMenu {
     private void itinerairePoubelles() {
         //calcul de l'itinéraire de collecte pour les poubelles aux pieds des habitations
         //Doit passer par toutes les habitations de toutes les rues dans chaque sens
-        //Rendre le graphe Eulerien ??
-        Intersection depot = PlanVille.getReseauIntersections().get("Int_01");
+        //Rendre le graphe Eulerien
         List<Arc> arc = PlanVille.euler(depot);
         Itineraire it = new Itineraire(depot,depot, arc);
         System.out.println(it);
@@ -248,7 +271,20 @@ public class AffichageMenu {
 
         switch (choix) {
             case "1" ->{
+                if(PlanVille != null) {
+                    //Plus proche voisin (TSP)
+                    List<Itineraire> tournee = PlanVille.itineraireVersListAdresseTSP(depot, adressesPtsCollecte);
 
+                    if (tournee != null) {
+                        System.out.println("Itinéraire de la tournée :");
+                        for (Itineraire it : tournee) {
+                            System.out.println(it);
+                        }
+                    }
+                }
+                else {
+                    System.out.println("Veuillez enregistrer le plan d'une ville d'abord.");
+                }
             }
             case "2" ->{
             }
