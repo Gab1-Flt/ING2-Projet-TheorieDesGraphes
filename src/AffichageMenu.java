@@ -7,7 +7,6 @@ public class AffichageMenu {
 
     private Reseau PlanVille = null;
     private final Scanner sc = new Scanner(System.in);
-    protected Intersection depot = null;
     protected List<Adresse> adressesPtsCollecte = new ArrayList<>();
 
     public void affichage() {
@@ -67,8 +66,6 @@ public class AffichageMenu {
         PlanVille = Plan.load("test.txt");
         System.out.println("Le plan a été enrergistré.");
         System.out.println("-------------------------------\n");
-
-        depot = PlanVille.getReseauIntersections().get("Int_01");
 
     }
 
@@ -188,13 +185,14 @@ public class AffichageMenu {
             case "1" ->{
                 if(PlanVille != null){
                     //SUPPOSER QUE L'INTERSECTION DE DEPART EST TOUJOURS INT_01 !!!
+                    Intersection intersectionDepart = PlanVille.getReseauIntersections().get("Int_01");
 
                     System.out.println("Saisir le nom de la rue du particulier : ");
                     String nomRue = sc.nextLine().trim();
                     System.out.println("Saisir le numero d'adresse du particulier :");
                     String numAdresse = sc.nextLine().trim();
 
-                    Itineraire itineraire = PlanVille.itineraireVersAdresse(depot,numAdresse,nomRue);
+                    Itineraire itineraire = PlanVille.itineraireVersAdresse(intersectionDepart,numAdresse,nomRue);
                     System.out.println("Voici l'itinéraire le plus court pour se rendre " + numAdresse + " " + nomRue + " :");
                     System.out.println(itineraire);
                 }
@@ -257,10 +255,12 @@ public class AffichageMenu {
     private void itinerairePoubelles() {
         //calcul de l'itinéraire de collecte pour les poubelles aux pieds des habitations
         //Doit passer par toutes les habitations de toutes les rues dans chaque sens
-        //Rendre le graphe Eulerien
-        List<Arc> arc = PlanVille.euler(depot);
-        Itineraire it = new Itineraire(depot,depot, arc);
+        //Rendre le graphe Eulerien ??
+        Intersection depot = PlanVille.getReseauIntersections().get("Int_01");
+        List<Arc> chemin = PlanVille.euler(depot);
+        Itineraire it = new Itineraire (depot,depot,chemin);
         System.out.println(it);
+        System.out.println("(non implémenté)");
     }
 
     private void itinerairePointDeCollecte(){
@@ -287,6 +287,7 @@ public class AffichageMenu {
                 }
             }
             case "2" ->{
+
             }
             default -> System.out.println("Choix invalide.");
         }
