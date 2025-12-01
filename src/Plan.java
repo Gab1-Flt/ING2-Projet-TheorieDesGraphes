@@ -48,12 +48,8 @@ public class Plan {
                     reseau.indexerAdresse(a);
                 }
 
-                // Ajouter l'arc dans le graphe
-                depart.getArcsSortants().add(arc);
-
-                // Ajouter arc inverse pour bidirectionnel
-                Arc arcInverse = new Arc(arrivee, depart, rue, distance, adresses);
-                arrivee.getArcsSortants().add(arcInverse);
+                reseau.addArcNonOriente(intersectionDepart, intersectionArrivee, rue, distance, adresses);
+                reseau.addArcOriente(intersectionDepart, intersectionArrivee, rue, distance, adresses);
             }
 
         } catch (IOException e) {
