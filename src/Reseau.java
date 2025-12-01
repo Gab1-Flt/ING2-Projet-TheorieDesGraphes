@@ -212,7 +212,6 @@ public class Reseau {
     }
 
     public List<Arc> euler(Intersection depart) {
-        int stop=0;
         Map<Intersection, List<Arc>> adj = new HashMap<>();
         for (Intersection inter : ReseauIntersections.values()) {
             adj.put(inter, new ArrayList<>());
@@ -247,8 +246,6 @@ public class Reseau {
                 pileIntersections.push(voisin);
                 pileRues.push(rueChoisie);
             }else {
-
-                // Cul-de-sac : on remonte
                 pileIntersections.pop();
 
                 if (!pileRues.isEmpty()) {
