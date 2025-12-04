@@ -126,7 +126,7 @@ public class AffichageMenu {
         System.out.println("(non implémenté)");
     }
 
-    // ===================== MENU ENTREPRISE =====================
+    //MENU ENTREPRISE
 
     private void menuEntreprise() {
         System.out.println("\n--- ENTREPRISE ---");
@@ -156,7 +156,7 @@ public class AffichageMenu {
         }
     }
 
-    // ===================== ENCOMBRANTS =====================
+    //ENCOMBRANTS
 
     private void itineraireEncombrant() {
         System.out.println("Pour combien de particuliers voulez-vous calculer la tournée:");
@@ -276,7 +276,7 @@ public class AffichageMenu {
         }
     }
 
-            private void itinerairePoubelles() {
+    private void itinerairePoubelles() {
         System.out.println("(non implémenté)");
     }
 
@@ -339,7 +339,7 @@ public class AffichageMenu {
         System.out.println("Distance totale estimée de la tournée : " + distanceTotale + " m");
     }
 
-    // ===================== THÈME 3 : PLANIFICATION DES COLLECTES =====================
+    //THÈME 3 : PLANIFICATION DES COLLECTES
 
     private void planningCollectes() {
         if (grapheSecteurs == null) {
@@ -477,7 +477,7 @@ public class AffichageMenu {
         return g;
     }
 
-    // ===================== TESTS =====================
+    //TESTS
 
     private void test1() {
         PlanVille = Plan.load("test.txt");

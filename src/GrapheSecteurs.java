@@ -28,7 +28,7 @@ public class GrapheSecteurs {
         return secteurs.values();
     }
 
-    // ======= HYPOTHÈSE 1 : Welsh-Powell (coloration) =======
+    //HYPOTHÈSE 1 : Welsh-Powell (coloration)
 
     public int colorierWelshPowell() {
         // reset
@@ -69,7 +69,7 @@ public class GrapheSecteurs {
     }
 
     public void afficherPlanningSimple() {
-        System.out.println("=== Planning (sans capacités) ===");
+        System.out.println("---Planning (sans capacités)---");
         Map<Integer, List<Secteur>> parJour = new HashMap<>();
         for (Secteur s : secteurs.values()) {
             parJour.computeIfAbsent(s.getJour(), k -> new ArrayList<>()).add(s);
@@ -85,7 +85,7 @@ public class GrapheSecteurs {
         }
     }
 
-    // ======= HYPOTHÈSE 2 : avec capacités =======
+    //HYPOTHÈSE 2 : avec capacités
 
     public int planifierAvecCapacites(int capaciteCamion, int nbCamions) {
         if (capaciteCamion <= 0 || nbCamions <= 0) {
@@ -143,7 +143,7 @@ public class GrapheSecteurs {
     public void afficherPlanningAvecCapacites(int capaciteCamion, int nbCamions) {
         int capaciteMaxParJour = capaciteCamion * nbCamions;
 
-        System.out.println("=== Planning (avec capacités) ===");
+        System.out.println("---Planning (avec capacités)---");
         Map<Integer, List<Secteur>> parJour = new HashMap<>();
         for (Secteur s : secteurs.values()) {
             parJour.computeIfAbsent(s.getJour(), k -> new ArrayList<>()).add(s);
