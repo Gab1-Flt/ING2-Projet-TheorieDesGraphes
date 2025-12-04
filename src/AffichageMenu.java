@@ -1,12 +1,11 @@
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
+import java.io.*;
+import java.util.*;
 
 public class AffichageMenu {
 
     private Reseau PlanVille = null;
     private final Scanner sc = new Scanner(System.in);
-
+    private GrapheSecteurs grapheSecteurs = null;
     protected List<Adresse> adressesPtsCollecte = new ArrayList<>();
 
     public void affichage() {
@@ -64,7 +63,7 @@ public class AffichageMenu {
         //Affichage du plan (Test pour le moment)
         System.out.println("\n-------------------------------");
         PlanVille = Plan.load("test.txt");
-        System.out.println("Le plan a été enrergistré.");
+        System.out.println("Le plan a été enregistré.");
         System.out.println("-------------------------------\n");
 
     }
@@ -142,6 +141,8 @@ public class AffichageMenu {
             Adresse ad = PlanVille.getAdresse(numeros.get(i), rues.get(i));
             if (ad != null) adressesPtsCollecte.add(ad);
         }
+
+        System.out.println("Adresses des points de collecte enregistrées !");
     }
 
 
@@ -150,7 +151,7 @@ public class AffichageMenu {
     private void menuEntreprise() {
         System.out.println("\n--- ENTREPRISE ---");
         System.out.println("1. Calculer un itinéraire");
-        System.out.println("2. Planifier les jours de collectes");
+        System.out.println("2. Calculer les jours de collectes");
         String choix = sc.nextLine();
 
         switch (choix) {
@@ -187,10 +188,10 @@ public class AffichageMenu {
                     //SUPPOSER QUE L'INTERSECTION DE DEPART EST TOUJOURS INT_01 !!!
                     Intersection intersectionDepart = PlanVille.getReseauIntersections().get("Int_01");
 
-                    System.out.println("Saisir le nom de la rue du particulier : ");
-                    String nomRue = sc.nextLine().trim();
                     System.out.println("Saisir le numero d'adresse du particulier :");
                     String numAdresse = sc.nextLine().trim();
+                    System.out.println("Saisir le nom de la rue du particulier : ");
+                    String nomRue = sc.nextLine().trim();
 
                     Itineraire itineraire = PlanVille.itineraireVersAdresse(intersectionDepart,numAdresse,nomRue);
                     System.out.println("Voici l'itinéraire le plus court pour se rendre " + numAdresse + " " + nomRue + " :");
@@ -277,18 +278,24 @@ public class AffichageMenu {
         switch (choix) {
             case "1" ->{
                 if(PlanVille != null) {
-                    //Plus proche voisin (TSP)
-                    Intersection depot = PlanVille.getReseauIntersections().get("Int_01");
-                    List<Itineraire> tournee = PlanVille.itineraireVersListAdresseTSP(depot, adressesPtsCollecte);
+                    if(adressesPtsCollecte == null) {
+                        System.out.println("Veuillez enregistrer des points de collectes");
+                    }
+                    else {
+                        //Plus proche voisin (TSP)
+                        Intersection depot = PlanVille.getReseauIntersections().get("Int_01");
+                        List<Itineraire> tournee = PlanVille.itineraireVersListAdresseTSP(depot, adressesPtsCollecte);
 
-                    if (tournee != null) {
-                        System.out.println("Itinéraire de la tournée :");
-                        for (Itineraire it : tournee) {
-                            System.out.println(it);
+                        if (tournee != null) {
+                            System.out.println("Itinéraire de la tournée :");
+                            for (Itineraire it : tournee) {
+                                System.out.println(it);
+                            }
                         }
                     }
                 }
                 else {
+                    //MST
                     System.out.println("Veuillez enregistrer le plan d'une ville d'abord.");
                 }
             }
@@ -301,19 +308,127 @@ public class AffichageMenu {
     }
 
     private void planningCollectes(){
-        System.out.println("Quel type de collecte :");
+        System.out.println("\nQuel type de collecte :");
         System.out.println("1. Sans contrainte de capacité.");
         System.out.println("2. Avec contrainte de capacité et nombre de camions.");
         String choix = sc.nextLine();
 
-        switch (choix) {
-            case "1" ->{
-
-            }
-            case "2" ->{
-            }
-            default -> System.out.println("Choix invalide.");
+        if (grapheSecteurs == null) {
+            grapheSecteurs = creerGrapheSecteursDepuisFichier("test.txt");
         }
+
+        switch (choix) {
+            case "1" ->planningSansCapacites();
+            case "2" ->planningAvecCapacites();
+            default -> System.out.println("\nChoix invalide.");
+        }
+    }
+
+    private void planningSansCapacites(){
+        System.out.println("\n--- Hypothèse 1 : sans contraintes de capacité ---");
+
+        int nbJours = grapheSecteurs.colorierWelshPowell();
+        System.out.println("\nNombre de jours utilisés : " + nbJours);
+
+        grapheSecteurs.afficherPlanningSimple();
+    }
+
+    private void planningAvecCapacites(){
+        System.out.println("\n--- Hypothèse 2 : avec capacités ---");
+
+        try {
+            System.out.print("\nCapacité d'un camion (C) : ");
+            int capaciteCamion = Integer.parseInt(sc.nextLine().trim());
+
+            System.out.print("Nombre de camions disponibles (N) : ");
+            int nbCamions = Integer.parseInt(sc.nextLine().trim());
+
+            int nbJours = grapheSecteurs.planifierAvecCapacitesEtDivision(capaciteCamion, nbCamions);
+            System.out.println("\nNombre de jours utilisés : " + nbJours);
+
+            grapheSecteurs.afficherPlanningAvecCapacitesEtDivision(capaciteCamion, nbCamions);
+        } catch (NumberFormatException e) {
+            System.out.println("\nValeur incorrecte, veuillez entrer des nombres entiers.");
+        }
+    }
+
+    //CONSTRUCTION DU GRAPHE DE SECTEURS (THÈME 3)
+
+    private String determinerSecteurPourIntersection(String nomIntersection) {
+        try {
+            int underscore = nomIntersection.indexOf('_');
+            String numStr = nomIntersection.substring(underscore + 1);
+            int num = Integer.parseInt(numStr);
+
+            if (num >= 1 && num <= 4) {
+                return "S1";
+            } else if (num <= 8) {
+                return "S2";
+            } else if (num <= 12) {
+                return "S3";
+            } else {
+                return "S4";
+            }
+        } catch (Exception e) {
+            return "S1";
+        }
+    }
+
+     // - On estime la quantité de déchets par secteur via le nombre d'adresses.
+     // - On crée une arête entre deux secteurs si une rue relie des intersections de secteurs différents.
+
+    private GrapheSecteurs creerGrapheSecteursDepuisFichier(String nomFichier) {
+        GrapheSecteurs g = new GrapheSecteurs();
+
+        Map<String, Integer> quantiteParSecteur = new HashMap<>();
+        Map<String, Set<String>> voisinages = new HashMap<>();
+
+        try (BufferedReader br = new BufferedReader(new FileReader(nomFichier))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                line = line.trim();
+                if (line.isEmpty()) continue;
+
+                String[] parts = line.split(";");
+                // NomRue;Int1;Int2;Distance;Ad1;Ad2;...
+                if (parts.length < 5) continue;
+
+                String inter1 = parts[1].trim();
+                String inter2 = parts[2].trim();
+
+                String s1 = determinerSecteurPourIntersection(inter1);
+                String s2 = determinerSecteurPourIntersection(inter2);
+
+                int nbAdresses = parts.length - 4;
+
+                quantiteParSecteur.merge(s1, nbAdresses, Integer::sum);
+                quantiteParSecteur.merge(s2, nbAdresses, Integer::sum);
+
+                if (!s1.equals(s2)) {
+                    voisinages.computeIfAbsent(s1, k -> new HashSet<>()).add(s2);
+                    voisinages.computeIfAbsent(s2, k -> new HashSet<>()).add(s1);
+                }
+            }
+        } catch (IOException e) {
+            System.out.println("Erreur en lisant le fichier : " + e.getMessage());
+        }
+
+        // Création des 4 secteurs S1..S4
+        for (String id : new String[]{"S1", "S2", "S3", "S4"}) {
+            int q = quantiteParSecteur.getOrDefault(id, 0);
+            g.ajouterSecteur(id, "Secteur " + id, q);
+        }
+
+        // Ajout des voisinages entre secteurs
+        for (String s1 : voisinages.keySet()) {
+            for (String s2 : voisinages.get(s1)) {
+                if (s1.compareTo(s2) < 0) {
+                    g.ajouterVoisinage(s1, s2);
+                }
+            }
+        }
+
+        return g;
     }
 
     private void test1(){
