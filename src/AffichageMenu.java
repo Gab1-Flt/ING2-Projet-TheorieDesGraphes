@@ -60,7 +60,7 @@ public class AffichageMenu {
 
         //Affichage du plan (Test pour le moment)
         System.out.println("\n-------------------------------");
-        PlanVille = Plan.load("test.txt");
+        PlanVille = Plan.load("Plan.txt");
         System.out.println("Le plan a été enregistré.");
         System.out.println("-------------------------------\n");
 
