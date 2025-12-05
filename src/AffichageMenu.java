@@ -283,7 +283,6 @@ public class AffichageMenu {
                         //Plus proche voisin (TSP)
                         Intersection depot = PlanVille.getReseauIntersections().get("Int_01");
                         List<Itineraire> tournee = PlanVille.itineraireVersListAdresseTSP(depot, adressesPtsCollecte);
-
                         if (tournee != null) {
                             System.out.println("Itinéraire de la tournée :");
                             for (Itineraire it : tournee) {
@@ -292,13 +291,21 @@ public class AffichageMenu {
                         }
                     }
                 }
-                else {
-                    //MST
-                    System.out.println("Veuillez enregistrer le plan d'une ville d'abord.");
-                }
             }
             case "2" ->{
-
+                    //MST
+                    Adresse depot = PlanVille.getAdresse("10", "Rue de la République");
+                    if (depot == null) {
+                        System.out.println("Adresse de dépôt introuvable (10 Rue de la République).");
+                        return;
+                    }
+                    List<Itineraire> tournee=PlanVille.tourneeMST(depot,adressesPtsCollecte);
+                    if (tournee != null) {
+                        System.out.println("Itinéraire de la tournée :");
+                        for (Itineraire it : tournee) {
+                            System.out.println(it);
+                        }
+                    }
             }
             default -> System.out.println("Choix invalide.");
         }
