@@ -289,7 +289,7 @@ public class Reseau {
 
 
     public List<Itineraire> itineraireVersListAdresseTSP(Intersection depart, List<Adresse> adresses) {
-        //Chercher l'adresse la plus proche avec Djikstra parmis liste d'adresse non visité
+        //Chercher l'adresse la plus proche avec Djikstra parmi liste d'adresses non visitées
         //Marqué la plus proche comme visité et la mettre comme point de départ du prochain Djikstra
         //Répéter jusqu'au bout
 
@@ -333,5 +333,152 @@ public class Reseau {
 
         return resultats;
     }
+
+    public List<Itineraire> tourneeMST(Adresse depot, List<Adresse> adresses) {
+        if (!adresses.contains(depot)) {
+            adresses = new ArrayList<>(adresses);
+            adresses.add(0, depot);
+        }
+        // matrice des distances entre points (via djikstra)
+        Map<Adresse, Map<Adresse, Double>> dist = matriceDistances(adresses);
+
+        // MST avec Prim
+        Map<Adresse, List<Adresse>> mstAdj = new HashMap<>();
+        for (Adresse i : adresses) {
+            mstAdj.put(i, new ArrayList<>());
+        }
+
+        Set<Adresse> inMST = new HashSet<>();
+        Map<Adresse, Double> key = new HashMap<>();
+        Map<Adresse, Adresse> parent = new HashMap<>();
+
+        for (Adresse i : adresses) {
+            key.put(i, Double.POSITIVE_INFINITY);
+        }
+        key.put(depot, 0.0);
+
+        while (inMST.size() < adresses.size()) {
+            Adresse u = null;
+            double best = Double.POSITIVE_INFINITY;
+            for (Adresse v : adresses) {
+                if (!inMST.contains(v) && key.get(v) < best) {
+                    best = key.get(v);
+                    u = v;
+                }
+            }
+            inMST.add(u);
+
+            if (parent.get(u) != null) {
+                Adresse p = parent.get(u);
+                mstAdj.get(p).add(u);
+                mstAdj.get(u).add(p);
+            }
+
+            for (Adresse v : adresses) {
+                if (!inMST.contains(v)) {
+                    double dv = dist.get(u).get(v);
+                    if (dv < key.get(v)) {
+                        key.put(v, dv);
+                        parent.put(v, u);
+                    }
+                }
+            }
+        }
+        // 1) Ordre d'adresses via DFS
+        List<Adresse> ordreAdresses = new ArrayList<>();
+        Set<Adresse> visite = new HashSet<>();
+        dfsMST(depot, mstAdj, visite, ordreAdresses);
+
+// Si tu veux une tournée fermée (retour au dépôt) :
+        ordreAdresses.add(depot);
+
+// 2) Transformer en liste d'itinéraires
+        List<Itineraire> itineraires = new ArrayList<>();
+
+        for (int i = 0; i < ordreAdresses.size() - 1; i++) {
+            Adresse a = ordreAdresses.get(i);
+            Adresse b = ordreAdresses.get(i+1);
+
+            // Point de départ pour Dijkstra = intersection représentant l'adresse A
+            Intersection interDepart = a.getAr().getArrivee();
+
+            String numB = b.getNumero();
+            String rueB = b.getAr().getRue();
+
+            Itineraire it = itineraireVersAdresse(interDepart, numB, rueB);
+
+            if (it != null) {
+                itineraires.add(it);
+            } else {
+                System.err.println("Impossible d'établir l'itinéraire entre "
+                        + a.getNumero() + " " + a.getAr().getRue()
+                        + " et " + b.getNumero() + " " + b.getAr().getRue());
+            }
+        }
+
+        return itineraires;
+
+    }
+
+    private Map<Adresse, Map<Adresse, Double>> matriceDistances(List<Adresse> adresses) {
+        Map<Adresse, Map<Adresse, Double>> dist = new HashMap<>();
+
+        // Initialisation : une map interne vide pour chaque adresse
+        for (Adresse a : adresses) {
+            dist.put(a, new HashMap<>());
+        }
+
+        // Chaque adresse est à distance 0 d'elle-même
+        for (Adresse a : adresses) {
+            dist.get(a).put(a, 0.0);
+        }
+
+        // Distances symétriques entre paires d'adresses
+        for (int i = 0; i < adresses.size(); i++) {
+            Adresse ai = adresses.get(i);
+            Intersection interDepart = ai.getAr().getArrivee();  // ou getDepart(), mais reste cohérent
+
+            for (int j = i + 1; j < adresses.size(); j++) {
+                Adresse aj = adresses.get(j);
+
+                String numB = aj.getNumero();
+                String rueB = aj.getAr().getRue();
+
+                Itineraire it = itineraireVersAdresse(interDepart, numB, rueB);
+
+                double d;
+                if (it == null) {
+                    d = Double.POSITIVE_INFINITY;
+                } else {
+                    d = it.getDistanceTotale();
+                }
+
+                // Ici on est sûr que dist.get(ai) et dist.get(aj) ne sont PAS null
+                dist.get(ai).put(aj, d);
+                dist.get(aj).put(ai, d);
+            }
+        }
+
+        return dist;
+    }
+
+
+    private void dfsMST(Adresse courant,
+                        Map<Adresse, List<Adresse>> adj,
+                        Set<Adresse> visite,
+                        List<Adresse> ordre) {
+        visite.add(courant);
+        ordre.add(courant);
+
+        List<Adresse> voisins = adj.get(courant);
+        if (voisins == null) return;  // sécurité au cas où
+
+        for (Adresse v : voisins) {
+            if (!visite.contains(v)) {
+                dfsMST(v, adj, visite, ordre);
+            }
+        }
+    }
+
 
 }
