@@ -1,0 +1,2 @@
+Rue de la Mairie1;Int_01;Int_02;222;2;4;8;12;156
+Rue de la Mairie1;Int_02;Int_01;222;1;21;49;51;75

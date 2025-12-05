@@ -22,7 +22,7 @@ public class Reseau {
         return adressesParCle.get(cleAdresse(numero, rue));
     }
 
-    Intersection intersection(String nom){
+    Intersection intersection(String nom) {
         return ReseauIntersections.computeIfAbsent(nom, Intersection::new);
     }
 
@@ -97,28 +97,35 @@ public class Reseau {
 
     }
 
-
-
-    Arc addArcOriente(String depart, String arrivee, String NomRue, double distance, List<Adresse> adresses){
+    Arc addArcOriente(String depart, String arrivee, String NomRue, double distance, List<Adresse> adresses) {
         Intersection d = intersection(depart);
         Intersection a = intersection(arrivee);
         Arc e = new Arc(d, a, NomRue, distance, adresses);
         d.getArcsSortants().add(e);
         return e;
     }
-    Arc addArcNonOriente(String depart, String arrivee, String NomRue, double distance, List<Adresse> adresses){
+
+    Arc addArcNonOriente(String depart, String arrivee, String NomRue, double distance, List<Adresse> adresses) {
         Intersection d = intersection(depart);
         Intersection a = intersection(arrivee);
-        Arc e = new Arc(d, a, NomRue, distance, adresses);
 
-        Rues.putIfAbsent(NomRue, e);
-        return e;
+        // Create arc from depart to arrivee
+        Arc e1 = new Arc(d, a, NomRue, distance, adresses);
+        d.getArcsSortants().add(e1);
+
+        // Create reverse arc from arrivee to depart (bidirectional)
+        Arc e2 = new Arc(a, d, NomRue, distance, adresses);
+        a.getArcsSortants().add(e2);
+
+        Rues.putIfAbsent(NomRue, e1);
+        return e1;
     }
-    public int getNbRues(){
+
+    public int getNbRues() {
         return Rues.size();
     }
 
-    public Map<String, Intersection> getReseauIntersections(){
+    public Map<String, Intersection> getReseauIntersections() {
         return ReseauIntersections;
     }
 
@@ -175,10 +182,8 @@ public class Reseau {
                 Intersection voisin = arc.getArrivee();
                 double nouvelleDist = distCourant + arc.getDistance();
 
-
                 if (nouvelleDist < distance.get(voisin.getNom())) {
                     distance.put(voisin.getNom(), nouvelleDist);
-
 
                     IntersectionsDecouvertes.put(voisin.getNom(), arc);
 
@@ -187,7 +192,6 @@ public class Reseau {
                 }
             }
         }
-
 
         if (!IntersectionsDecouvertes.containsKey(destination.getNom())) {
             return null; // aucun chemin
@@ -216,11 +220,11 @@ public class Reseau {
             adj.put(inter, new ArrayList<>());
         }
 
-        for (Arc rueArc : Rues.values()){
+        for (Arc rueArc : Rues.values()) {
             Intersection a = rueArc.getDepart();
             Intersection b = rueArc.getArrivee();
-            adj.computeIfAbsent(a, key->new ArrayList<>()).add(rueArc);
-            adj.computeIfAbsent(b, key->new ArrayList<>()).add(rueArc);
+            adj.computeIfAbsent(a, key -> new ArrayList<>()).add(rueArc);
+            adj.computeIfAbsent(b, key -> new ArrayList<>()).add(rueArc);
         }
         Deque<Intersection> pileIntersections = new ArrayDeque<>();
         Deque<Arc> pileRues = new ArrayDeque<>();
@@ -229,10 +233,12 @@ public class Reseau {
         while (!pileIntersections.isEmpty()) {
             Intersection courant = pileIntersections.peek();
             List<Arc> ruesDisponibles = adj.get(courant);
-            Arc rueChoisie=null;
-            while (ruesDisponibles !=null && !ruesDisponibles.isEmpty()) {
+            Arc rueChoisie = null;
+            while (ruesDisponibles != null && !ruesDisponibles.isEmpty()) {
                 rueChoisie = ruesDisponibles.remove(ruesDisponibles.size() - 1);
-                if (rueChoisie !=null){break;}
+                if (rueChoisie != null) {
+                    break;
+                }
             }
             if (rueChoisie != null) {
                 Intersection voisin;
@@ -244,7 +250,7 @@ public class Reseau {
                 adj.get(voisin).remove(rueChoisie);
                 pileIntersections.push(voisin);
                 pileRues.push(rueChoisie);
-            }else {
+            } else {
                 pileIntersections.pop();
 
                 if (!pileRues.isEmpty()) {
@@ -257,7 +263,7 @@ public class Reseau {
     }
 
     public Itineraire itineraireVersAdresse(Intersection depart, String numero, String rue) {
-        Adresse adresse = getAdresse(numero, rue);  // <<< on utilise this.getAdresse
+        Adresse adresse = getAdresse(numero, rue); // <<< on utilise this.getAdresse
         if (adresse == null) {
             System.err.println("Adresse introuvable : " + numero + " " + rue);
             return null;
@@ -287,11 +293,12 @@ public class Reseau {
         return new Itineraire(depart, intersectionAtteinte, chemin);
     }
 
-
     public List<Itineraire> itineraireVersListAdresseTSP(Intersection depart, List<Adresse> adresses) {
-        //Chercher l'adresse la plus proche avec Djikstra parmi liste d'adresses non visitées
-        //Marqué la plus proche comme visité et la mettre comme point de départ du prochain Djikstra
-        //Répéter jusqu'au bout
+        // Chercher l'adresse la plus proche avec Djikstra parmi liste d'adresses non
+        // visitées
+        // Marqué la plus proche comme visité et la mettre comme point de départ du
+        // prochain Djikstra
+        // Répéter jusqu'au bout
 
         if (depart == null || adresses == null || adresses.isEmpty()) {
             System.out.println("Départ ou liste d'adresses invalide.");
@@ -308,11 +315,13 @@ public class Reseau {
             double distanceMin = Double.POSITIVE_INFINITY;
 
             for (int i = 0; i < adresses.size(); i++) {
-                if (visite.get(i)) continue;
+                if (visite.get(i))
+                    continue;
 
                 Adresse ad = adresses.get(i);
                 Itineraire it = this.itineraireVersAdresse(courant, ad.getNumero(), ad.getAr().getRue());
-                if (it == null) continue;
+                if (it == null)
+                    continue;
 
                 if (it.getDistanceTotale() < distanceMin) {
                     distanceMin = it.getDistanceTotale();
@@ -322,7 +331,8 @@ public class Reseau {
             }
 
             if (meilleurItineraire == null) {
-                System.out.println("Impossible de calculer une tournée complète, certaines adresses sont inaccessibles.");
+                System.out
+                        .println("Impossible de calculer une tournée complète, certaines adresses sont inaccessibles.");
                 return null;
             }
 
@@ -389,15 +399,15 @@ public class Reseau {
         Set<Adresse> visite = new HashSet<>();
         dfsMST(depot, mstAdj, visite, ordreAdresses);
 
-// Si tu veux une tournée fermée (retour au dépôt) :
+        // Si tu veux une tournée fermée (retour au dépôt) :
         ordreAdresses.add(depot);
 
-// 2) Transformer en liste d'itinéraires
+        // 2) Transformer en liste d'itinéraires
         List<Itineraire> itineraires = new ArrayList<>();
 
         for (int i = 0; i < ordreAdresses.size() - 1; i++) {
             Adresse a = ordreAdresses.get(i);
-            Adresse b = ordreAdresses.get(i+1);
+            Adresse b = ordreAdresses.get(i + 1);
 
             // Point de départ pour Dijkstra = intersection représentant l'adresse A
             Intersection interDepart = a.getAr().getArrivee();
@@ -436,7 +446,7 @@ public class Reseau {
         // Distances symétriques entre paires d'adresses
         for (int i = 0; i < adresses.size(); i++) {
             Adresse ai = adresses.get(i);
-            Intersection interDepart = ai.getAr().getArrivee();  // ou getDepart(), mais reste cohérent
+            Intersection interDepart = ai.getAr().getArrivee(); // ou getDepart(), mais reste cohérent
 
             for (int j = i + 1; j < adresses.size(); j++) {
                 Adresse aj = adresses.get(j);
@@ -462,16 +472,16 @@ public class Reseau {
         return dist;
     }
 
-
     private void dfsMST(Adresse courant,
-                        Map<Adresse, List<Adresse>> adj,
-                        Set<Adresse> visite,
-                        List<Adresse> ordre) {
+            Map<Adresse, List<Adresse>> adj,
+            Set<Adresse> visite,
+            List<Adresse> ordre) {
         visite.add(courant);
         ordre.add(courant);
 
         List<Adresse> voisins = adj.get(courant);
-        if (voisins == null) return;  // sécurité au cas où
+        if (voisins == null)
+            return; // sécurité au cas où
 
         for (Adresse v : voisins) {
             if (!visite.contains(v)) {
@@ -479,6 +489,5 @@ public class Reseau {
             }
         }
     }
-
 
 }

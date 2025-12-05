@@ -183,8 +183,8 @@ public class AffichageMenu {
         switch (choix) {
             case "1" ->{
                 if(PlanVille != null){
-                    //SUPPOSER QUE L'INTERSECTION DE DEPART EST TOUJOURS INT_01 !!!
-                    Intersection intersectionDepart = PlanVille.getReseauIntersections().get("Int_01");
+                    //SUPPOSER QUE L'INTERSECTION DE DEPART EST TOUJOURS Int_001 !!!
+                    Intersection intersectionDepart = PlanVille.getReseauIntersections().get("Int_001");
 
                     System.out.println("Saisir le numero d'adresse du particulier :");
                     String numAdresse = sc.nextLine().trim();
@@ -207,7 +207,7 @@ public class AffichageMenu {
                 // et trouver le plus court
                 //Recommencer jusqu'a reconstituer la liste
                 if (PlanVille != null) {
-                    Intersection depot = PlanVille.getReseauIntersections().get("Int_01");
+                    Intersection depot = PlanVille.getReseauIntersections().get("Int_001");
                     if (depot == null) {
                         System.out.println("Impossible de trouver l'intersection de départ.");
                         return;
@@ -261,7 +261,7 @@ public class AffichageMenu {
         //calcul de l'itinéraire de collecte pour les poubelles aux pieds des habitations
         //Doit passer par toutes les habitations de toutes les rues dans chaque sens
         //Rendre le graphe Eulerien ??
-        Intersection depot = PlanVille.getReseauIntersections().get("Int_01");
+        Intersection depot = PlanVille.getReseauIntersections().get("Int_001");
         List<Arc> chemin = PlanVille.euler(depot);
         Itineraire it = new Itineraire (depot,depot,chemin);
         System.out.println(it);
@@ -281,7 +281,7 @@ public class AffichageMenu {
                     }
                     else {
                         //Plus proche voisin (TSP)
-                        Intersection depot = PlanVille.getReseauIntersections().get("Int_01");
+                        Intersection depot = PlanVille.getReseauIntersections().get("Int_001");
                         List<Itineraire> tournee = PlanVille.itineraireVersListAdresseTSP(depot, adressesPtsCollecte);
                         if (tournee != null) {
                             System.out.println("Itinéraire de la tournée :");
@@ -294,9 +294,9 @@ public class AffichageMenu {
             }
             case "2" ->{
                     //MST
-                    Adresse depot = PlanVille.getAdresse("10", "Rue de la République");
+                    Adresse depot = PlanVille.getAdresse("36", "Avenue de la Victoire1");
                     if (depot == null) {
-                        System.out.println("Adresse de dépôt introuvable (10 Rue de la République).");
+                        System.out.println("Adresse de dépôt introuvable (36 Avenue de la Victoire1).");
                         return;
                     }
                     List<Itineraire> tournee=PlanVille.tourneeMST(depot,adressesPtsCollecte);
@@ -440,7 +440,7 @@ public class AffichageMenu {
 
     private void test1(){
         //affichage Teste
-        PlanVille = Plan.load("test.txt");
+        PlanVille = Plan.load("Plan.txt");
 
         System.out.println("\n-------------------------------");
         //Affichage du plan (Test pour le moment)
@@ -456,8 +456,8 @@ public class AffichageMenu {
     private void test2(){
         PlanVille = Plan.load("test.txt");
 
-        Intersection intersectionDepart = PlanVille.getReseauIntersections().get("Int_01");
-        Intersection intersectionArrivee = PlanVille.getReseauIntersections().get("Int_13");
+        Intersection intersectionDepart = PlanVille.getReseauIntersections().get("Int_001");
+        Intersection intersectionArrivee = PlanVille.getReseauIntersections().get("Int_0013");
 
         Itineraire itineraire = PlanVille.djikstra(intersectionDepart, intersectionArrivee);
         System.out.println(itineraire);
