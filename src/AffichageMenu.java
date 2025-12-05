@@ -42,17 +42,15 @@ public class AffichageMenu {
         System.out.println("\n--- COLLECTIVITÉ ---");
         System.out.println("1. Soumettre le plan de la commune.");
         System.out.println("2. Signaler une modification de circulation.");
-        System.out.println("3. Indiquer des contraintes horaire.");
-        System.out.println("4. Consulter la quantité de déchets récoltés.");
-        System.out.println("5. Situer les points de collecte.");
+        System.out.println("3. Consulter la quantité de déchets récoltés.");
+        System.out.println("4. Situer les points de collecte.");
         String choix = sc.nextLine();
 
         switch (choix) {
             case "1" -> soumettrePlan();
             case "2" -> modifierCirculation();
-            case "3" -> contraintesHoraires();
-            case "4" -> consulterDechets();
-            case "5" -> SituerPtsDeCollecte();
+            case "3" -> consulterDechets();
+            case "4" -> SituerPtsDeCollecte();
             default -> System.out.println("Choix invalide.");
         }
     }
@@ -70,7 +68,7 @@ public class AffichageMenu {
 
     private void modifierCirculation() {
         //Modifier un graphe ? Permettre l'ajout ou la modification des rues (sens unique, travaux temporaires, etc.) ?
-        System.out.println("Que voulez-vous signaler :");
+        System.out.println("\nQue voulez-vous signaler :");
         System.out.println("1. Route barrée.");
         System.out.println("2. Ajout d'une nouvelle rue.");
         String choix = sc.nextLine();
@@ -78,7 +76,7 @@ public class AffichageMenu {
         switch (choix) {
             case "1" -> {
                 //supprimer la rue
-                System.out.println("Indiquer le nom de la rue barrée :");
+                System.out.println("\nIndiquer le nom de la rue barrée :");
                 String choix2 = sc.nextLine().trim();
                 PlanVille.bloquerRue(choix2); //Bloquage de la rue
             }
@@ -110,12 +108,12 @@ public class AffichageMenu {
 
     }
 
-    private void contraintesHoraires() {
-        System.out.println("(non implémenté)");
-    }
-
     private void consulterDechets() {
-        System.out.println("(non implémenté)");
+        if(grapheSecteurs == null){
+            System.out.println("Effectuez une tournée avant de consulter la quantité de déchets récoltée");
+            return;
+        }
+        grapheSecteurs.afficherQuantiteCollecteeDetaillee(capaciteCamion, nbCamions);
     }
 
     private void SituerPtsDeCollecte() {
@@ -304,7 +302,6 @@ public class AffichageMenu {
             }
             default -> System.out.println("Choix invalide.");
         }
-
     }
 
     private void planningCollectes(){
@@ -333,15 +330,18 @@ public class AffichageMenu {
         grapheSecteurs.afficherPlanningSimple();
     }
 
+    int capaciteCamion = 0;
+    int nbCamions = 0;
+
     private void planningAvecCapacites(){
         System.out.println("\n--- Hypothèse 2 : avec capacités ---");
 
         try {
             System.out.print("\nCapacité d'un camion (C) : ");
-            int capaciteCamion = Integer.parseInt(sc.nextLine().trim());
+            capaciteCamion = Integer.parseInt(sc.nextLine().trim());
 
             System.out.print("Nombre de camions disponibles (N) : ");
-            int nbCamions = Integer.parseInt(sc.nextLine().trim());
+            nbCamions = Integer.parseInt(sc.nextLine().trim());
 
             int nbJours = grapheSecteurs.planifierAvecCapacitesEtDivision(capaciteCamion, nbCamions);
             System.out.println("\nNombre de jours utilisés : " + nbJours);

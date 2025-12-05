@@ -9,7 +9,7 @@ public class GrapheSecteurs {
     public static class Part {
         public final String secteurId;
         public final int quantite;
-        public final boolean partielle; // true si c'est une part (fraction) du secteur
+        public final boolean partielle; // true si c'est une part du secteur
 
         public Part(String secteurId, int quantite, boolean partielle) {
             this.secteurId = secteurId;
@@ -19,7 +19,7 @@ public class GrapheSecteurs {
 
         @Override
         public String toString() {
-            return secteurId + "(q=" + quantite + (partielle ? " part" : "") + ")";
+            return secteurId;
         }
     }
 
@@ -79,6 +79,33 @@ public class GrapheSecteurs {
 
         return jourCourant;
     }
+
+    public void afficherQuantiteCollecteeDetaillee(int capaciteCamion, int nbCamions) {
+        if (dernierPlanningAvecParts.isEmpty() || capaciteCamion == 0 || nbCamions == 0) {
+            System.out.println("Aucune tournée effectuée");
+            return;
+        }
+
+        int capaciteMaxParJour = capaciteCamion * nbCamions;
+        System.out.println("\n--- Quantités collectées par jour ---");
+
+        List<Integer> jours = new ArrayList<>(dernierPlanningAvecParts.keySet());
+        Collections.sort(jours);
+
+        int total = 0;
+        for (int j : jours) {
+            int somme = 0;
+            System.out.print("Jour " + (j + 1));
+            for (Part p : dernierPlanningAvecParts.get(j)) {
+                somme += p.quantite;
+            }
+            total += somme;
+            System.out.println(" | Collecté = " + somme + " kg" );
+        }
+
+        System.out.println("\n>>> Quantité totale collectée (tous jours) : " + total + " kg");
+    }
+
 
     private boolean peutAffecterJour(Secteur s, int jour) {
         for (Secteur v : s.getVoisins()) {
