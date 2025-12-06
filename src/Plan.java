@@ -1,6 +1,8 @@
 import java.io.BufferedReader;
-import java.io.FileReader;
+import java.io.FileInputStream;
+import java.io.InputStreamReader;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,7 +11,8 @@ public class Plan {
     public static Reseau load(String fichier) {
         Reseau reseau = new Reseau();
 
-        try (BufferedReader br = new BufferedReader(new FileReader(fichier))) {
+        try (BufferedReader br = new BufferedReader(
+                new InputStreamReader(new FileInputStream(fichier), StandardCharsets.UTF_8))) {
             String ligne;
 
             while ((ligne = br.readLine()) != null) {
@@ -32,12 +35,10 @@ public class Plan {
                 List<Adresse> adresses = new ArrayList<>();
 
                 // Un seul Arc pour toutes les adresses de cette ligne
-                Arc arc = new Arc(
-                        new Intersection(intersectionDepart),
-                        new Intersection(intersectionArrivee),
-                        rue,distance
-                        , adresses
-                );
+                Intersection depart = reseau.intersection(intersectionDepart);
+                Intersection arrivee = reseau.intersection(intersectionArrivee);
+
+                Arc arc = new Arc(depart, arrivee, rue, distance, adresses);
 
                 // Adresses à partir de l’indice 3
                 for (int u = 4; u < elements.length; u++) {
@@ -50,8 +51,8 @@ public class Plan {
                     reseau.indexerAdresse(a);
                 }
 
-                reseau.addArcNonOriente(intersectionDepart, intersectionArrivee, rue, distance,adresses);
-                reseau.addArcOriente(intersectionDepart, intersectionArrivee, rue, distance,adresses);
+                reseau.addArcNonOriente(intersectionDepart, intersectionArrivee, rue, distance, adresses);
+                reseau.addArcOriente(intersectionDepart, intersectionArrivee, rue, distance, adresses);
             }
 
         } catch (IOException e) {

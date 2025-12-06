@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c0d34f22-8ca1-4304-955d-40adf0f3f3e3" name="Changes" comment="Theme 3 essai">
-      <change afterPath="$PROJECT_DIR$/src/TSPPointsCollecte.java" afterDir="false" />
+    <list default="true" id="c0d34f22-8ca1-4304-955d-40adf0f3f3e3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/test2.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Plan.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Plan.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AffichageMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AffichageMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Plan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Plan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Reseau.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reseau.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,36 +34,58 @@
     &quot;assignee&quot;: &quot;Gab1-Flt&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Gab1-Flt/ING2-Projet-TheorieDesGraphes.git",
-    "accountId": "5597e187-e9a7-4344-a6e6-38ea1c90ba74"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Gab1-Flt/ING2-Projet-TheorieDesGraphes.git&quot;,
+    &quot;accountId&quot;: &quot;edb75e3a-ed6f-479e-8d18-25e05e7b1b6e&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
   &quot;associatedIndex&quot;: 7
 }</component>
   <component name="ProjectId" id="35QCibCRS0ywjVFhbqsiP9d4rqH" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/PC/Downloads/ING2-Projet-TheorieDesGraphes 2/ING2-Projet-TheorieDesGraphes",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "advanced.settings"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Gabin&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/gabin/Documents/GitHub/ING2-Projet-TheorieDesGraphes&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\gabin\Documents\GitHub\ING2-Projet-TheorieDesGraphes" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\gabin\Documents\GitHub\ING2-Projet-TheorieDesGraphes" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="ING2-Projet-TheorieDesGraphes" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -76,37 +101,7 @@
       <option name="presentableId" value="Default" />
       <updated>1763033039951</updated>
     </task>
-    <task id="LOCAL-00001" summary="Theme 3 essai">
-      <option name="closed" value="true" />
-      <created>1764339715516</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1764339715516</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Theme 3 essai">
-      <option name="closed" value="true" />
-      <created>1764339843084</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1764339843084</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Theme 3 essai">
-      <option name="closed" value="true" />
-      <created>1764347797691</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1764347797691</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
     <servers />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Merge remote-tracking branch 'origin/main' into main&#10;&#10;# Conflicts:&#10;#&#9;.idea/misc.xml&#10;#&#9;.idea/workspace.xml" />
-    <MESSAGE value="Theme 3 essai" />
-    <option name="LAST_COMMIT_MESSAGE" value="Theme 3 essai" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

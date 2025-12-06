@@ -22,7 +22,7 @@ public class Reseau {
         return adressesParCle.get(cleAdresse(numero, rue));
     }
 
-    Intersection intersection(String nom){
+    Intersection intersection(String nom) {
         return ReseauIntersections.computeIfAbsent(nom, Intersection::new);
     }
 
@@ -81,11 +81,10 @@ public class Reseau {
 
     public void ajouterRue(String rue, String departNom, String arriveeNom, double distance, List<String> numeros) {
 
-        List<Adresse> adresses = new ArrayList<>();
-
         Intersection d = intersection(departNom);
         Intersection a = intersection(arriveeNom);
 
+        List<Adresse> adresses = new ArrayList<>();
         Arc arc = new Arc(d, a, rue, distance, adresses);
 
         for (String numero : numeros) {
@@ -98,28 +97,35 @@ public class Reseau {
 
     }
 
-
-
-    Arc addArcOriente(String depart, String arrivee, String NomRue, double distance, List<Adresse> adresses){
+    Arc addArcOriente(String depart, String arrivee, String NomRue, double distance, List<Adresse> adresses) {
         Intersection d = intersection(depart);
         Intersection a = intersection(arrivee);
         Arc e = new Arc(d, a, NomRue, distance, adresses);
         d.getArcsSortants().add(e);
         return e;
     }
-    Arc addArcNonOriente(String depart, String arrivee, String NomRue, double distance, List<Adresse> adresses){
+
+    Arc addArcNonOriente(String depart, String arrivee, String NomRue, double distance, List<Adresse> adresses) {
         Intersection d = intersection(depart);
         Intersection a = intersection(arrivee);
-        Arc e = new Arc(d, a, NomRue, distance, adresses);
 
-        Rues.putIfAbsent(NomRue, e);
-        return e;
+        // Create arc from depart to arrivee
+        Arc e1 = new Arc(d, a, NomRue, distance, adresses);
+        d.getArcsSortants().add(e1);
+
+        // Create reverse arc from arrivee to depart (bidirectional)
+        Arc e2 = new Arc(a, d, NomRue, distance, adresses);
+        a.getArcsSortants().add(e2);
+
+        Rues.putIfAbsent(NomRue, e1);
+        return e1;
     }
-    public int getNbRues(){
+
+    public int getNbRues() {
         return Rues.size();
     }
 
-    public Map<String, Intersection> getReseauIntersections(){
+    public Map<String, Intersection> getReseauIntersections() {
         return ReseauIntersections;
     }
 
@@ -176,10 +182,8 @@ public class Reseau {
                 Intersection voisin = arc.getArrivee();
                 double nouvelleDist = distCourant + arc.getDistance();
 
-
                 if (nouvelleDist < distance.get(voisin.getNom())) {
                     distance.put(voisin.getNom(), nouvelleDist);
-
 
                     IntersectionsDecouvertes.put(voisin.getNom(), arc);
 
@@ -188,7 +192,6 @@ public class Reseau {
                 }
             }
         }
-
 
         if (!IntersectionsDecouvertes.containsKey(destination.getNom())) {
             return null; // aucun chemin
@@ -212,17 +215,16 @@ public class Reseau {
     }
 
     public List<Arc> euler(Intersection depart) {
-        int stop=0;
         Map<Intersection, List<Arc>> adj = new HashMap<>();
         for (Intersection inter : ReseauIntersections.values()) {
             adj.put(inter, new ArrayList<>());
         }
 
-        for (Arc rueArc : Rues.values()){
+        for (Arc rueArc : Rues.values()) {
             Intersection a = rueArc.getDepart();
             Intersection b = rueArc.getArrivee();
-            adj.computeIfAbsent(a, key->new ArrayList<>()).add(rueArc);
-            adj.computeIfAbsent(b, key->new ArrayList<>()).add(rueArc);
+            adj.computeIfAbsent(a, key -> new ArrayList<>()).add(rueArc);
+            adj.computeIfAbsent(b, key -> new ArrayList<>()).add(rueArc);
         }
         Deque<Intersection> pileIntersections = new ArrayDeque<>();
         Deque<Arc> pileRues = new ArrayDeque<>();
@@ -231,10 +233,12 @@ public class Reseau {
         while (!pileIntersections.isEmpty()) {
             Intersection courant = pileIntersections.peek();
             List<Arc> ruesDisponibles = adj.get(courant);
-            Arc rueChoisie=null;
-            while (ruesDisponibles !=null && !ruesDisponibles.isEmpty()) {
+            Arc rueChoisie = null;
+            while (ruesDisponibles != null && !ruesDisponibles.isEmpty()) {
                 rueChoisie = ruesDisponibles.remove(ruesDisponibles.size() - 1);
-                if (rueChoisie !=null){break;}
+                if (rueChoisie != null) {
+                    break;
+                }
             }
             if (rueChoisie != null) {
                 Intersection voisin;
@@ -246,9 +250,7 @@ public class Reseau {
                 adj.get(voisin).remove(rueChoisie);
                 pileIntersections.push(voisin);
                 pileRues.push(rueChoisie);
-            }else {
-
-                // Cul-de-sac : on remonte
+            } else {
                 pileIntersections.pop();
 
                 if (!pileRues.isEmpty()) {
@@ -261,7 +263,7 @@ public class Reseau {
     }
 
     public Itineraire itineraireVersAdresse(Intersection depart, String numero, String rue) {
-        Adresse adresse = getAdresse(numero, rue);  // <<< on utilise this.getAdresse
+        Adresse adresse = getAdresse(numero, rue); // <<< on utilise this.getAdresse
         if (adresse == null) {
             System.err.println("Adresse introuvable : " + numero + " " + rue);
             return null;
@@ -284,12 +286,208 @@ public class Reseau {
             return null;
         }
 
+        Intersection intersectionAtteinte = meilleur.getArrivee();
         List<Arc> chemin = new ArrayList<>(meilleur.getArcs()); // ou getArcs()
+        chemin.add(arcAdresse);
 
-        if (chemin.isEmpty() || chemin.get(chemin.size() - 1) != arcAdresse) {
-            chemin.add(arcAdresse);
+        return new Itineraire(depart, intersectionAtteinte, chemin);
+    }
+
+    public List<Itineraire> itineraireVersListAdresseTSP(Intersection depart, List<Adresse> adresses) {
+        // Chercher l'adresse la plus proche avec Djikstra parmi liste d'adresses non
+        // visitées
+        // Marqué la plus proche comme visité et la mettre comme point de départ du
+        // prochain Djikstra
+        // Répéter jusqu'au bout
+
+        if (depart == null || adresses == null || adresses.isEmpty()) {
+            System.out.println("Départ ou liste d'adresses invalide.");
+            return null;
         }
 
-        return new Itineraire(depart, adresse.getAr().getArrivee(), chemin);
+        List<Boolean> visite = new ArrayList<>(Collections.nCopies(adresses.size(), false));
+        List<Itineraire> resultats = new ArrayList<>();
+        Intersection courant = depart;
+
+        for (int k = 0; k < adresses.size(); k++) {
+            Itineraire meilleurItineraire = null;
+            int meilleurIndex = -1;
+            double distanceMin = Double.POSITIVE_INFINITY;
+
+            for (int i = 0; i < adresses.size(); i++) {
+                if (visite.get(i))
+                    continue;
+
+                Adresse ad = adresses.get(i);
+                Itineraire it = this.itineraireVersAdresse(courant, ad.getNumero(), ad.getAr().getRue());
+                if (it == null)
+                    continue;
+
+                if (it.getDistanceTotale() < distanceMin) {
+                    distanceMin = it.getDistanceTotale();
+                    meilleurItineraire = it;
+                    meilleurIndex = i;
+                }
+            }
+
+            if (meilleurItineraire == null) {
+                System.out
+                        .println("Impossible de calculer une tournée complète, certaines adresses sont inaccessibles.");
+                return null;
+            }
+
+            visite.set(meilleurIndex, true);
+            resultats.add(meilleurItineraire);
+            courant = meilleurItineraire.getArrivee();
+        }
+
+        return resultats;
     }
+
+    public List<Itineraire> tourneeMST(Adresse depot, List<Adresse> adresses) {
+        if (!adresses.contains(depot)) {
+            adresses = new ArrayList<>(adresses);
+            adresses.add(0, depot);
+        }
+        // matrice des distances entre points (via djikstra)
+        Map<Adresse, Map<Adresse, Double>> dist = matriceDistances(adresses);
+
+        // MST avec Prim
+        Map<Adresse, List<Adresse>> mstAdj = new HashMap<>();
+        for (Adresse i : adresses) {
+            mstAdj.put(i, new ArrayList<>());
+        }
+
+        Set<Adresse> inMST = new HashSet<>();
+        Map<Adresse, Double> key = new HashMap<>();
+        Map<Adresse, Adresse> parent = new HashMap<>();
+
+        for (Adresse i : adresses) {
+            key.put(i, Double.POSITIVE_INFINITY);
+        }
+        key.put(depot, 0.0);
+
+        while (inMST.size() < adresses.size()) {
+            Adresse u = null;
+            double best = Double.POSITIVE_INFINITY;
+            for (Adresse v : adresses) {
+                if (!inMST.contains(v) && key.get(v) < best) {
+                    best = key.get(v);
+                    u = v;
+                }
+            }
+            inMST.add(u);
+
+            if (parent.get(u) != null) {
+                Adresse p = parent.get(u);
+                mstAdj.get(p).add(u);
+                mstAdj.get(u).add(p);
+            }
+
+            for (Adresse v : adresses) {
+                if (!inMST.contains(v)) {
+                    double dv = dist.get(u).get(v);
+                    if (dv < key.get(v)) {
+                        key.put(v, dv);
+                        parent.put(v, u);
+                    }
+                }
+            }
+        }
+        // 1) Ordre d'adresses via DFS
+        List<Adresse> ordreAdresses = new ArrayList<>();
+        Set<Adresse> visite = new HashSet<>();
+        dfsMST(depot, mstAdj, visite, ordreAdresses);
+
+        // Si tu veux une tournée fermée (retour au dépôt) :
+        ordreAdresses.add(depot);
+
+        // 2) Transformer en liste d'itinéraires
+        List<Itineraire> itineraires = new ArrayList<>();
+
+        for (int i = 0; i < ordreAdresses.size() - 1; i++) {
+            Adresse a = ordreAdresses.get(i);
+            Adresse b = ordreAdresses.get(i + 1);
+
+            // Point de départ pour Dijkstra = intersection représentant l'adresse A
+            Intersection interDepart = a.getAr().getArrivee();
+
+            String numB = b.getNumero();
+            String rueB = b.getAr().getRue();
+
+            Itineraire it = itineraireVersAdresse(interDepart, numB, rueB);
+
+            if (it != null) {
+                itineraires.add(it);
+            } else {
+                System.err.println("Impossible d'établir l'itinéraire entre "
+                        + a.getNumero() + " " + a.getAr().getRue()
+                        + " et " + b.getNumero() + " " + b.getAr().getRue());
+            }
+        }
+
+        return itineraires;
+
+    }
+
+    private Map<Adresse, Map<Adresse, Double>> matriceDistances(List<Adresse> adresses) {
+        Map<Adresse, Map<Adresse, Double>> dist = new HashMap<>();
+
+        // Initialisation : une map interne vide pour chaque adresse
+        for (Adresse a : adresses) {
+            dist.put(a, new HashMap<>());
+        }
+
+        // Chaque adresse est à distance 0 d'elle-même
+        for (Adresse a : adresses) {
+            dist.get(a).put(a, 0.0);
+        }
+
+        // Distances symétriques entre paires d'adresses
+        for (int i = 0; i < adresses.size(); i++) {
+            Adresse ai = adresses.get(i);
+            Intersection interDepart = ai.getAr().getArrivee(); // ou getDepart(), mais reste cohérent
+
+            for (int j = i + 1; j < adresses.size(); j++) {
+                Adresse aj = adresses.get(j);
+
+                String numB = aj.getNumero();
+                String rueB = aj.getAr().getRue();
+
+                Itineraire it = itineraireVersAdresse(interDepart, numB, rueB);
+
+                double d;
+                if (it == null) {
+                    d = Double.POSITIVE_INFINITY;
+                } else {
+                    d = it.getDistanceTotale();
+                }
+
+                // Ici on est sûr que dist.get(ai) et dist.get(aj) ne sont PAS null
+                dist.get(ai).put(aj, d);
+                dist.get(aj).put(ai, d);
+            }
+        }
+
+        return dist;
+    }
+
+    private void dfsMST(Adresse courant,
+            Map<Adresse, List<Adresse>> adj,
+            Set<Adresse> visite,
+            List<Adresse> ordre) {
+        visite.add(courant);
+        ordre.add(courant);
+
+        List<Adresse> voisins = adj.get(courant);
+        if (voisins == null)
+            return; // sécurité au cas où
+
+        for (Adresse v : voisins) {
+            if (!visite.contains(v)) {
+                dfsMST(v, adj, visite, ordre);
+            }
+        }
+    }
+
 }

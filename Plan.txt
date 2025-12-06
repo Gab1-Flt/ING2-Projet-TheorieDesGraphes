@@ -1,0 +1,391 @@
+Avenue de la Victoire1;Int_001;Int_002;38;36
+Avenue de la Victoire1;Int_002;Int_001;38;7;9;13;27;37
+Avenue de la Victoire2;Int_002;Int_003;80;36
+Avenue de la Victoire2;Int_003;Int_002;80;7;9;13;27;37
+Avenue de la Victoire3;Int_003;Int_004;17;36
+Avenue de la Victoire3;Int_004;Int_003;17;7;9;13;27;37
+Avenue de la Victoire4;Int_004;Int_005;72;36
+Avenue de la Victoire4;Int_005;Int_004;72;7;9;13;27;37
+Rue Neuve1;Int_006;Int_007;7;1;13
+Rue Neuve2;Int_008;Int_006;18;1;13
+Rue Neuve3;Int_009;Int_008;79;1;13
+Rue Neuve4;Int_010;Int_009;5;1;13
+Rue Neuve5;Int_011;Int_010;1;1;13
+Rue du Maréchal de Lattre de Tassigny1;Int_012;Int_013;53;23
+Rue du Maréchal de Lattre de Tassigny2;Int_013;Int_014;62;23
+Rue des Liniers1;Int_015;Int_016;37;12
+Rue des Liniers1;Int_016;Int_015;37;1
+Rue des Liniers2;Int_016;Int_017;30;12
+Rue des Liniers2;Int_017;Int_016;30;1
+Rue des Liniers3;Int_017;Int_003;28;12
+Rue des Liniers3;Int_003;Int_017;28;1
+Rue des Chaudronniers1;Int_018;Int_019;43;2;10
+Rue des Chaudronniers2;Int_019;Int_020;94;2;10
+Rue Jean Jaurès2;Int_021;Int_022;105;1;7;9;18;20;22;173;175;177;185;187;189;260;264;265;301;303;372;376;380;382
+Rue d'Alger1;Int_023;Int_024;6;4;20
+Rue d'Alger2;Int_024;Int_025;84;4;20
+Rue d'Alger3;Int_025;Int_026;4;4;20
+Rue d'Alger4;Int_026;Int_027;27;4;20
+Rue Sadi Carnot1;Int_028;Int_021;50;12;14;16;18;20;22;30
+Rue Sadi Carnot1;Int_021;Int_028;50;7;9;25;27;29;31;79
+Rue de Nice1;Int_029;Int_030;18;21
+Rue de Nice2;Int_030;Int_031;36;21
+Rue de Nice3;Int_031;Int_032;12;21
+Rue de Nice4;Int_032;Int_033;18;21
+Rue de Nice5;Int_033;Int_022;19;21
+Rue de Nice6;Int_022;Int_034;80;21
+Rue Delphin Dutemple1;Int_035;Int_036;25;18
+Rue d'Alsace-Lorraine1;Int_037;Int_038;10;1;2;3;5;7;9;11;17;21;25;40
+Rue d'Alsace-Lorraine2;Int_038;Int_039;82;1;2;3;5;7;9;11;17;21;25;40
+Rue d'Alsace-Lorraine3;Int_039;Int_040;8;1;2;3;5;7;9;11;17;21;25;40
+Rue de l'Épée1;Int_041;Int_042;43;5
+Rue de l'Épée2;Int_042;Int_043;42;5
+Place du Saint-Sépulcre1;Int_044;Int_045;14;7
+Rue du Grand Séminaire1;Int_046;Int_047;107;11
+Place du 9 Octobre1;Int_048;Int_049;36;8
+Boulevard Faidherbe1;Int_050;Int_051;31;24
+Boulevard Faidherbe2;Int_052;Int_053;9;24
+Boulevard Faidherbe3;Int_053;Int_054;23;24
+Boulevard Faidherbe4;Int_054;Int_055;56;24
+Boulevard Faidherbe5;Int_056;Int_057;14;24
+Boulevard Faidherbe6;Int_057;Int_058;106;24
+Boulevard Faidherbe7;Int_058;Int_059;19;24
+Boulevard Faidherbe8;Int_059;Int_060;7;24
+Boulevard Faidherbe9;Int_060;Int_061;6;24
+Boulevard Faidherbe10;Int_061;Int_062;7;24
+Boulevard Faidherbe11;Int_062;Int_063;12;24
+Rue de Lille36;Int_064;Int_065;228;2;4;6;8;10;12;14;16;18;30;36;38;48;80;82;84;86;92;94;96
+Rue de Lille36;Int_065;Int_064;228;1;3;5;9;11;13;15;17;19;21;23;25;27;29;31;33;35;37;39;41;45;47;49;51;53;55;57;59;61;63;65;67;69;71;73;75;77;79;89;91;99;103;105;107;109;111;115;119;121;137;139;141;145;149;151;153;155;159;161;167;169;171;173;175;177;179;181;193
+Rue de Lille37;Int_066;Int_065;32;1;2;3;4;5;6;8;9;10;11;12;13;14;15;16;17;18;19;21;23;25;27;29;30;31;33;35;36;37;38;39;41;45;47;48;49;51;53;55;57;59;61;63;65;67;69;71;73;75;77;79;80;82;84;86;89;91;92;94;96;99;103;105;107;109;111;115;119;121;137;139;141;145;149;151;153;155;159;161;167;169;171;173;175;177;179;181;193
+Rue de Lille38;Int_065;Int_067;31;1;2;3;4;5;6;8;9;10;11;12;13;14;15;16;17;18;19;21;23;25;27;29;30;31;33;35;36;37;38;39;41;45;47;48;49;51;53;55;57;59;61;63;65;67;69;71;73;75;77;79;80;82;84;86;89;91;92;94;96;99;103;105;107;109;111;115;119;121;137;139;141;145;149;151;153;155;159;161;167;169;171;173;175;177;179;181;193
+Place de la République1;Int_022;Int_068;4;3;7;10;11;12;13;14;15;16
+Place de la République2;Int_068;Int_069;30;3;7;10;11;12;13;14;15;16
+Place de la République3;Int_069;Int_070;29;3;7;10;11;12;13;14;15;16
+Place de la République4;Int_070;Int_071;4;3;7;10;11;12;13;14;15;16
+Boulevard Faidherbe12;Int_072;Int_073;7;24
+Boulevard Faidherbe13;Int_073;Int_074;32;24
+Boulevard Faidherbe14;Int_074;Int_075;12;24
+Boulevard Faidherbe15;Int_075;Int_076;31;24
+Avenue Albert 1er1;Int_063;Int_077;10;9
+Allée Saint-Roch1;Int_078;Int_079;13;47;122
+Allée Saint-Roch2;Int_079;Int_080;7;47;122
+Allée Saint-Roch3;Int_080;Int_081;63;47;122
+Allée Saint-Roch4;Int_081;Int_082;161;47;122
+Allée Saint-Roch5;Int_082;Int_083;8;47;122
+Rue de Solesmes8;Int_084;Int_085;62;240;246;252;264
+Rue de Solesmes9;Int_085;Int_086;164;240;246;252;264
+Rue de Solesmes10;Int_086;Int_087;23;240;246;252;264
+Rue de Solesmes11;Int_087;Int_088;58;240;246;252;264
+Rue de Solesmes12;Int_088;Int_089;21;240;246;252;264
+Rue de Solesmes13;Int_089;Int_090;2;240;246;252;264
+Rue de Solesmes14;Int_090;Int_091;72;240;246;252;264
+Rue de Solesmes15;Int_092;Int_093;52;240;246;252;264
+Place de la Porte de Paris1;Int_094;Int_095;24;2
+Place de la Porte de Paris2;Int_095;Int_096;27;2
+Place de la Porte de Paris3;Int_096;Int_097;57;2
+Place de la Porte de Paris4;Int_097;Int_098;11;2
+Allée Saint-Roch6;Int_099;Int_100;62;122
+Allée Saint-Roch6;Int_100;Int_099;62;47
+Avenue de Valenciennes1;Int_101;Int_102;8;14;38;86
+Avenue de Valenciennes1;Int_102;Int_101;8;119;179;197
+Avenue de Valenciennes2;Int_102;Int_078;56;14;38;86
+Avenue de Valenciennes2;Int_078;Int_102;56;119;179;197
+Avenue de Valenciennes3;Int_103;Int_104;13;14;38;86
+Avenue de Valenciennes3;Int_104;Int_103;13;119;179;197
+Place du 9 Octobre2;Int_105;Int_106;7;8
+Place du 9 Octobre3;Int_106;Int_107;7;8
+Place du 9 Octobre4;Int_108;Int_109;21;8
+Place du 9 Octobre5;Int_109;Int_110;10;8
+Place du 9 Octobre6;Int_107;Int_028;22;8
+Place de la Porte de Paris5;Int_111;Int_112;14;2
+Place de la Porte de Paris6;Int_112;Int_113;66;2
+Place de la Porte de Paris7;Int_113;Int_114;18;2
+Place de la Porte de Paris8;Int_114;Int_094;31;2
+Boulevard Faidherbe16;Int_115;Int_116;17;24
+Boulevard Faidherbe17;Int_116;Int_117;35;24
+Boulevard Faidherbe18;Int_117;Int_118;68;24
+Boulevard Faidherbe19;Int_074;Int_119;83;24
+Place de la République6;Int_120;Int_121;5;3;7;10;11;12;13;14;15;16
+Place de la République7;Int_121;Int_122;59;3;7;10;11;12;13;14;15;16
+Place de la République8;Int_122;Int_032;4;3;7;10;11;12;13;14;15;16
+Place Maurice Schumann1;Int_123;Int_064;5;9
+Place Maurice Schumann2;Int_124;Int_123;5;9
+Place Maurice Schumann3;Int_125;Int_124;18;9
+Place Maurice Schumann4;Int_037;Int_125;8;9
+Avenue du Maréchal Foch5;Int_126;Int_127;16;14;16;18;20
+Avenue du Maréchal Foch5;Int_127;Int_126;16;23;27
+Avenue du Maréchal Foch6;Int_127;Int_128;90;14;16;18;20
+Avenue du Maréchal Foch6;Int_128;Int_127;90;23;27
+Rue de Solesmes31;Int_129;Int_130;68;240;246;252;264
+Rue de Solesmes32;Int_130;Int_131;53;240;246;252;264
+Rue de Solesmes33;Int_131;Int_132;53;240;246;252;264
+Rue de Solesmes34;Int_132;Int_133;394;240;246;252;264
+Rue de Solesmes39;Int_134;Int_135;133;240;246;252;264
+Rue de Solesmes40;Int_135;Int_136;86;240;246;252;264
+Rue de Solesmes41;Int_136;Int_137;43;240;246;252;264
+Rue de Solesmes42;Int_137;Int_138;33;240;246;252;264
+Rue de Solesmes43;Int_138;Int_139;77;240;246;252;264
+Rue de Solesmes44;Int_139;Int_140;62;240;246;252;264
+Rue de Solesmes45;Int_140;Int_141;89;240;246;252;264
+Rue de Solesmes46;Int_141;Int_142;35;240;246;252;264
+Rue de Solesmes47;Int_142;Int_143;46;240;246;252;264
+Rue de Solesmes48;Int_143;Int_092;67;240;246;252;264
+Rue des Chaudronniers3;Int_020;Int_071;102;2;10
+Avenue de la Victoire5;Int_144;Int_001;75;36
+Avenue de la Victoire5;Int_001;Int_144;75;7;9;13;27;37
+Rue des Rôtisseurs1;Int_145;Int_146;38;9;18
+Rue des Rôtisseurs2;Int_146;Int_001;54;9;18
+Rue des Rôtisseurs3;Int_011;Int_147;40;9;18
+Rue des Rôtisseurs4;Int_147;Int_148;4;9;18
+Rue des Rôtisseurs5;Int_148;Int_149;61;9;18
+Rue Saint-Georges1;Int_150;Int_151;122;58
+Rue Saint-Georges2;Int_151;Int_152;22;58
+Rue Saint-Georges3;Int_152;Int_153;56;58
+Rue Saint-Georges4;Int_153;Int_154;151;58
+Rue Saint-Georges5;Int_154;Int_155;28;58
+Rue Saint-Georges6;Int_155;Int_156;4;58
+Allée Saint-Roch7;Int_157;Int_158;28;122
+Allée Saint-Roch7;Int_158;Int_157;28;47
+Allée Saint-Roch8;Int_158;Int_159;42;122
+Allée Saint-Roch8;Int_159;Int_158;42;47
+Allée Saint-Roch9;Int_159;Int_160;91;122
+Allée Saint-Roch9;Int_160;Int_159;91;47
+Allée Saint-Roch10;Int_160;Int_100;25;122
+Allée Saint-Roch10;Int_100;Int_160;25;47
+Allée Saint-Roch11;Int_100;Int_161;47;122
+Allée Saint-Roch11;Int_161;Int_100;47;47
+Allée Saint-Roch12;Int_161;Int_162;214;122
+Allée Saint-Roch12;Int_162;Int_161;214;47
+Avenue de Valenciennes6;Int_163;Int_103;87;14;38;86
+Avenue de Valenciennes6;Int_103;Int_163;87;119;179;197
+Place Aristide Briand1;Int_164;Int_165;18;1;8;10;34;56
+Place Aristide Briand2;Int_165;Int_166;59;1;8;10;34;56
+Place du 9 Octobre7;Int_028;Int_167;18;8
+Avenue de Valenciennes7;Int_168;Int_169;58;14;38;86
+Avenue de Valenciennes7;Int_169;Int_168;58;119;179;197
+Avenue de Valenciennes8;Int_169;Int_163;54;14;38;86
+Avenue de Valenciennes8;Int_163;Int_169;54;119;179;197
+Avenue de Valenciennes9;Int_104;Int_170;21;14;38;86
+Avenue de Valenciennes9;Int_170;Int_104;21;119;179;197
+Avenue de Valenciennes10;Int_170;Int_171;13;14;38;86
+Avenue de Valenciennes10;Int_171;Int_170;13;119;179;197
+Avenue de Valenciennes11;Int_171;Int_172;23;14;38;86
+Avenue de Valenciennes11;Int_172;Int_171;23;119;179;197
+Avenue de Valenciennes12;Int_172;Int_173;25;14;38;86
+Avenue de Valenciennes12;Int_173;Int_172;25;119;179;197
+Avenue Albert 1er2;Int_174;Int_175;20;9
+Avenue Albert 1er3;Int_175;Int_063;5;9
+Place Aristide Briand3;Int_176;Int_177;26;1;8;10;34;56
+Place du 9 Octobre8;Int_110;Int_178;11;8
+Place du 9 Octobre9;Int_178;Int_105;16;8
+Avenue de Valenciennes13;Int_173;Int_101;81;14;38;86
+Avenue de Valenciennes13;Int_101;Int_173;81;119;179;197
+Place du 9 Octobre10;Int_179;Int_180;5;8
+Rue Sadi Carnot31;Int_181;Int_182;32;12;14;16;18;20;22;30
+Rue Sadi Carnot31;Int_182;Int_181;32;7;9;25;27;29;31;79
+Avenue de Valenciennes14;Int_183;Int_184;9;14;38;86;119;179;197
+Avenue de Valenciennes15;Int_184;Int_185;64;14;38;86;119;179;197
+Avenue de Valenciennes16;Int_185;Int_186;72;14;38;86;119;179;197
+Avenue de Valenciennes17;Int_186;Int_187;10;14;38;86;119;179;197
+Avenue de Valenciennes18;Int_187;Int_188;52;14;38;86;119;179;197
+Avenue de Valenciennes19;Int_188;Int_189;21;14;38;86;119;179;197
+Boulevard Faidherbe20;Int_051;Int_190;33;24
+Boulevard Faidherbe21;Int_190;Int_191;39;24
+Boulevard Faidherbe22;Int_191;Int_072;4;24
+Boulevard Faidherbe23;Int_072;Int_192;64;24
+Rue Saint-Georges7;Int_193;Int_194;11;58
+Rue Saint-Georges8;Int_194;Int_195;13;58
+Rue Saint-Georges9;Int_195;Int_150;200;58
+Avenue de Valenciennes25;Int_196;Int_197;14;14;38;86;119;179;197
+Avenue de Valenciennes26;Int_197;Int_198;67;14;38;86;119;179;197
+Avenue de Valenciennes27;Int_198;Int_199;27;14;38;86;119;179;197
+Avenue de Valenciennes28;Int_199;Int_200;12;14;38;86;119;179;197
+Rue de Nice7;Int_181;Int_030;15;21
+Rue Sadi Carnot32;Int_029;Int_181;15;12;14;16;18;20;22;30
+Rue Sadi Carnot32;Int_181;Int_029;15;7;9;25;27;29;31;79
+Place Maurice Schumann5;Int_201;Int_202;81;9
+Place Maurice Schumann6;Int_202;Int_203;40;9
+Place Maurice Schumann7;Int_203;Int_124;17;9
+Rue d'Alsace-Lorraine8;Int_052;Int_204;22;1;2;3;5;7;9;11;17;21;25;40
+Rue d'Alsace-Lorraine9;Int_204;Int_018;6;1;2;3;5;7;9;11;17;21;25;40
+Rue d'Alsace-Lorraine10;Int_018;Int_205;18;1;2;3;5;7;9;11;17;21;25;40
+Rue d'Alsace-Lorraine11;Int_205;Int_206;3;1;2;3;5;7;9;11;17;21;25;40
+Rue d'Alsace-Lorraine12;Int_206;Int_207;40;1;2;3;5;7;9;11;17;21;25;40
+Rue d'Alsace-Lorraine13;Int_207;Int_208;13;1;2;3;5;7;9;11;17;21;25;40
+Rue d'Alsace-Lorraine14;Int_208;Int_209;71;1;2;3;5;7;9;11;17;21;25;40
+Boulevard Faidherbe24;Int_210;Int_211;27;24
+Boulevard Faidherbe25;Int_211;Int_115;23;24
+Boulevard Faidherbe26;Int_212;Int_213;22;24
+Place du 9 Octobre11;Int_049;Int_180;3;8
+Place du 9 Octobre12;Int_180;Int_214;32;8
+Avenue Albert 1er4;Int_215;Int_174;20;9
+Avenue Albert 1er5;Int_216;Int_217;36;9
+Avenue Albert 1er6;Int_084;Int_216;13;9
+Avenue Albert 1er7;Int_218;Int_084;2;9
+Place Aristide Briand4;Int_219;Int_007;10;1;8;10;34;56
+Place Aristide Briand5;Int_007;Int_220;19;1;8;10;34;56
+Place Aristide Briand6;Int_220;Int_221;27;1;8;10;34;56
+Place Aristide Briand7;Int_222;Int_223;6;1;8;10;34;56
+Place Aristide Briand8;Int_223;Int_034;61;1;8;10;34;56
+Place Aristide Briand9;Int_177;Int_224;37;8;10;34;56
+Place Aristide Briand9;Int_224;Int_177;37;1
+Boulevard Faidherbe27;Int_225;Int_226;14;24
+Boulevard Faidherbe28;Int_226;Int_128;66;24
+Boulevard Faidherbe29;Int_128;Int_227;73;24
+Boulevard Faidherbe30;Int_227;Int_040;9;24
+Place Aristide Briand10;Int_176;Int_224;33;1;8;10;34;56
+Place Maurice Schumann8;Int_228;Int_037;8;9
+Place Maurice Schumann9;Int_229;Int_228;9;9
+Boulevard Faidherbe31;Int_040;Int_230;9;24
+Boulevard Faidherbe32;Int_230;Int_231;78;24
+Boulevard Faidherbe33;Int_231;Int_232;3;24
+Boulevard Faidherbe34;Int_232;Int_056;24;24
+Boulevard Faidherbe35;Int_233;Int_050;40;24
+Boulevard Faidherbe36;Int_118;Int_212;7;24
+Boulevard Faidherbe37;Int_234;Int_235;67;24
+Boulevard Faidherbe38;Int_235;Int_233;6;24
+Place Aristide Briand11;Int_236;Int_237;18;1;8;10;34;56
+Place Aristide Briand12;Int_237;Int_164;13;1;8;10;34;56
+Place Aristide Briand13;Int_034;Int_236;30;1;8;10;34;56
+Place Aristide Briand14;Int_238;Int_239;6;1;8;10;34;56
+Place Aristide Briand15;Int_239;Int_219;21;1;8;10;34;56
+Place Aristide Briand16;Int_224;Int_222;23;1;8;10;34;56
+Allée Saint-Roch13;Int_157;Int_240;37;122
+Allée Saint-Roch13;Int_240;Int_157;37;47
+Allée Saint-Roch14;Int_240;Int_241;57;122
+Allée Saint-Roch14;Int_241;Int_240;57;47
+Allée Saint-Roch15;Int_241;Int_242;8;122
+Allée Saint-Roch15;Int_242;Int_241;8;47
+Allée Saint-Roch16;Int_162;Int_243;73;122
+Allée Saint-Roch16;Int_243;Int_162;73;47
+Allée Saint-Roch17;Int_243;Int_244;37;122
+Allée Saint-Roch17;Int_244;Int_243;37;47
+Allée Saint-Roch18;Int_244;Int_245;54;122
+Allée Saint-Roch18;Int_245;Int_244;54;47
+Allée Saint-Roch19;Int_245;Int_246;21;122
+Allée Saint-Roch19;Int_246;Int_245;21;47
+Allée Saint-Roch20;Int_246;Int_247;14;122
+Allée Saint-Roch20;Int_247;Int_246;14;47
+Allée Saint-Roch21;Int_247;Int_248;69;122
+Allée Saint-Roch21;Int_248;Int_247;69;47
+Allée Saint-Roch22;Int_248;Int_249;14;122
+Allée Saint-Roch22;Int_249;Int_248;14;47
+Allée Saint-Roch23;Int_249;Int_250;30;122
+Allée Saint-Roch23;Int_250;Int_249;30;47
+Allée Saint-Roch24;Int_250;Int_251;38;122
+Allée Saint-Roch24;Int_251;Int_250;38;47
+Rue Delphin Dutemple2;Int_036;Int_182;102;18
+Rue de Solesmes53;Int_093;Int_252;30;240;246;252;264
+Rue d'Alsace-Lorraine15;Int_204;Int_205;24;1;2;3;5;7;9;11;17;21;25;40
+Place du 9 Octobre13;Int_108;Int_105;25;8
+Place du 9 Octobre14;Int_253;Int_048;9;8
+Place du 9 Octobre15;Int_167;Int_253;7;8
+Place du 9 Octobre16;Int_107;Int_253;26;8
+Boulevard Faidherbe39;Int_213;Int_254;6;24
+Boulevard Faidherbe40;Int_254;Int_255;85;24
+Boulevard Faidherbe41;Int_255;Int_256;17;24
+Boulevard Faidherbe42;Int_256;Int_257;32;24
+Boulevard Faidherbe43;Int_257;Int_258;110;24
+Boulevard Faidherbe44;Int_258;Int_259;79;24
+Boulevard Faidherbe45;Int_259;Int_260;124;24
+Boulevard Faidherbe46;Int_260;Int_261;51;24
+Rue de Solesmes54;Int_143;Int_262;81;240;246;252;264
+Place Maurice Schumann10;Int_126;Int_229;10;9
+Place du Saint-Sépulcre2;Int_263;Int_045;42;7
+Place du Saint-Sépulcre3;Int_045;Int_046;43;7
+Avenue de la Victoire6;Int_044;Int_264;84;36
+Avenue de la Victoire6;Int_264;Int_044;84;7;9;13;27;37
+Avenue de la Victoire7;Int_264;Int_265;18;36
+Avenue de la Victoire7;Int_265;Int_264;18;7;9;13;27;37
+Avenue de la Victoire8;Int_265;Int_094;32;36
+Avenue de la Victoire8;Int_094;Int_265;32;7;9;13;27;37
+Avenue Albert 1er8;Int_215;Int_066;29;9
+Allée Saint-Roch25;Int_083;Int_242;13;122
+Allée Saint-Roch25;Int_242;Int_083;13;47
+Avenue Albert 1er9;Int_066;Int_067;17;9
+Place Maurice Schumann11;Int_266;Int_126;33;9
+Place Maurice Schumann12;Int_267;Int_266;2;9
+Place du 9 Octobre17;Int_048;Int_268;9;8
+Avenue Albert 1er10;Int_067;Int_217;28;9
+Avenue Albert 1er11;Int_218;Int_269;18;9
+Avenue de Valenciennes29;Int_078;Int_269;19;14;38;86
+Avenue de Valenciennes29;Int_269;Int_078;19;119;179;197
+Avenue de la Victoire9;Int_005;Int_270;35;36
+Avenue de la Victoire9;Int_270;Int_005;35;7;9;13;27;37
+Avenue de la Victoire10;Int_270;Int_044;23;36
+Avenue de la Victoire10;Int_044;Int_270;23;7;9;13;27;37
+Boulevard Faidherbe47;Int_055;Int_271;63;24
+Boulevard Faidherbe48;Int_271;Int_272;12;24
+Boulevard Faidherbe49;Int_273;Int_056;15;24
+Boulevard Faidherbe50;Int_261;Int_274;2;24
+Boulevard Faidherbe51;Int_274;Int_077;6;24
+Boulevard Faidherbe52;Int_077;Int_275;23;24
+Boulevard Faidherbe53;Int_275;Int_276;8;24
+Boulevard Faidherbe54;Int_276;Int_277;14;24
+Boulevard Faidherbe55;Int_277;Int_278;22;24
+Boulevard Faidherbe56;Int_278;Int_279;84;24
+Boulevard Faidherbe57;Int_279;Int_273;12;24
+Boulevard Faidherbe58;Int_063;Int_280;8;24
+Boulevard Faidherbe59;Int_280;Int_281;178;24
+Boulevard Faidherbe60;Int_281;Int_282;139;24
+Boulevard Faidherbe61;Int_282;Int_283;65;24
+Boulevard Faidherbe62;Int_283;Int_284;24;24
+Boulevard Faidherbe63;Int_284;Int_285;9;24
+Boulevard Faidherbe64;Int_285;Int_234;15;24
+Place Aristide Briand17;Int_221;Int_176;4;1;8;10;34;56
+Rue du Maréchal de Lattre de Tassigny20;Int_286;Int_287;11;23
+Rue du Maréchal de Lattre de Tassigny21;Int_288;Int_286;21;23
+Rue de Solesmes55;Int_133;Int_289;41;240;246;252;264
+Rue des Liniers9;Int_156;Int_015;51;12
+Rue des Liniers9;Int_015;Int_156;51;1
+Place du 9 Octobre18;Int_214;Int_108;9;8
+Place du 9 Octobre19;Int_268;Int_214;21;8
+Boulevard Faidherbe65;Int_273;Int_290;36;24
+Boulevard Faidherbe66;Int_290;Int_291;76;24
+Boulevard Faidherbe67;Int_291;Int_052;8;24
+Rue d'Alsace-Lorraine16;Int_040;Int_052;11;1;2;3;5;7;9;11;17;21;25;40
+Avenue de Valenciennes30;Int_292;Int_293;14;14;38;86;119;179;197
+Avenue de Valenciennes31;Int_293;Int_294;10;14;38;86;119;179;197
+Avenue de Valenciennes32;Int_294;Int_196;30;14;38;86;119;179;197
+Rue d'Alger5;Int_071;Int_295;18;4;20
+Rue d'Alger6;Int_295;Int_120;18;4;20
+Rue d'Alger7;Int_120;Int_023;9;4;20
+Rue d'Alger8;Int_222;Int_071;81;4;20
+Rue Sadi Carnot38;Int_021;Int_182;94;12;14;16;18;20;22;30
+Rue Sadi Carnot38;Int_182;Int_021;94;7;9;25;27;29;31;79
+Place Maurice Schumann13;Int_201;Int_267;12;9
+Place du Saint-Sépulcre4;Int_046;Int_296;8;7
+Place du Saint-Sépulcre5;Int_296;Int_263;9;7
+Rue du Maréchal de Lattre de Tassigny22;Int_220;Int_288;12;23
+Rue du Maréchal de Lattre de Tassigny23;Int_297;Int_298;19;23
+Rue du Maréchal de Lattre de Tassigny24;Int_298;Int_287;22;23
+Rue du Maréchal de Lattre de Tassigny25;Int_014;Int_297;49;23
+Rue des Rôtisseurs6;Int_001;Int_299;30;9;18
+Rue des Rôtisseurs7;Int_299;Int_011;40;9;18
+Rue de l'Épée3;Int_043;Int_300;31;5
+Rue de l'Épée4;Int_047;Int_041;22;5
+Rue Delphin Dutemple3;Int_301;Int_035;24;18
+Rue de Solesmes67;Int_252;Int_302;4;240;246;252;264
+Rue de Solesmes68;Int_302;Int_303;15;240;246;252;264
+Rue de Solesmes69;Int_303;Int_304;36;240;246;252;264
+Rue de Solesmes70;Int_304;Int_305;84;240;246;252;264
+Rue de Solesmes71;Int_305;Int_306;65;240;246;252;264
+Rue de Solesmes72;Int_306;Int_307;29;240;246;252;264
+Rue de Solesmes73;Int_307;Int_308;208;240;246;252;264
+Rue de Solesmes74;Int_308;Int_129;90;240;246;252;264
+Rue de Solesmes75;Int_289;Int_309;71;240;246;252;264
+Rue de Solesmes76;Int_309;Int_310;114;240;246;252;264
+Rue de Solesmes77;Int_311;Int_289;186;240;246;252;264
+Rue de Solesmes78;Int_091;Int_134;11;240;246;252;264
+Avenue de Valenciennes33;Int_312;Int_168;33;14;38;86;119;179;197
+Avenue de Valenciennes34;Int_168;Int_313;30;14;38;86;119;179;197
+Avenue de Valenciennes35;Int_189;Int_314;16;14;38;86;119;179;197
+Avenue de Valenciennes36;Int_314;Int_315;4;14;38;86;119;179;197
+Avenue de Valenciennes37;Int_315;Int_312;18;14;38;86;119;179;197
+Avenue de Valenciennes38;Int_313;Int_316;21;14;38;86;119;179;197
+Avenue de Valenciennes39;Int_316;Int_317;5;14;38;86;119;179;197
+Avenue de Valenciennes40;Int_317;Int_318;36;14;38;86;119;179;197
+Avenue de Valenciennes41;Int_318;Int_292;38;14;38;86;119;179;197
+Place Aristide Briand18;Int_144;Int_238;32;1;8;10;34;56
+Place Aristide Briand19;Int_166;Int_144;31;1;8;10;34;56
+Place Aristide Briand20;Int_166;Int_238;52;1;8;10;34;56

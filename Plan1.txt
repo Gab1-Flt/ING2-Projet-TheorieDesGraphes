@@ -1,0 +1,2730 @@
+Rue Émile Lenglet;Int_01193;Int_00001;246;
+Rue Émile Lenglet;Int_01193;Int_00003;6;
+Rue Émile Lenglet;Int_00003;Int_01193;6;
+Boulevard Carnot;Int_00006;Int_00004;24;
+Boulevard Carnot;Int_00004;Int_01076;26;
+Avenue du Maréchal Leclerc;Int_00007;Int_00977;3;
+Avenue du Maréchal Leclerc;Int_00977;Int_00007;3;
+Rue du Docteur Brassart;Int_00249;Int_01435;39;5
+Rue du Docteur Brassart;Int_01435;Int_00249;39;
+Rue du Dépôt;Int_00013;Int_00012;47;
+Rue du Dépôt;Int_00012;Int_00013;47;
+Rue du Dépôt;Int_00013;Int_00803;21;
+Rue du Dépôt;Int_00803;Int_00013;21;
+Rue du Dépôt;Int_00803;Int_00125;155;
+Rue du Dépôt;Int_00125;Int_00803;155;
+Grand'Place;Int_01404;Int_01144;41;
+Grand'Place;Int_01144;Int_01404;41;
+Grand'Place;Int_01144;Int_00017;18;
+Grand'Place;Int_00017;Int_01144;18;
+Grand'Place;Int_00015;Int_00338;39;
+Carrefour Dwight Eisenhower;Int_01078;Int_00878;25;
+Carrefour Dwight Eisenhower;Int_00878;Int_01078;25;
+Avenue Winston Churchill;Int_01011;Int_01012;17;58;60;114;116;157
+Rue de la Taillerie;Int_00015;Int_00361;26;
+Rue Émile Lenglet;Int_00001;Int_01193;246;
+Rue de la Taillerie;Int_00361;Int_00015;26;
+Rue de la Taillerie;Int_00361;Int_01127;21;
+Rue de la Taillerie;Int_01127;Int_00361;21;
+Rue Saint-Michel;Int_00972;Int_01444;97;
+Rue Saint-Michel;Int_01444;Int_00972;97;
+Rue de Cambrai;Int_01422;Int_01213;138;
+Avenue Fernand Lobbedez;Int_00032;Int_01403;21;
+Avenue Fernand Lobbedez;Int_01403;Int_00032;21;
+Rue du Temple;Int_00033;Int_00032;46;
+Avenue Winston Churchill;Int_00877;Int_00038;423;58;60;114;116;157
+Avenue Winston Churchill;Int_00039;Int_00876;420;58;60;114;116;157
+Rue Désiré Delansorne;Int_00044;Int_00208;59;20
+Cours de Verdun;Int_01278;Int_00047;143;
+Cours de Verdun;Int_00047;Int_00048;118;
+Rue Sainte-Claire;Int_01385;Int_01268;96;
+Rue Sainte-Claire;Int_01268;Int_01385;96;
+Rue Sainte-Claire;Int_01268;Int_00041;40;
+Rue Sainte-Claire;Int_00041;Int_01268;40;
+Boulevard Crespel;Int_01279;Int_01277;19;
+Place des Héros;Int_01128;Int_01129;44;
+Place des Héros;Int_01129;Int_01128;44;
+Place de Tchécoslovaquie;Int_00309;Int_00054;20;
+Place de Tchécoslovaquie;Int_00054;Int_00309;20;
+Place de Tchécoslovaquie;Int_00054;Int_00055;20;
+Place de Tchécoslovaquie;Int_00055;Int_00054;20;
+Place de Tchécoslovaquie;Int_00055;Int_00056;7;
+Place de Tchécoslovaquie;Int_00056;Int_00055;7;
+Place de Tchécoslovaquie;Int_00056;Int_00057;13;
+Place de Tchécoslovaquie;Int_00057;Int_00056;13;
+Boulevard Robert Schuman;Int_00059;Int_00061;458;
+Boulevard Robert Schuman;Int_00094;Int_00064;254;
+Boulevard de la Liberté;Int_00054;Int_01112;347;
+Avenue Winston Churchill;Int_01439;Int_01010;24;58;60;114;116;157
+Avenue Winston Churchill;Int_01010;Int_00464;308;58;60;114;116;157
+Avenue Winston Churchill;Int_00464;Int_00465;99;58;60;114;116;157
+Avenue Winston Churchill;Int_00465;Int_00460;21;58;60;114;116;157
+Rue du 8 Mai 1945;Int_01109;Int_00070;24;
+Rue du 8 Mai 1945;Int_00070;Int_01333;15;
+Boulevard de la Liberté;Int_01340;Int_01336;6;
+Boulevard de la Liberté;Int_01336;Int_00310;23;
+Rue Baudimont;Int_01399;Int_01088;122;13;23;28
+Rue Baudimont;Int_01088;Int_00505;115;13;23;28
+Place de la Vacquerie;Int_01324;Int_00216;55;28
+Place de la Vacquerie;Int_00216;Int_01324;55;
+Rue Jules Ferry;Int_00078;Int_00506;158;
+Route de Bapaume;Int_00032;Int_00036;15;
+Route de Bapaume;Int_00036;Int_00032;15;
+Boulevard Carnot;Int_00003;Int_01192;180;
+Boulevard Vauban;Int_00082;Int_01247;44;
+Rue Héronval;Int_00044;Int_00205;104;
+Rue Héronval;Int_00205;Int_00083;49;
+Rue des 4 Crosses;Int_00083;Int_00196;181;
+Rue Saint-Michel;Int_01005;Int_01003;19;
+Rue Constant Dutilleux;Int_01176;Int_01073;193;
+Rue Constant Dutilleux;Int_01073;Int_00832;13;
+Boulevard Faidherbe;Int_00952;Int_01289;197;24
+Rue Saint-Michel;Int_00086;Int_00099;53;
+Rue Saint-Michel;Int_00099;Int_00086;53;
+Avenue Maréchal de Lattre de Tassigny;Int_00656;Int_00970;12;
+Avenue Maréchal de Lattre de Tassigny;Int_00970;Int_00656;12;
+Boulevard Georges Besnier;Int_00930;Int_01371;296;
+Rue Victor Hugo;Int_00047;Int_00114;81;
+Rue Victor Hugo;Int_00114;Int_00047;81;
+Rue Victor Hugo;Int_00114;Int_00110;44;
+Rue Victor Hugo;Int_00110;Int_00114;44;
+Boulevard Robert Schuman;Int_00066;Int_01290;376;
+Boulevard Robert Schuman;Int_00061;Int_00062;20;
+Boulevard Robert Schuman;Int_00065;Int_00066;22;
+Boulevard Robert Schuman;Int_00062;Int_01064;20;
+Rue Marietta Martin;Int_01031;Int_00058;135;
+Rue Marietta Martin;Int_00058;Int_01031;135;
+Rue de Turenne;Int_01299;Int_01271;200;
+Rue des 3 Visages;Int_00372;Int_00355;17;
+Petite Rue de Turenne;Int_01344;Int_00098;63;
+Rue de Turenne;Int_01298;Int_01344;147;
+Rue Posteau;Int_00106;Int_01095;115;1
+Rue du Bloc;Int_00107;Int_00108;98;
+Rue du Bloc;Int_00108;Int_00423;21;
+Rue du Bloc;Int_00423;Int_00424;105;
+Rue des Fours;Int_01178;Int_00114;72;16
+Rue des Fours;Int_00114;Int_00170;143;16
+Place Victor Hugo;Int_00110;Int_00116;69;
+Place Victor Hugo;Int_00116;Int_00117;62;
+Rue Rohart Courtin;Int_00193;Int_00118;112;
+Rue Gambetta;Int_00243;Int_00207;18;
+Rue Gambetta;Int_00207;Int_00243;18;
+Rue des Agaches;Int_01346;Int_00954;62;
+Rue des Agaches;Int_00954;Int_00955;28;
+Rue d'Elquenterie;Int_00052;Int_00872;14;
+Rue d'Elquenterie;Int_00872;Int_00052;14;
+Rue d'Amiens;Int_00119;Int_00231;37;
+Rue d'Amiens;Int_00231;Int_00397;12;
+Rue d'Amiens;Int_00397;Int_00113;12;
+Rue d'Amiens;Int_00113;Int_00394;71;
+Place du 33e Régiment;Int_01294;Int_01117;7;
+Place du 33e Régiment;Int_01117;Int_00121;7;
+Place du 33e Régiment;Int_00121;Int_01150;6;
+Place du 33e Régiment;Int_01150;Int_00122;6;
+Place du 33e Régiment;Int_00122;Int_01151;6;
+Place du 33e Régiment;Int_01151;Int_00123;6;
+Place du 33e Régiment;Int_00123;Int_01152;6;
+Place du 33e Régiment;Int_01152;Int_01153;6;
+Place du 33e Régiment;Int_01153;Int_00124;6;
+Place du 33e Régiment;Int_00124;Int_01252;6;
+Place du 33e Régiment;Int_01252;Int_01154;6;
+Place du 33e Régiment;Int_01154;Int_01118;6;
+Place du 33e Régiment;Int_01118;Int_01411;4;
+Rue Jean de La Fontaine;Int_00140;Int_00194;173;
+Rue Jean de La Fontaine;Int_00194;Int_00140;173;
+Rue Jean de La Fontaine;Int_00194;Int_00051;129;
+Rue Jean de La Fontaine;Int_00051;Int_00194;129;
+Rue André Boulloche;Int_00187;Int_00143;199;
+Rue André Boulloche;Int_00143;Int_00187;199;
+Rue des Églantines;Int_00925;Int_00430;40;
+Rue des Églantines;Int_00430;Int_00925;40;
+Rue des Églantines;Int_00430;Int_00428;71;
+Rue des Églantines;Int_00428;Int_00430;71;
+Rue des Églantines;Int_00428;Int_00429;72;
+Rue des Églantines;Int_00429;Int_00428;72;
+Rue des Églantines;Int_00429;Int_00890;33;
+Rue des Églantines;Int_00890;Int_00429;33;
+Rue des Églantines;Int_00890;Int_00144;38;
+Rue des Églantines;Int_00144;Int_00890;38;
+Rue Faraday;Int_00150;Int_00488;96;
+Rue Faraday;Int_00488;Int_00150;96;
+Rue Faraday;Int_00488;Int_00151;8;
+Rue Faraday;Int_00151;Int_00488;8;
+Rue Faraday;Int_00151;Int_00490;50;
+Rue Faraday;Int_00490;Int_00151;50;
+Rue Faraday;Int_00490;Int_00480;95;
+Rue Faraday;Int_00480;Int_00490;95;
+Rue Faraday;Int_00480;Int_00485;60;
+Rue Faraday;Int_00485;Int_00480;60;
+Rue Faraday;Int_00485;Int_00156;12;
+Rue Faraday;Int_00156;Int_00485;12;
+Rue des Bleuets;Int_00537;Int_00470;42;4
+Rue des Bleuets;Int_00470;Int_00537;42;
+Rue des Bleuets;Int_00470;Int_00452;100;4
+Rue des Bleuets;Int_00452;Int_00470;100;
+Rue des Bleuets;Int_00452;Int_00451;84;4
+Rue des Bleuets;Int_00451;Int_00452;84;
+Rue des Bleuets;Int_00451;Int_00441;73;4
+Rue des Bleuets;Int_00441;Int_00451;73;
+Rue des Bleuets;Int_00441;Int_01066;71;4
+Rue des Bleuets;Int_01066;Int_00441;71;
+Rue Molière;Int_01156;Int_01067;32;
+Rue Molière;Int_01067;Int_01156;32;
+Rue Utrillo;Int_00152;Int_01202;9;
+Rue Utrillo;Int_01202;Int_00152;9;
+Rue Copernic;Int_00156;Int_00499;153;14
+Rue Copernic;Int_00499;Int_00156;153;
+Rue Copernic;Int_00499;Int_00501;80;14
+Rue Copernic;Int_00501;Int_00499;80;
+Rue Copernic;Int_00501;Int_00993;136;14
+Rue Copernic;Int_00993;Int_00501;136;
+Rue Jean Racine;Int_01164;Int_00165;54;
+Rue Jean Racine;Int_00165;Int_01164;54;
+Rue Jean Racine;Int_00165;Int_00627;35;
+Rue Jean Racine;Int_00627;Int_00165;35;
+Rue Jean Racine;Int_00627;Int_01134;13;
+Rue Jean Racine;Int_01134;Int_00627;13;
+Rue Lech Walesa;Int_00164;Int_00163;237;1;2;3;4;5;6;7;8;9;10;11;12;14;16;18;20;22;24
+Rue Nelson Mandela;Int_00903;Int_00981;17;2;5;34
+Rue Nelson Mandela;Int_00981;Int_00980;32;2;5;34
+Avenue de l'Hippodrome;Int_00924;Int_00289;399;
+Avenue de l'Hippodrome;Int_00289;Int_00924;399;
+Avenue de l'Hippodrome;Int_00289;Int_00155;41;
+Avenue de l'Hippodrome;Int_00155;Int_00289;41;
+Rue Utrillo;Int_00153;Int_00167;15;
+Rue Utrillo;Int_00167;Int_00153;15;
+Place Gustave Courbet;Int_00167;Int_00168;123;
+Place Gustave Courbet;Int_00168;Int_00167;123;
+Rue de l'Abbé Halluin;Int_00176;Int_00238;35;
+Place de Marseille;Int_00172;Int_00173;88;
+Rue Victor Hugo;Int_00174;Int_00175;49;
+Rue Fontenelle;Int_00178;Int_00178;187;
+Rue Georges Santerne;Int_00180;Int_00220;218;
+Rue Georges Santerne;Int_00220;Int_00137;85;
+Rue d'Amiens;Int_01257;Int_00964;48;
+Rue d'Amiens;Int_00964;Int_01257;48;
+Boulevard du Président Allende;Int_01083;Int_00306;273;11;13
+Boulevard du Président Allende;Int_00306;Int_00304;64;11;13
+Boulevard du Président Allende;Int_00965;Int_00182;13;11;13
+Rue des Hochettes;Int_00303;Int_00301;71;
+Rue des Hochettes;Int_00301;Int_00302;94;
+Rue des Hochettes;Int_00302;Int_01284;10;
+Rue Dambrine;Int_00185;Int_01253;56;
+Rue Dambrine;Int_01253;Int_00185;56;
+Place de Marseille;Int_00188;Int_00189;87;
+Rue du Petit Chaudron;Int_00206;Int_00197;57;
+Rue de la Croix-Rouge;Int_00046;Int_00199;35;
+Rue du Collège;Int_00198;Int_00197;61;
+Rue des Jésuites;Int_00200;Int_00201;33;
+Rue des Jésuites;Int_00201;Int_00200;33;
+Rue des Lions;Int_00203;Int_00202;36;
+Rue des Lions;Int_00202;Int_00205;39;
+Rue Sainte-Marguerite;Int_00204;Int_00203;87;
+Boulevard de Strasbourg;Int_00004;Int_01043;33;
+Rue de la Caisse d'Épargne;Int_00208;Int_00209;113;
+Rue de la Caisse d'Épargne;Int_00209;Int_00210;21;
+Rue de la Caisse d'Épargne;Int_00210;Int_00852;34;
+Rue des Jongleurs;Int_00076;Int_00386;30;
+Rue des Jongleurs;Int_00386;Int_00852;22;
+Place du Théâtre;Int_00852;Int_00388;19;
+Place du Théâtre;Int_00388;Int_00385;26;
+Rue des Grands Viéziers;Int_00214;Int_00074;24;
+Rue des Grands Viéziers;Int_00074;Int_00075;53;
+Rue Saint-Denis;Int_00217;Int_00213;78;
+Rue Jacques le Caron;Int_00042;Int_01324;61;
+Rue Eugène-François Vidocq;Int_01235;Int_00356;16;3
+Rue Eugène-François Vidocq;Int_00356;Int_01235;16;
+Rue des Petits Vieziers;Int_00210;Int_00211;47;
+Rue des Petits Vieziers;Int_00211;Int_00210;47;
+Rue du Gommier;Int_00212;Int_00209;46;
+Rue des Récollets;Int_01442;Int_00049;77;
+Rue du Canon d'Or;Int_00074;Int_01324;60;
+Rue du Canon d'Or;Int_01324;Int_00074;60;
+Rue Ernest Delannoy;Int_00214;Int_00217;52;
+Rue du Colonel Touny;Int_00221;Int_00222;142;
+Rue du Colonel Touny;Int_00222;Int_00221;142;
+Rue Louis Helle;Int_00220;Int_00218;236;
+Rue Louis Helle;Int_00218;Int_00220;236;
+Rue Georges Santerne;Int_00223;Int_00134;102;
+Rue du Jeu de Paume;Int_00226;Int_00175;143;
+Rue du Jeu de Paume;Int_00175;Int_00226;143;
+Rue de Beauffort;Int_00229;Int_00228;160;
+Rue de Beauffort;Int_00228;Int_00225;141;
+Rue des Promenades;Int_00227;Int_00116;99;
+Boulevard Carnot;Int_00082;Int_01158;44;
+Rue de Châteaudun;Int_01384;Int_01179;53;
+Rue du Pont de Tolède;Int_01297;Int_00119;50;
+Rue du Général Barbot;Int_00050;Int_00320;56;
+Rue du Général Barbot;Int_00320;Int_01398;80;
+Rue de Grigny;Int_00171;Int_00894;278;
+Rue de Grigny;Int_00894;Int_00171;278;
+Rue Lamartine;Int_00234;Int_00235;131;
+Rue Lamartine;Int_00235;Int_00234;131;
+Rue Lamartine;Int_00235;Int_00236;85;
+Rue Lamartine;Int_00236;Int_00235;85;
+Rue Beffara;Int_00172;Int_00237;137;
+Rue Beffara;Int_00237;Int_00172;137;
+Carrefour d'Hagerue;Int_00240;Int_00238;49;
+Carrefour d'Hagerue;Int_00238;Int_00240;49;
+Rue Abel Bergaigne;Int_00849;Int_01024;56;
+Boulevard de Strasbourg;Int_01353;Int_00255;64;
+Boulevard de Strasbourg;Int_01138;Int_00207;11;
+Rue Gambetta;Int_01313;Int_01314;11;
+Rue Gambetta;Int_01314;Int_01313;11;
+Boulevard Carnot;Int_00245;Int_00246;22;
+Boulevard Faidherbe;Int_00252;Int_00021;96;24
+Allée Georges Braque;Int_00258;Int_00257;322;
+Allée Georges Braque;Int_00257;Int_00258;322;
+Rue Braque;Int_00257;Int_00258;244;1;3;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;23;25
+Rue Braque;Int_00258;Int_00257;244;6;8;10;12;14;16;18;20
+Rue Braque;Int_00258;Int_01201;15;1;3;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;23;25
+Rue Braque;Int_01201;Int_00258;15;6;8;10;12;14;16;18;20
+Rue des Fauvettes;Int_00263;Int_00280;57;
+Rue des Fauvettes;Int_00280;Int_00263;57;
+Rue des Fauvettes;Int_00280;Int_00990;66;
+Rue des Fauvettes;Int_00990;Int_00280;66;
+Rue Mignard;Int_00264;Int_00261;68;
+Rue Poussin;Int_00262;Int_00267;59;
+Rue Lurçat;Int_00263;Int_00260;130;2;4;6;8;10;12;14;16;18;20;22
+Rue Daumier;Int_00265;Int_00266;34;
+Rue Daumier;Int_00266;Int_00265;34;
+Rue Daumier;Int_00266;Int_00268;43;
+Rue Daumier;Int_00268;Int_00266;43;
+Rue des Bouvreuils;Int_00272;Int_00277;75;
+Rue des Bouvreuils;Int_00277;Int_00272;75;
+Rue des Bouvreuils;Int_00277;Int_00279;74;
+Rue des Bouvreuils;Int_00279;Int_00277;74;
+Rue des Bouvreuils;Int_00279;Int_00260;40;
+Rue des Bouvreuils;Int_00260;Int_00279;40;
+Rue des Alouettes;Int_00280;Int_00279;127;
+Rue des Alouettes;Int_00279;Int_00280;127;
+Rue des Chardonnerets;Int_00273;Int_01132;84;
+Rue des Chardonnerets;Int_01132;Int_00273;84;
+Rue des Chardonnerets;Int_01132;Int_00991;22;
+Rue des Chardonnerets;Int_00991;Int_01132;22;
+Rue des Pinsons;Int_00829;Int_00828;127;
+Rue des Pinsons;Int_00828;Int_00829;127;
+Rue des Mésanges;Int_00275;Int_00276;54;
+Rue des Mésanges;Int_00276;Int_00275;54;
+Rue des Mésanges;Int_00276;Int_00259;68;
+Rue des Mésanges;Int_00259;Int_00276;68;
+Rue des Mésanges;Int_00259;Int_00272;126;
+Rue des Mésanges;Int_00272;Int_00259;126;
+Rue des Hirondelles;Int_00270;Int_00830;25;
+Rue des Hirondelles;Int_00830;Int_00270;25;
+Rue des Hirondelles;Int_00830;Int_00274;77;
+Rue des Hirondelles;Int_00274;Int_00830;77;
+Rue des Hirondelles;Int_00274;Int_00166;239;
+Rue des Hirondelles;Int_00166;Int_00274;239;
+Rue des Rouges-Gorges;Int_00276;Int_00270;159;
+Rue des Rouges-Gorges;Int_00270;Int_00276;159;
+Rue Lebrun;Int_00283;Int_00282;163;
+Rue Dufy;Int_00289;Int_00283;72;
+Rue Dufy;Int_00283;Int_00289;72;
+Rue Dufy;Int_00283;Int_00282;125;
+Rue Dufy;Int_00282;Int_00283;125;
+Rue Millet;Int_00284;Int_00285;33;1;3;5;7;9
+Rue Millet;Int_00285;Int_00284;33;
+Rue Nattier;Int_00287;Int_00268;71;
+Rue Nattier;Int_00268;Int_00287;71;
+Rue Nattier;Int_00288;Int_00287;56;
+Rue Nattier;Int_00287;Int_00286;87;
+Rue Nattier;Int_00286;Int_00285;45;
+Rue Camille Pissarro;Int_00286;Int_00288;124;
+Rue Wacquez-Glasson;Int_00247;Int_01354;2;
+Rue Wacquez-Glasson;Int_01354;Int_00247;2;
+Rue Wacquez-Glasson;Int_01354;Int_00327;34;
+Rue Wacquez-Glasson;Int_00327;Int_01354;34;
+Rue Wacquez-Glasson;Int_00327;Int_01349;44;
+Rue Wacquez-Glasson;Int_01349;Int_00327;44;
+Rue Wacquez-Glasson;Int_01349;Int_00299;6;
+Rue Wacquez-Glasson;Int_00299;Int_01349;6;
+Rue des Balances;Int_00295;Int_00300;91;
+Place Adolphe Lenglet;Int_00208;Int_00291;21;
+Rue de la Wattelette;Int_00298;Int_00296;96;
+Rue de la Wattelette;Int_00296;Int_00298;96;
+Rue Briquet Tailliandier;Int_00297;Int_00293;66;
+Rue Briquet Tailliandier;Int_00293;Int_00111;71;
+Petite Rue Saint-Jean;Int_00290;Int_00294;63;
+Rue des Portes Cochères;Int_00291;Int_00292;107;
+Rue des Portes Cochères;Int_00292;Int_00294;11;
+Rue des Portes Cochères;Int_00294;Int_00293;82;
+Rue de la Charité;Int_00202;Int_01170;92;
+Rue de la Housse;Int_00299;Int_00300;68;
+Rue de la Housse;Int_00300;Int_00299;68;
+Rue Georges Sangnier;Int_00304;Int_00303;127;
+Rue Georges Sangnier;Int_00303;Int_00304;127;
+Voie du Général Delestraint;Int_00305;Int_00301;57;
+Voie du Général Delestraint;Int_00301;Int_00305;57;
+Rue André Gatoux;Int_00306;Int_00307;83;
+Rue André Gatoux;Int_00307;Int_00306;83;
+Rue André Gatoux;Int_00307;Int_00302;100;
+Rue André Gatoux;Int_00302;Int_00307;100;
+Rue Saint-Étienne;Int_00319;Int_00316;38;
+Rue Saint-Étienne;Int_00316;Int_00315;52;
+Rue du Péage;Int_00926;Int_00319;117;
+Rue des Trois Pommettes;Int_00318;Int_00316;69;
+Rue Neuve Saint-Étienne;Int_00118;Int_00311;58;
+Rue Sainte-Agnès;Int_00311;Int_00926;92;
+Rue du Péage;Int_00926;Int_00115;17;
+Rue du Péage;Int_00115;Int_00926;17;
+Place Saint-Étienne;Int_00311;Int_00312;27;
+Place Saint-Étienne;Int_00312;Int_00313;15;
+Place Saint-Étienne;Int_00313;Int_00315;52;
+Rue Sainte-Barbe;Int_00319;Int_00321;75;
+Rue du Fer à Cheval;Int_00323;Int_00322;47;
+Rue des Louez-Dieu;Int_00324;Int_00319;106;
+Rue de Justice;Int_00331;Int_01129;67;
+Rue de Justice;Int_01129;Int_00331;67;
+Rue du Vert Baudet;Int_00337;Int_01127;58;
+Rue du Vert Baudet;Int_01127;Int_00337;58;
+Rue du Saumon;Int_00254;Int_00329;90;
+Rue du Saumon;Int_00329;Int_00332;48;
+Rue du Saumon;Int_00332;Int_00335;106;
+Petite Rue du Saumon;Int_01114;Int_00329;78;
+Impasse de l'Écu de France;Int_00327;Int_01348;3;
+Impasse de l'Écu de France;Int_01348;Int_00327;3;
+Rue Presbytère Saint-Nicolas;Int_00330;Int_00335;61;
+Rue des Dominicains;Int_00335;Int_00336;20;
+Rue du Cardinal;Int_01429;Int_00338;34;
+Rue de Justice;Int_00333;Int_00330;12;
+Rue de Justice;Int_00330;Int_00333;12;
+Rue de Justice;Int_00330;Int_00331;44;
+Rue de Justice;Int_00331;Int_00330;44;
+Place d'Ipswich;Int_00333;Int_01114;24;
+Rue de la Fleur de Lys;Int_00341;Int_00340;47;
+Rue de la Fleur de Lys;Int_00340;Int_00341;47;
+Square Léon Jouhaux;Int_00343;Int_00342;52;
+Square Léon Jouhaux;Int_00342;Int_00014;22;
+Rue des Carabiniers d'Artois;Int_00344;Int_01181;84;
+Rue de l'École Normale;Int_01142;Int_00346;107;
+Rue de l'École Normale;Int_00346;Int_01142;107;
+Rue de la Paix;Int_00347;Int_00348;184;
+Rue de la Paix;Int_00348;Int_00347;184;
+Rue Ferdinand Buisson;Int_00351;Int_01086;82;
+Rue Roger Salengro;Int_00057;Int_00078;216;13
+Rue Paul Adam;Int_00073;Int_00119;111;
+Impasse de Sailly;Int_01168;Int_00353;55;
+Impasse de Sailly;Int_00353;Int_01168;55;
+Place du Wetz d'Amain;Int_00352;Int_01168;71;
+Place du Wetz d'Amain;Int_01168;Int_00354;28;
+Rue du Noble;Int_00358;Int_00365;63;
+Rue du Noble;Int_00365;Int_01249;61;
+Rue du Noble;Int_01249;Int_00374;17;
+Rue aux Ours;Int_00357;Int_00360;23;
+Rue aux Ours;Int_00360;Int_00358;17;
+Rue aux Ours;Int_00358;Int_00359;22;
+Rue aux Ours;Int_00359;Int_00366;55;
+Rue de la Batterie;Int_00363;Int_01169;2;
+Rue de la Batterie;Int_01169;Int_00363;2;
+Rue des Trois Marteaux;Int_00362;Int_00922;27;
+Rue de la Batterie;Int_00362;Int_00363;40;
+Rue de la Batterie;Int_00363;Int_00362;40;
+Rue du Petit Feutre;Int_00359;Int_00364;59;
+Rue du Petit Feutre;Int_00364;Int_00359;59;
+Rue du Petit Feutre;Int_00364;Int_00365;32;
+Rue du Petit Feutre;Int_00365;Int_00364;32;
+Rue du Vert Galant;Int_01402;Int_00362;74;
+Rue Albert 1er de Belgique;Int_00076;Int_00215;82;
+Rue Albert 1er de Belgique;Int_00215;Int_00379;93;
+Rue Albert 1er de Belgique;Int_00379;Int_00381;55;
+Rue Neuve des Ardents;Int_00380;Int_00378;59;
+Rue Neuve des Ardents;Int_00378;Int_00020;22;
+Rue Désiré Bras;Int_00378;Int_00379;80;
+Rue du Conseil;Int_00851;Int_00386;87;
+Rue de la Gouvernance;Int_00383;Int_00384;19;
+Rue de la Gouvernance;Int_00384;Int_00851;40;
+Rue Maximilien Robespierre;Int_00385;Int_00387;45;
+Petite Rue des Rapporteurs;Int_00387;Int_00382;36;
+Petite Rue des Rapporteurs;Int_00382;Int_00387;36;
+Rue Putevin;Int_00384;Int_00388;81;
+Rue Notre-Dame;Int_00395;Int_00394;37;
+Rue Notre-Dame;Int_00395;Int_00396;90;
+Rue des Chanoines;Int_00397;Int_00396;92;
+Rue Ferdinand Buisson;Int_00351;Int_00349;71;
+Rue Nelson Mandela;Int_00402;Int_00162;46;2;5;34
+Rue des Augustines;Int_00416;Int_00413;55;
+Rue Saint-Jacques;Int_00408;Int_00406;89;
+Rue du Nocquet d'Or;Int_00409;Int_00406;62;
+Place Guy Mollet;Int_00367;Int_00407;40;
+Place Guy Mollet;Int_00407;Int_00367;40;
+Rue du Presbytère Sainte-Croix;Int_00407;Int_01071;69;
+Rue des Chariottes;Int_00404;Int_00546;65;
+Rue des Chariottes;Int_00546;Int_00405;52;
+Rue du Mont de Piété;Int_00369;Int_00404;94;
+Rue de Lolliette;Int_00413;Int_01126;120;
+Rue du Pignon Bigarré;Int_00415;Int_01144;140;
+Rue du Pignon Bigarré;Int_01144;Int_00415;140;
+Rue Doncre;Int_00411;Int_00412;131;
+Rue Doncre;Int_00412;Int_00411;131;
+Rue du Refuge Maroeuil;Int_01379;Int_01116;65;
+Rue du Refuge Maroeuil;Int_01116;Int_01361;3;
+Rue du Refuge Maroeuil;Int_01361;Int_00419;17;
+Rue du Refuge Maroeuil;Int_00419;Int_00985;24;
+Rue du Larcin;Int_00419;Int_01283;4;
+Rue du Larcin;Int_01283;Int_00421;7;
+Rue du Larcin;Int_00421;Int_00108;80;
+Rue des Archers;Int_00426;Int_00425;61;
+Rue des Archers;Int_00425;Int_00426;61;
+Rue des Archers;Int_00425;Int_00423;67;
+Rue des Archers;Int_00423;Int_00425;67;
+Rue des Oeillets;Int_00144;Int_00435;119;
+Rue des Oeillets;Int_00435;Int_00437;82;
+Rue des Oeillets;Int_00437;Int_00451;126;
+Rue Claude Monet;Int_01261;Int_00446;42;
+Rue des Hortensias;Int_00190;Int_00438;60;
+Rue des Hortensias;Int_00438;Int_00439;147;
+Rue des Hortensias;Int_00439;Int_00431;87;
+Rue des Hortensias;Int_00431;Int_00430;157;
+Rue des Bleuets;Int_00440;Int_00438;109;4
+Rue des Lilas;Int_00442;Int_00439;89;
+Rue des Lilas;Int_00439;Int_00442;89;
+Rue des Marguerites;Int_00432;Int_00431;76;
+Rue des Marguerites;Int_00431;Int_00432;76;
+Rue des Jonquilles;Int_00434;Int_00433;71;
+Rue des Jonquilles;Int_00433;Int_00434;71;
+Rue Molière;Int_00428;Int_00433;90;
+Rue Molière;Int_00433;Int_00432;56;
+Rue Molière;Int_00432;Int_00442;87;
+Rue Molière;Int_00442;Int_00444;56;
+Rue Molière;Int_00444;Int_00440;91;
+Rue des Glycines;Int_00443;Int_00444;70;
+Rue des Glycines;Int_00444;Int_00443;70;
+Rue des Jasmins;Int_00435;Int_00436;69;
+Rue des Jasmins;Int_00436;Int_00435;69;
+Rue des Dahlias;Int_00441;Int_00443;86;
+Rue des Dahlias;Int_00443;Int_00445;58;
+Rue des Dahlias;Int_00445;Int_00436;82;
+Rue des Dahlias;Int_00436;Int_00434;58;
+Rue des Dahlias;Int_00434;Int_00429;80;
+Rue des Violettes;Int_00437;Int_00445;70;
+Rue des Violettes;Int_00445;Int_00437;70;
+Square Degas;Int_00447;Int_00448;81;
+Square Degas;Int_00448;Int_00447;81;
+Rue Claude Monet;Int_00446;Int_00447;58;
+Rue Claude Monet;Int_00447;Int_00446;58;
+Rue Claude Monet;Int_00447;Int_00448;26;
+Rue Claude Monet;Int_00448;Int_00447;26;
+Rue Claude Monet;Int_00448;Int_00449;70;
+Rue Claude Monet;Int_00449;Int_00448;70;
+Rue Claude Monet;Int_00449;Int_00450;27;
+Rue Claude Monet;Int_00450;Int_00449;27;
+Square Manet;Int_00449;Int_00450;81;
+Square Manet;Int_00450;Int_00449;81;
+Place Marc Lanvin;Int_00242;Int_00242;332;
+Place Marc Lanvin;Int_00242;Int_00242;332;
+Rue Auguste Dumand;Int_00973;Int_00834;155;
+Rue Auguste Dumand;Int_00834;Int_00973;155;
+Rue Auguste Dumand;Int_00834;Int_00458;57;
+Rue Auguste Dumand;Int_00458;Int_00834;57;
+Rue Auguste Dumand;Int_00458;Int_00461;74;
+Rue Auguste Dumand;Int_00461;Int_00458;74;
+Rue Auguste Dumand;Int_00461;Int_00462;19;
+Rue Auguste Dumand;Int_00462;Int_00461;19;
+Rue Mozart;Int_00456;Int_00467;104;
+Rue Mozart;Int_00467;Int_00452;79;
+Rue Auguste Dumand;Int_01334;Int_00461;33;
+Rue Auguste Dumand;Int_01334;Int_00462;26;
+Rue du Bon Air;Int_00455;Int_00457;64;
+Rue du Bon Air;Int_00457;Int_00455;64;
+Rue Séverine;Int_00457;Int_00463;101;
+Rue Séverine;Int_00463;Int_00457;101;
+Rue Louise Michel;Int_00454;Int_00463;80;
+Rue Louise Michel;Int_00463;Int_00454;80;
+Rue Louise Michel;Int_00463;Int_00464;11;
+Rue Louise Michel;Int_00464;Int_00463;11;
+Rue Traversière;Int_00458;Int_00459;37;
+Rue Traversière;Int_00459;Int_00454;108;
+Rue Traversière;Int_00454;Int_00455;72;
+Rue Traversière;Int_00455;Int_00456;251;
+Rue des Blancs Monts;Int_00459;Int_00906;80;
+Rue des Blancs Monts;Int_00906;Int_00459;80;
+Rue Berlioz;Int_00472;Int_00468;107;
+Rue Berlioz;Int_00468;Int_00472;107;
+Rue Berlioz;Int_00468;Int_00470;109;
+Rue Berlioz;Int_00470;Int_00468;109;
+Rue Gounod;Int_00473;Int_00471;115;
+Rue Gounod;Int_00471;Int_00473;115;
+Rue Gounod;Int_00471;Int_00469;117;
+Rue Gounod;Int_00469;Int_00471;117;
+Rue Massenet;Int_00467;Int_00468;80;
+Rue Massenet;Int_00468;Int_00467;80;
+Rue Massenet;Int_00468;Int_00471;73;
+Rue Massenet;Int_00471;Int_00468;73;
+Rue Claude Debussy;Int_00456;Int_00472;66;
+Rue Claude Debussy;Int_00472;Int_00456;66;
+Rue Claude Debussy;Int_00472;Int_00473;56;
+Rue Claude Debussy;Int_00473;Int_00472;56;
+Rue Claude Debussy;Int_00473;Int_01009;74;
+Rue Claude Debussy;Int_01009;Int_00473;74;
+Avenue du Maréchal Leclerc;Int_00008;Int_00007;45;
+Avenue du Maréchal Leclerc;Int_00007;Int_00008;45;
+Rue Calmette;Int_00485;Int_00481;114;
+Rue Monge;Int_00474;Int_00475;75;
+Rue Monge;Int_00475;Int_00474;75;
+Rue Monge;Int_00475;Int_00150;69;
+Rue Monge;Int_00150;Int_00475;69;
+Rue Lavoisier;Int_00475;Int_01016;78;
+Rue Lavoisier;Int_01016;Int_00475;78;
+Rue Galilée;Int_00482;Int_00477;70;
+Rue Galilée;Int_00477;Int_00482;70;
+Rue Galilée;Int_00477;Int_00476;65;
+Rue Galilée;Int_00476;Int_00477;65;
+Rue Galilée;Int_00476;Int_01016;28;
+Rue Galilée;Int_01016;Int_00476;28;
+Rue Lavoisier;Int_00476;Int_00479;130;
+Rue Lavoisier;Int_00479;Int_00476;130;
+Rue Lavoisier;Int_00479;Int_00481;60;
+Rue Lavoisier;Int_00481;Int_00479;60;
+Rue Lumière;Int_00482;Int_00483;110;
+Rue Lumière;Int_00483;Int_00482;110;
+Rue Lumière;Int_00483;Int_00484;79;
+Rue Lumière;Int_00484;Int_00483;79;
+Rue Chappe;Int_00474;Int_00477;64;
+Rue Chappe;Int_00477;Int_00474;64;
+Rue Chappe;Int_00477;Int_00478;110;
+Rue Chappe;Int_00478;Int_00477;110;
+Rue Arago;Int_00483;Int_00478;69;
+Rue Arago;Int_00478;Int_00483;69;
+Rue Arago;Int_00478;Int_00479;83;
+Rue Arago;Int_00479;Int_00478;83;
+Rue Arago;Int_00479;Int_00480;114;
+Rue Arago;Int_00480;Int_00479;114;
+Rue Lagrange;Int_00492;Int_00491;97;
+Rue Lagrange;Int_00491;Int_00492;97;
+Rue Lagrange;Int_00491;Int_00497;70;
+Rue Lagrange;Int_00497;Int_00491;70;
+Rue Parmentier;Int_00498;Int_00494;60;
+Rue Parmentier;Int_00494;Int_00498;60;
+Rue Parmentier;Int_00494;Int_00491;59;
+Rue Parmentier;Int_00491;Int_00494;59;
+Rue Raspail;Int_00486;Int_00498;154;
+Rue Raspail;Int_00498;Int_00486;154;
+Rue Raspail;Int_00498;Int_00496;69;
+Rue Raspail;Int_00496;Int_00498;69;
+Rue Jussieu;Int_00493;Int_00492;60;
+Rue Jussieu;Int_00492;Int_00493;60;
+Rue Jussieu;Int_00492;Int_00490;65;
+Rue Jussieu;Int_00490;Int_00492;65;
+Rue Laplace;Int_00495;Int_00493;57;
+Rue Laplace;Int_00493;Int_00495;57;
+Rue Laplace;Int_00493;Int_00494;96;
+Rue Laplace;Int_00494;Int_00493;96;
+Rue Cuvier;Int_00488;Int_00489;97;
+Rue Cuvier;Int_00489;Int_00488;97;
+Rue Cuvier;Int_00489;Int_00495;35;
+Rue Cuvier;Int_00495;Int_00489;35;
+Rue Cuvier;Int_00495;Int_00486;58;
+Rue Cuvier;Int_00486;Int_00495;58;
+Rue Becquerel;Int_00487;Int_00489;132;
+Rue Becquerel;Int_00489;Int_00487;132;
+Rue Roberval;Int_00496;Int_00497;117;
+Rue Roberval;Int_00497;Int_00496;117;
+Rue Roberval;Int_00497;Int_00156;65;
+Rue Roberval;Int_00156;Int_00497;65;
+Rue Diderot;Int_00501;Int_00502;520;1;2;4;6;7;8;10
+Rue Diderot;Int_00502;Int_00501;520;1;7
+Rue Claude Bernard;Int_00157;Int_00147;467;
+Rue Claude Bernard;Int_00147;Int_00157;467;
+Rue Léon Foucault;Int_00994;Int_00500;267;1
+Rue Léon Foucault;Int_00500;Int_00994;267;
+Rue de l'Égalité;Int_01378;Int_01140;150;
+Rue des Bouchers de Cité;Int_00507;Int_01246;219;
+Allée Fabre d'Églantine;Int_00514;Int_00510;89;
+Allée Fabre d'Églantine;Int_00510;Int_00514;89;
+Allée Fabre d'Églantine;Int_00510;Int_00517;72;
+Allée Fabre d'Églantine;Int_00517;Int_00510;72;
+Rue Théophile Gautier;Int_00069;Int_00517;117;
+Rue Théophile Gautier;Int_00517;Int_00069;117;
+Rue Théophile Gautier;Int_00517;Int_00515;171;
+Rue Théophile Gautier;Int_00515;Int_00517;171;
+Rue du Petit Atre;Int_00520;Int_00526;63;
+Rue de la Cronerie;Int_00527;Int_00525;38;
+Rue du Crinchon;Int_00524;Int_00518;113;
+Rue du Crinchon;Int_00518;Int_00524;113;
+Rue du Crinchon;Int_00518;Int_00523;158;
+Rue du Crinchon;Int_00523;Int_00518;158;
+Rue du Crinchon;Int_00523;Int_01113;20;
+Rue du Crinchon;Int_01113;Int_00523;20;
+Rue du Croissant;Int_00522;Int_00519;77;
+Rue du Puits de Saulty;Int_00525;Int_00521;56;
+Rue des Porteurs;Int_01412;Int_00414;134;
+Rue Guinegatte;Int_00525;Int_00409;70;
+Rue Alexandre Ribot;Int_00733;Int_00979;15;
+Rue Alexandre Ribot;Int_00979;Int_00733;15;
+Rue Alexandre Ribot;Int_00979;Int_00748;5;
+Rue Alexandre Ribot;Int_00748;Int_00979;5;
+Rue Alexandre Ribot;Int_00748;Int_00731;143;
+Rue Alexandre Ribot;Int_00731;Int_00748;143;
+Rue Alexandre Ribot;Int_00731;Int_00747;8;
+Rue Alexandre Ribot;Int_00747;Int_00731;8;
+Rue Alexandre Ribot;Int_00747;Int_00761;106;
+Rue Alexandre Ribot;Int_00761;Int_00747;106;
+Rue Alexandre Ribot;Int_00761;Int_01160;134;
+Rue Alexandre Ribot;Int_01160;Int_00761;134;
+Rue des Frênes;Int_00530;Int_00037;170;
+Rue Renoir;Int_01311;Int_01062;275;1;3;5;7;9;11;13;15
+Rue Renoir;Int_01062;Int_01311;275;
+Rue Renoir;Int_01062;Int_00538;38;1;3;5;7;9;11;13;15
+Rue Renoir;Int_00538;Int_01062;38;
+Rue Rouault;Int_00538;Int_00536;47;1;3;4;5;7;9;11;13;15;17;19;21;23;25;27;29;31
+Rue Rouault;Int_00536;Int_00538;47;4
+Rue Rouault;Int_00536;Int_01063;257;1;3;4;5;7;9;11;13;15;17;19;21;23;25;27;29;31
+Rue Rouault;Int_01063;Int_00536;257;4
+Rue Rouault;Int_01063;Int_00503;139;1;3;4;5;7;9;11;13;15;17;19;21;23;25;27;29;31
+Rue Rouault;Int_00503;Int_01063;139;4
+Rue du Coclipas;Int_00541;Int_00544;71;
+Rue du Coclipas;Int_00544;Int_00542;33;
+Rue des Galletoires;Int_00549;Int_00540;51;
+Rue des Galletoires;Int_00540;Int_00544;45;
+Rue du Four Saint-Adrien;Int_00403;Int_00541;71;
+Rue de Jérusalem;Int_00540;Int_00546;149;
+Rue du Pré;Int_00543;Int_00552;36;
+Rue du Pré;Int_00552;Int_00543;36;
+Place de l'Ancien Rivage;Int_00552;Int_00929;115;
+Rue des Onze Mille Vierges;Int_00550;Int_00551;30;
+Rue des Onze Mille Vierges;Int_00551;Int_01030;22;
+Rue des Onze Mille Vierges;Int_01030;Int_00377;55;
+Rue Saint-Maurice;Int_00106;Int_00422;33;
+Rue Saint-Maurice;Int_00422;Int_00107;82;
+Rue Saint-Maurice;Int_00107;Int_01023;78;
+Rue Saint-Maurice;Int_01023;Int_00420;7;
+Rue Saint-Maurice;Int_00420;Int_00841;21;
+Place de Herten;Int_00554;Int_00551;18;
+Place de Herten;Int_00551;Int_00554;18;
+Rue de la Fourche;Int_00560;Int_00527;57;
+Rue du Pont Amoureux;Int_00558;Int_00560;71;
+Rue de la Coignée;Int_00561;Int_00562;118;
+Rue des Trois Filloires;Int_00541;Int_00562;56;
+Rue des Trois Filloires;Int_00562;Int_00527;30;
+Rue des Trois Filloires;Int_00527;Int_00556;34;
+Rue des Trois Filloires;Int_00556;Int_00557;35;
+Rue Victor Leroy;Int_00566;Int_00969;47;
+Rue des Processions;Int_00565;Int_00556;116;
+Rue de la Douizième;Int_00523;Int_00555;107;
+Rue Neuve du Vivier;Int_00521;Int_00557;35;
+Rue aux Foulons;Int_00559;Int_00560;75;
+Rue du Docteur Goudemand;Int_00578;Int_00534;96;
+Rue du Docteur Goudemand;Int_00534;Int_00578;96;
+Rue Philippe Gerber;Int_00574;Int_00581;182;
+Rue Philippe Gerber;Int_00581;Int_00574;182;
+Rue de Douai;Int_00126;Int_00971;30;2
+Rue de Douai;Int_00971;Int_00126;30;
+Rue Noel Trannin;Int_01443;Int_00570;12;
+Rue Noel Trannin;Int_00570;Int_00574;134;
+Résidence Joseph Brongniart;Int_00583;Int_00572;138;
+Résidence Joseph Brongniart;Int_00572;Int_00583;138;
+Résidence Joseph Brongniart;Int_00572;Int_00579;140;
+Résidence Joseph Brongniart;Int_00579;Int_00572;140;
+Résidence Joseph Brongniart;Int_00579;Int_01234;206;
+Résidence Joseph Brongniart;Int_01234;Int_00579;206;
+Rue du 19 Mars 1962;Int_00578;Int_00582;98;
+Rue du 19 Mars 1962;Int_00582;Int_00578;98;
+Rue des Rosati;Int_01204;Int_00577;84;
+Rue des Rosati;Int_00577;Int_01204;84;
+Résidence Joseph Brongniart;Int_01234;Int_00572;73;
+Résidence Joseph Brongniart;Int_00572;Int_01234;73;
+Rue Louis Legay;Int_00090;Int_01292;98;
+Rue des Rosati;Int_00576;Int_00580;13;
+Rue des Rosati;Int_00580;Int_00576;13;
+Rue Jean Lecanuet;Int_00575;Int_00580;162;
+Rue Jean Lecanuet;Int_00580;Int_00575;162;
+Rue Jean Bodel;Int_01425;Int_00933;71;
+Rue Jean Bodel;Int_00933;Int_01425;71;
+Rue Jean Bodel;Int_00933;Int_00934;14;
+Rue Jean Bodel;Int_00934;Int_00933;14;
+Rue Jean Bodel;Int_00934;Int_00584;22;
+Rue Jean Bodel;Int_00584;Int_00934;22;
+Rue Jean Bodel;Int_00584;Int_00571;117;
+Rue Jean Bodel;Int_00571;Int_00584;117;
+Rue Dubois de Fosseux;Int_00577;Int_00568;93;
+Rue Dubois de Fosseux;Int_00568;Int_00577;93;
+Rue Dubois de Fosseux;Int_00568;Int_00581;26;
+Rue Dubois de Fosseux;Int_00581;Int_00568;26;
+Rue Dubois de Fosseux;Int_00581;Int_00582;95;
+Rue Dubois de Fosseux;Int_00582;Int_00581;95;
+Résidence Joseph Brongniart;Int_00583;Int_01234;71;
+Résidence Joseph Brongniart;Int_01234;Int_00583;71;
+Résidence Joseph Brongniart;Int_01234;Int_00579;72;
+Résidence Joseph Brongniart;Int_00579;Int_01234;72;
+Rue Elie Wiesel;Int_01208;Int_00591;45;
+Rue Elie Wiesel;Int_00591;Int_01208;45;
+Avenue des Atrébates;Int_00587;Int_00594;79;1;2;3;4;5;6;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;29;30;31;33;35;37;39;41;43;45;47
+Avenue des Atrébates;Int_00594;Int_00587;79;2;4;6;8;10;12;14;16;18;20;22;24;26;30
+Avenue des Atrébates;Int_00594;Int_00590;109;1;2;3;4;5;6;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;29;30;31;33;35;37;39;41;43;45;47
+Avenue des Atrébates;Int_00590;Int_00594;109;2;4;6;8;10;12;14;16;18;20;22;24;26;30
+Avenue des Atrébates;Int_00590;Int_00592;151;1;2;3;4;5;6;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;29;30;31;33;35;37;39;41;43;45;47
+Avenue des Atrébates;Int_00592;Int_00590;151;2;4;6;8;10;12;14;16;18;20;22;24;26;30
+Rue de l'Oppidum;Int_00590;Int_00900;74;1;3;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24
+Rue de l'Oppidum;Int_00900;Int_00590;74;6;8;10;12;14;16;18;20;22;24
+Place Mère Térésa;Int_01238;Int_01046;24;
+Place Mère Térésa;Int_01046;Int_01238;24;
+Avenue des Atrébates;Int_01039;Int_01038;7;1;2;3;4;5;6;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;29;30;31;33;35;37;39;41;43;45;47
+Avenue des Atrébates;Int_01038;Int_00901;70;1;2;3;4;5;6;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;29;30;31;33;35;37;39;41;43;45;47
+Avenue des Atrébates;Int_00901;Int_00587;44;1;2;3;4;5;6;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;29;30;31;33;35;37;39;41;43;45;47
+Avenue des Atrébates;Int_00587;Int_00902;45;1;2;3;4;5;6;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;29;30;31;33;35;37;39;41;43;45;47
+Avenue des Atrébates;Int_00902;Int_01037;73;1;2;3;4;5;6;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;29;30;31;33;35;37;39;41;43;45;47
+Avenue des Atrébates;Int_01037;Int_00984;6;1;2;3;4;5;6;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;29;30;31;33;35;37;39;41;43;45;47
+Rue Anouar El Sadate;Int_01449;Int_00588;56;
+Rue Anouar El Sadate;Int_00588;Int_01449;56;
+Rue Anouar El Sadate;Int_00589;Int_01449;78;
+Rue Anouar El Sadate;Int_01449;Int_00589;78;
+Rue Anouar El Sadate;Int_01449;Int_00588;41;
+Rue Anouar El Sadate;Int_00588;Int_01449;41;
+Rue Anouar El Sadate;Int_00588;Int_00401;97;
+Rue Anouar El Sadate;Int_00401;Int_00588;97;
+Allée Fabre d'Églantine;Int_00624;Int_00618;109;
+Allée Fabre d'Églantine;Int_00618;Int_00624;109;
+Rue Montesquieu;Int_00614;Int_00617;88;
+Rue Montesquieu;Int_00617;Int_00614;88;
+Rue Honoré de Balzac;Int_00609;Int_00597;314;2;4;6;8;10;12;14;16;18;20;22;24;26
+Rue Guillaume Apollinaire;Int_00613;Int_00625;116;
+Rue Guillaume Apollinaire;Int_00625;Int_00613;116;
+Rue François Villon;Int_00601;Int_00612;102;
+Rue François Villon;Int_00612;Int_00601;102;
+Rue Anatole France;Int_00606;Int_00602;92;
+Rue Anatole France;Int_00602;Int_00606;92;
+Rue Anatole France;Int_00602;Int_00910;12;
+Rue Anatole France;Int_00910;Int_00602;12;
+Rue Montaigne;Int_00605;Int_00601;119;
+Rue Pierre Corneille;Int_00597;Int_00622;45;
+Rue Pierre Corneille;Int_00621;Int_00619;41;
+Rue Pierre Corneille;Int_00619;Int_00621;41;
+Rue Pierre Corneille;Int_00619;Int_00614;188;
+Rue Pierre Corneille;Int_00614;Int_00619;188;
+Rue Pierre Corneille;Int_00614;Int_00622;55;
+Rue Pierre Corneille;Int_00622;Int_00614;55;
+Rue Pierre Corneille;Int_00622;Int_00608;15;
+Rue Pierre Corneille;Int_00608;Int_00622;15;
+Rue Gustave Flaubert;Int_00607;Int_00603;36;
+Rue Gustave Flaubert;Int_00603;Int_00607;36;
+Rue Gustave Flaubert;Int_00603;Int_01256;49;
+Rue Gustave Flaubert;Int_01256;Int_00603;49;
+Rue Gustave Flaubert;Int_01256;Int_00620;60;
+Rue Gustave Flaubert;Int_00620;Int_01256;60;
+Rue Clément Marot;Int_00604;Int_01092;37;
+Rue Clément Marot;Int_01092;Int_00604;37;
+Rue Clément Marot;Int_01092;Int_00615;73;
+Rue Clément Marot;Int_00615;Int_01092;73;
+Rue Louis Pergaud;Int_00912;Int_00610;189;
+Rue Louis Pergaud;Int_00610;Int_00912;189;
+Rue Charles Péguy;Int_00627;Int_01157;66;
+Rue Charles Péguy;Int_01157;Int_00627;66;
+Rue Charles Péguy;Int_01157;Int_00606;26;
+Rue Charles Péguy;Int_00606;Int_01157;26;
+Rue Condorcet;Int_00600;Int_00616;189;40
+Rue Condorcet;Int_00616;Int_00600;189;
+Rue René Descartes;Int_00609;Int_00623;135;
+Rue René Descartes;Int_00623;Int_00609;135;
+Rue Chateaubriand;Int_00598;Int_00619;52;9;11;13;15
+Rue Chateaubriand;Int_00619;Int_00598;52;
+Rue Guynemer;Int_01386;Int_00632;86;
+Rue du Commandant Dumetz;Int_00631;Int_00629;85;
+Rue du Commandant Dumetz;Int_00629;Int_00631;85;
+Rue du Commandant Dumetz;Int_00629;Int_00633;73;
+Rue du Commandant Dumetz;Int_00633;Int_00629;73;
+Rue du Commandant Dumetz;Int_00633;Int_00635;10;
+Rue du Commandant Dumetz;Int_00635;Int_00633;10;
+Rue du Commandant Dumetz;Int_00635;Int_00762;77;
+Rue du Commandant Dumetz;Int_00762;Int_00635;77;
+Rue du Commandant Dumetz;Int_00762;Int_01389;72;
+Rue du Commandant Dumetz;Int_01389;Int_00762;72;
+Rue Édouard Branly;Int_00630;Int_00529;158;
+Rue Édouard Branly;Int_00529;Int_00630;158;
+Rue Charcot;Int_00630;Int_01387;85;
+Rue du Commandant Dumetz;Int_00669;Int_00670;99;
+Rue du Commandant Dumetz;Int_00670;Int_00669;99;
+Rue du Commandant Dumetz;Int_00670;Int_00634;107;
+Rue du Commandant Dumetz;Int_00634;Int_00670;107;
+Rue Georges Bernard;Int_00646;Int_01105;37;
+Rue Georges Bernard;Int_01105;Int_00646;37;
+Rue Émile Loubet;Int_00529;Int_00651;197;
+Rue Neuve du Rietz;Int_00642;Int_00649;65;
+Rue Neuve du Rietz;Int_00649;Int_00642;65;
+Rue Clusius;Int_00638;Int_00650;106;
+Rue Clusius;Int_00650;Int_00638;106;
+Rue Gustave Colin;Int_00656;Int_01229;189;
+Rue Gustave Colin;Int_01229;Int_00702;105;
+Rue Neuve du Rietz;Int_00654;Int_00641;162;
+Rue Jules Mathon;Int_00665;Int_00631;112;
+Rue Malpeaux;Int_01070;Int_00034;75;
+Rue Malpeaux;Int_00034;Int_01070;75;
+Rue du Docteur Baude;Int_00660;Int_00665;75;
+Rue du Docteur Baude;Int_00665;Int_00660;75;
+Avenue Fernand Lobbedez;Int_00030;Int_00031;113;
+Rue Octave Diruit;Int_00662;Int_00659;130;
+Rue Octave Diruit;Int_00659;Int_00662;130;
+Rue Ozanam;Int_01306;Int_01307;30;
+Rue Pierre Curie;Int_00680;Int_00673;55;
+Rue Pierre Curie;Int_00673;Int_00680;55;
+Rue Deroeux Rebout;Int_01244;Int_00682;59;
+Rue Deroeux Rebout;Int_00682;Int_01244;59;
+Rue Nungesser et Coli;Int_00668;Int_00667;94;
+Rue Nungesser et Coli;Int_00667;Int_00668;94;
+Rue Nungesser et Coli;Int_00667;Int_00528;95;
+Rue Nungesser et Coli;Int_00528;Int_00667;95;
+Rue Guilbault;Int_00672;Int_00679;134;
+Rue Guilbault;Int_00679;Int_00672;134;
+Rue Gallieni;Int_00673;Int_00681;91;
+Rue Gallieni;Int_00681;Int_00673;91;
+Rue Mistral;Int_00671;Int_00678;124;
+Rue Bellon;Int_00676;Int_00674;92;
+Rue Bellon;Int_00674;Int_00676;92;
+Rue du Luxembourg;Int_00860;Int_00701;36;
+Rue du Luxembourg;Int_00701;Int_00860;36;
+Rue Gustave Colin;Int_00656;Int_01180;51;
+Rue de Rome;Int_00691;Int_00704;78;
+Rue de Rome;Int_00704;Int_00691;78;
+Rue de Rome;Int_00704;Int_01008;116;
+Rue de Rome;Int_01008;Int_00704;116;
+Rue de Rome;Int_01008;Int_00695;11;
+Rue de Rome;Int_00695;Int_01008;11;
+Rue Gaston Debray;Int_00102;Int_01303;37;
+Rue Gaston Debray;Int_01303;Int_00102;37;
+Rue Gaston Debray;Int_01303;Int_01207;74;
+Rue Gaston Debray;Int_01207;Int_01303;74;
+Rue de Copenhague;Int_00701;Int_00694;70;
+Rue de Copenhague;Int_00694;Int_00701;70;
+Rue d'Athènes;Int_00858;Int_01197;17;
+Rue d'Athènes;Int_01197;Int_00858;17;
+Rue de la Fontainerie;Int_00130;Int_00687;95;
+Rue de la Fontainerie;Int_00687;Int_00130;95;
+Rue de la Fontainerie;Int_00687;Int_01131;19;
+Rue de la Fontainerie;Int_01131;Int_00687;19;
+Rue Grassin Baledans;Int_00688;Int_01401;148;
+Rue de Vienne;Int_00703;Int_01007;12;
+Rue de Vienne;Int_01007;Int_00703;12;
+Rue Jean-Baptiste Delaporte;Int_00690;Int_00697;94;
+Rue Jean-Baptiste Delaporte;Int_00697;Int_01270;45;
+Chemin de Feuchy;Int_00127;Int_01107;127;
+Chemin de Feuchy;Int_01107;Int_00127;127;
+Rue René Durant;Int_00862;Int_00708;98;
+Rue René Durant;Int_00708;Int_00862;98;
+Rue Mathieu Orfila;Int_00711;Int_00710;49;2
+Rue Mathieu Orfila;Int_00710;Int_00711;49;
+Rue Jacques Monod;Int_00710;Int_00712;140;
+Rue Jacques Monod;Int_00712;Int_00710;140;
+Rue Montgolfier;Int_00713;Int_00898;239;
+Rue Montgolfier;Int_00898;Int_00713;239;
+Rue des Sapins;Int_00740;Int_00764;60;
+Rue des Sapins;Int_00764;Int_00740;60;
+Rue du Vercors;Int_00131;Int_00720;163;
+Rue des Platanes;Int_00737;Int_01409;26;
+Rue des Platanes;Int_01409;Int_00737;26;
+Rue de Bretagne;Int_00741;Int_00715;298;
+Rue de Bretagne;Int_00715;Int_00741;298;
+Place de Picardie;Int_00743;Int_00734;23;
+Place de Picardie;Int_00734;Int_00743;23;
+Place de Picardie;Int_00734;Int_00755;30;
+Place de Picardie;Int_00755;Int_00734;30;
+Place de Picardie;Int_00755;Int_00728;39;
+Place de Picardie;Int_00728;Int_00755;39;
+Rue des Platanes;Int_00737;Int_00979;28;
+Place du Dauphiné;Int_00715;Int_00754;21;
+Place du Dauphiné;Int_00754;Int_00715;21;
+Place du Dauphiné;Int_00754;Int_00727;26;
+Place du Dauphiné;Int_00727;Int_00754;26;
+Place du Dauphiné;Int_00727;Int_00738;22;
+Place du Dauphiné;Int_00738;Int_00727;22;
+Place du Dauphiné;Int_00738;Int_00752;31;
+Place du Dauphiné;Int_00752;Int_00738;31;
+Rue des Acacias;Int_00717;Int_00748;158;
+Résidence Henri Duflos;Int_00746;Int_00730;22;
+Résidence Henri Duflos;Int_00730;Int_00746;22;
+Rue de Flandre;Int_00732;Int_00724;44;
+Rue de Flandre;Int_00724;Int_00732;44;
+Rue des Sapins;Int_00731;Int_00751;54;
+Rue de Provence;Int_00735;Int_00714;37;
+Rue de Provence;Int_00714;Int_00735;37;
+Place de Picardie;Int_00739;Int_00755;38;
+Place de Picardie;Int_00755;Int_00739;38;
+Rue de Provence;Int_00722;Int_00714;37;
+Rue de Provence;Int_00714;Int_00722;37;
+Rue de Gascogne;Int_00535;Int_00741;139;
+Rue de Gascogne;Int_00741;Int_00535;139;
+Rue de Gascogne;Int_00741;Int_00719;155;
+Rue de Gascogne;Int_00719;Int_00741;155;
+Rue de Gascogne;Int_00719;Int_00742;46;
+Rue de Gascogne;Int_00742;Int_00719;46;
+Rue du Berry;Int_00716;Int_00957;186;
+Rue du Berry;Int_00957;Int_00716;186;
+Rue des Platanes;Int_00751;Int_00737;192;
+Rue de Provence;Int_00742;Int_00722;96;
+Rue de Provence;Int_00722;Int_00742;96;
+Rue de Provence;Int_00722;Int_00735;36;
+Rue de Provence;Int_00735;Int_00722;36;
+Rue de Provence;Int_00735;Int_00724;151;
+Rue de Provence;Int_00724;Int_00735;151;
+Rue de Provence;Int_00724;Int_00744;48;
+Rue de Provence;Int_00744;Int_00724;48;
+Rue de Provence;Int_00744;Int_00749;25;
+Rue de Provence;Int_00749;Int_00744;25;
+Place du Dauphiné;Int_00715;Int_00727;26;
+Place du Dauphiné;Int_00727;Int_00715;26;
+Place de Bourgogne;Int_00749;Int_00729;27;
+Place de Bourgogne;Int_00729;Int_00749;27;
+Place de Bourgogne;Int_00729;Int_00725;26;
+Place de Bourgogne;Int_00725;Int_00729;26;
+Place de Bourgogne;Int_00725;Int_00749;30;
+Place de Bourgogne;Int_00749;Int_00725;30;
+Rue du Poitou;Int_00750;Int_00723;250;
+Rue du Poitou;Int_00723;Int_00750;250;
+Rue des Tilleuls;Int_00745;Int_00716;71;
+Rue des Tilleuls;Int_00716;Int_00745;71;
+Rue des Sapins;Int_00764;Int_00747;52;
+Rue de Flandre;Int_00744;Int_00732;35;
+Rue de Flandre;Int_00732;Int_00744;35;
+Rue de Flandre;Int_00732;Int_00736;102;
+Rue de Flandre;Int_00736;Int_00732;102;
+Rue de Flandre;Int_00736;Int_00752;41;
+Rue de Flandre;Int_00752;Int_00736;41;
+Place du Dauphiné;Int_00736;Int_00738;34;
+Place du Dauphiné;Int_00738;Int_00736;34;
+Place de Picardie;Int_00734;Int_00718;28;
+Place de Picardie;Int_00718;Int_00734;28;
+Rue de la Libération;Int_00757;Int_00759;84;
+Rue de la Libération;Int_00759;Int_00757;84;
+Rue de la Libération;Int_00759;Int_00760;57;
+Rue de la Libération;Int_00760;Int_00759;57;
+Rue de la Libération;Int_00760;Int_00767;157;
+Rue de la Libération;Int_00767;Int_00760;157;
+Rue de Lorraine;Int_00758;Int_00759;105;
+Rue de Lorraine;Int_00759;Int_00758;105;
+Rue d'Alsace;Int_00760;Int_00763;90;
+Rue d'Alsace;Int_00763;Int_00760;90;
+Rue du 11 Novembre;Int_00658;Int_00758;336;
+Impasse Fernand Lobbedez;Int_00941;Int_00942;4;
+Impasse Fernand Lobbedez;Int_00942;Int_00941;4;
+Impasse Fernand Lobbedez;Int_00942;Int_00765;123;
+Impasse Fernand Lobbedez;Int_00765;Int_00942;123;
+Rue Bocquet Flochel;Int_01414;Int_00873;407;
+Rue Bocquet Flochel;Int_00873;Int_01414;407;
+Rue de Normandie;Int_00767;Int_00766;93;
+Rue de Normandie;Int_00766;Int_00767;93;
+Place Émile-Didier;Int_00774;Int_01051;28;
+Place Émile-Didier;Int_01051;Int_00774;28;
+Rue Denis Papin;Int_01262;Int_00772;147;
+Rue Denis Papin;Int_00772;Int_01262;147;
+Rue Denis Papin;Int_00772;Int_00773;150;
+Rue Denis Papin;Int_00773;Int_00772;150;
+Rue du Temple;Int_00036;Int_00033;55;
+Rue Stéphenson;Int_00768;Int_00774;92;
+Rue Stéphenson;Int_00774;Int_00768;92;
+Rue Désiré Glasson;Int_00772;Int_00768;58;
+Rue Désiré Glasson;Int_00768;Int_00772;58;
+Rue Zamenhof;Int_00774;Int_00773;79;
+Rue Zamenhof;Int_00773;Int_00774;79;
+Rue Zamenhof;Int_00773;Int_00769;33;
+Rue Zamenhof;Int_00769;Int_00773;33;
+Rue Zamenhof;Int_00769;Int_00775;48;
+Rue Zamenhof;Int_00775;Int_00769;48;
+Rue Zamenhof;Int_00775;Int_00770;31;
+Rue Zamenhof;Int_00770;Int_00775;31;
+Rue des Grillons;Int_00782;Int_00787;32;
+Rue des Grillons;Int_00787;Int_00782;32;
+Rue des Grillons;Int_00787;Int_00784;48;
+Rue des Grillons;Int_00784;Int_00787;48;
+Rue des Coccinelles;Int_00785;Int_00770;59;
+Rue des Coccinelles;Int_00770;Int_00785;59;
+Rue des Criquets;Int_00783;Int_00788;57;
+Rue des Criquets;Int_00788;Int_00783;57;
+Rue des Criquets;Int_00788;Int_00777;65;
+Rue des Criquets;Int_00777;Int_00788;65;
+Rue des Criquets;Int_00777;Int_00781;72;
+Rue des Criquets;Int_00781;Int_00777;72;
+Rue des Coccinelles;Int_00786;Int_00778;47;
+Rue des Coccinelles;Int_00778;Int_00786;47;
+Rue des Coccinelles;Int_00778;Int_00782;39;
+Rue des Coccinelles;Int_00782;Int_00778;39;
+Rue des Coccinelles;Int_00782;Int_00783;50;
+Rue des Coccinelles;Int_00783;Int_00782;50;
+Rue des Coccinelles;Int_00783;Int_01263;97;
+Rue des Coccinelles;Int_01263;Int_00783;97;
+Rue des Cigales;Int_00780;Int_00784;83;
+Rue des Cigales;Int_00784;Int_00780;83;
+Place des Papillons;Int_00776;Int_00780;10;
+Place des Papillons;Int_00780;Int_00776;10;
+Place des Papillons;Int_00780;Int_00786;10;
+Place des Papillons;Int_00786;Int_00780;10;
+Place des Papillons;Int_00786;Int_00779;20;
+Place des Papillons;Int_00779;Int_00786;20;
+Place des Papillons;Int_00779;Int_00785;18;
+Place des Papillons;Int_00785;Int_00779;18;
+Place des Papillons;Int_00785;Int_00776;28;
+Place des Papillons;Int_00776;Int_00785;28;
+Rue des Scarabées;Int_00779;Int_00769;49;
+Rue des Scarabées;Int_00769;Int_00779;49;
+Rue Florimond Roger;Int_00125;Int_00797;67;
+Rue Florimond Roger;Int_00797;Int_00125;67;
+Rue Florimond Roger;Int_00797;Int_00802;39;
+Rue Florimond Roger;Int_00802;Int_00797;39;
+Rue Florimond Roger;Int_00802;Int_00791;39;
+Rue Florimond Roger;Int_00791;Int_00802;39;
+Rue Florimond Roger;Int_00791;Int_00798;41;
+Rue Florimond Roger;Int_00798;Int_00791;41;
+Rue Florimond Roger;Int_00798;Int_00809;7;
+Rue Florimond Roger;Int_00809;Int_00798;7;
+Rue Florimond Roger;Int_00809;Int_00815;44;
+Rue Florimond Roger;Int_00815;Int_00809;44;
+Rue Florimond Roger;Int_00815;Int_00793;40;
+Rue Florimond Roger;Int_00793;Int_00815;40;
+Rue Albert Breuval;Int_00792;Int_00807;119;
+Rue Albert Breuval;Int_00807;Int_00792;119;
+Rue Albert Breuval;Int_00807;Int_00802;69;
+Rue Albert Breuval;Int_00802;Int_00807;69;
+Rue Albert Breuval;Int_00802;Int_00816;111;
+Rue Albert Breuval;Int_00816;Int_00802;111;
+Rue Auguste Porez;Int_00790;Int_00812;109;
+Rue Auguste Porez;Int_00812;Int_00790;109;
+Rue Henri Lefebvre;Int_00805;Int_00813;49;
+Rue Henri Lefebvre;Int_00813;Int_00805;49;
+Rue Henri Lefebvre;Int_00813;Int_00799;33;
+Rue Henri Lefebvre;Int_00799;Int_00813;33;
+Rue Henri Lefebvre;Int_00799;Int_00792;40;
+Rue Henri Lefebvre;Int_00792;Int_00799;40;
+Rue Henri Lefebvre;Int_00792;Int_00817;10;
+Rue Henri Lefebvre;Int_00817;Int_00792;10;
+Rue Charles Mathé;Int_00813;Int_00795;104;
+Rue Charles Mathé;Int_00795;Int_00813;104;
+Rue Charles Mathé;Int_00795;Int_00798;69;
+Rue Charles Mathé;Int_00798;Int_00795;69;
+Rue Henri Godelier;Int_00789;Int_00796;43;
+Rue Henri Godelier;Int_00796;Int_00789;43;
+Ruelle des Prêtres;Int_00804;Int_00794;103;
+Ruelle des Prêtres;Int_00794;Int_00804;103;
+Rue Walker;Int_00799;Int_00808;111;
+Rue Walker;Int_00808;Int_00799;111;
+Rue Walker;Int_00808;Int_00791;67;
+Rue Walker;Int_00791;Int_00808;67;
+Rue Walker;Int_00791;Int_00789;47;
+Rue Walker;Int_00789;Int_00791;47;
+Rue Walker;Int_00789;Int_00810;69;
+Rue Walker;Int_00810;Int_00789;69;
+Rue Joseph Cormier;Int_00812;Int_00807;31;
+Rue Joseph Cormier;Int_00807;Int_00812;31;
+Rue Joseph Cormier;Int_00807;Int_00808;40;
+Rue Joseph Cormier;Int_00808;Int_00807;40;
+Rue Joseph Cormier;Int_00808;Int_00795;36;
+Rue Joseph Cormier;Int_00795;Int_00808;36;
+Rue Joseph Cormier;Int_00795;Int_00814;48;
+Rue Joseph Cormier;Int_00814;Int_00795;48;
+Rue Léon Say;Int_00806;Int_00815;91;
+Rue Léon Say;Int_00815;Int_00806;91;
+Rue des Abeilles;Int_00781;Int_00805;75;
+Rue des Abeilles;Int_00805;Int_00781;75;
+Rue Auguste Tréhoux;Int_00797;Int_00801;114;
+Rue Auguste Tréhoux;Int_00801;Int_00797;114;
+Petit Chemin des Augustines;Int_00816;Int_00810;39;
+Petit Chemin des Augustines;Int_00810;Int_00806;96;
+Cité du Polygone;Int_00824;Int_00823;106;
+Cité du Polygone;Int_00822;Int_00819;60;
+Cité du Polygone;Int_00819;Int_00820;55;
+Cité du Polygone;Int_00823;Int_00819;26;
+Rue Nelson Mandela;Int_00162;Int_00595;96;2;5;34
+Rue Nelson Mandela;Int_00595;Int_00162;96;5
+Rue Nelson Mandela;Int_00162;Int_00402;47;2;5;34
+Rue des Roitelets;Int_00828;Int_00827;28;
+Rue des Roitelets;Int_00827;Int_00828;28;
+Rue des Roitelets;Int_00829;Int_00274;47;
+Rue des Roitelets;Int_00274;Int_00829;47;
+Rue des Pinsons;Int_00829;Int_00826;75;
+Rue des Pinsons;Int_00826;Int_00829;75;
+Rue Émile Breton;Int_00648;Int_00647;133;
+Rue Émile Breton;Int_00647;Int_00648;133;
+Rue de la République;Int_00640;Int_00649;73;
+Rue de Douai;Int_00126;Int_01355;50;2
+Rue de Douai;Int_01355;Int_00126;50;
+Rue Pasteur;Int_00255;Int_00254;33;
+Rue Gambetta;Int_00207;Int_00250;84;
+Rue Ozanam;Int_00666;Int_00657;44;
+Rue Ozanam;Int_00657;Int_00666;44;
+Rue Ozanam;Int_00657;Int_00662;23;
+Rue Ozanam;Int_00662;Int_00657;23;
+Rue Ozanam;Int_01382;Int_01381;39;
+Boulevard Vauban;Int_00976;Int_00240;14;
+Rue Aristide Briand;Int_00928;Int_00229;25;
+Rue Aristide Briand;Int_00229;Int_00118;78;
+Boulevard Vauban;Int_00974;Int_00239;15;
+Carrefour d'Hagerue;Int_00238;Int_00831;18;
+Grand'Place;Int_00017;Int_00374;121;
+Grand'Place;Int_00374;Int_00015;27;
+Rue Paul Perrin;Int_00339;Int_01446;90;
+Rue des 4 Crosses;Int_00084;Int_00083;78;
+Rue de la Braderie;Int_00216;Int_00356;47;
+Rue des 3 Visages;Int_00355;Int_00380;49;
+Rue de Justice;Int_00332;Int_00333;46;
+Rue Chanzy;Int_00253;Int_00254;31;
+Rue du Docteur Brassart;Int_00010;Int_00009;54;5
+Rue du Docteur Brassart;Int_00009;Int_00010;54;
+Avenue du Maréchal Leclerc;Int_01084;Int_00643;59;
+Avenue du Maréchal Leclerc;Int_00643;Int_01084;59;
+Avenue Fernand Lobbedez;Int_00012;Int_01405;31;
+Rue de la République;Int_01408;Int_00637;121;
+Rue de la République;Int_00637;Int_01408;121;
+Avenue Fernand Lobbedez;Int_00027;Int_00628;38;
+Avenue Fernand Lobbedez;Int_00628;Int_00027;38;
+Rue Paul Doumer;Int_00389;Int_00955;62;
+Place de la Madeleine;Int_00847;Int_00389;18;
+Place de la Madeleine;Int_01272;Int_00847;35;
+Place de la Madeleine;Int_00847;Int_01272;35;
+Rue Saint-Aubert;Int_01298;Int_00417;62;
+Rue Saint-Aubert;Int_00417;Int_00052;32;
+Rue Saint-Aubert;Int_00052;Int_00352;60;
+Rue de la Paix;Int_00348;Int_01085;78;
+Rue de la Paix;Int_00120;Int_00351;78;
+Rue de la Paix;Int_00351;Int_00120;78;
+Rue Puvis de Chavannes;Int_00835;Int_00834;200;1;3;5
+Avenue Paul Michonneau;Int_00095;Int_01072;14;20
+Carrefour Jean Monnet;Int_00094;Int_00095;55;
+Rue Noel Trannin;Int_00574;Int_00578;82;
+Rue Noel Trannin;Int_00578;Int_00574;82;
+Rue du Temple;Int_00756;Int_00943;88;
+Rue du Temple;Int_00943;Int_00756;88;
+Rue du Temple;Int_00943;Int_00663;19;
+Rue du Temple;Int_00663;Int_00943;19;
+Rue du Temple;Int_00663;Int_00658;67;
+Rue du Temple;Int_00658;Int_00663;67;
+Avenue Jean Zay;Int_00137;Int_00967;56;20;2A;2B
+Avenue Jean Zay;Int_00967;Int_00137;56;
+Cité du Polygone;Int_00822;Int_00820;74;
+Cité du Polygone;Int_00820;Int_00822;74;
+Cité du Polygone;Int_00820;Int_00824;26;
+Cité du Polygone;Int_00824;Int_00820;26;
+Cité du Polygone;Int_00824;Int_00821;123;
+Cité du Polygone;Int_00821;Int_00824;123;
+Avenue John Fitzgerald Kennedy;Int_01206;Int_00184;78;1;245;255;259
+Avenue John Fitzgerald Kennedy;Int_00184;Int_01206;78;
+Avenue John Fitzgerald Kennedy;Int_00184;Int_00183;154;1;245;255;259
+Avenue John Fitzgerald Kennedy;Int_00183;Int_00184;154;
+Rue des Hirondelles;Int_00839;Int_00269;110;
+Rue des Hirondelles;Int_00269;Int_00839;110;
+Rue des Hirondelles;Int_00269;Int_00825;29;
+Rue des Hirondelles;Int_00825;Int_00269;29;
+Rue Georges Auphelle;Int_00840;Int_00271;96;
+Rue Georges Auphelle;Int_00271;Int_00840;96;
+Rue Georges Auphelle;Int_00271;Int_00278;128;
+Rue Georges Auphelle;Int_00278;Int_00271;128;
+Rue Georges Auphelle;Int_00278;Int_00261;133;
+Rue Georges Auphelle;Int_00261;Int_00278;133;
+Rue Georges Auphelle;Int_00261;Int_00262;78;
+Rue Georges Auphelle;Int_00262;Int_00261;78;
+Rue Georges Auphelle;Int_00262;Int_00140;55;
+Rue Georges Auphelle;Int_00140;Int_00262;55;
+Rue Georges Auphelle;Int_00140;Int_00152;97;
+Rue Georges Auphelle;Int_00152;Int_00140;97;
+Rue Saint-Maurice;Int_00112;Int_01410;64;
+Rue Saint-Maurice;Int_00841;Int_00112;12;
+Avenue Maréchal de Lattre de Tassigny;Int_00639;Int_00843;37;
+Avenue du Mémorial des Fusillés;Int_00219;Int_00218;36;
+Avenue du Mémorial des Fusillés;Int_00218;Int_00219;36;
+Avenue du Mémorial des Fusillés;Int_00218;Int_00221;105;
+Avenue du Mémorial des Fusillés;Int_00221;Int_00218;105;
+Avenue du Mémorial des Fusillés;Int_00221;Int_00135;81;
+Avenue du Mémorial des Fusillés;Int_00135;Int_00221;81;
+Avenue du Mémorial des Fusillés;Int_00135;Int_01223;11;
+Avenue du Mémorial des Fusillés;Int_01223;Int_00135;11;
+Place du Train de Loos;Int_00844;Int_00844;229;
+Place du Train de Loos;Int_00844;Int_00844;229;
+Rue du Roussillon;Int_00753;Int_00746;51;
+Rue du Roussillon;Int_00746;Int_00753;51;
+Rue du Roussillon;Int_00746;Int_00743;138;
+Rue du Roussillon;Int_00743;Int_00746;138;
+Rue du Roussillon;Int_00743;Int_00718;27;
+Rue du Roussillon;Int_00718;Int_00743;27;
+Rue du Roussillon;Int_00718;Int_00754;159;
+Rue du Roussillon;Int_00754;Int_00718;159;
+Petite Rue Saint-Géry;Int_00298;Int_01357;22;
+Petite Rue Saint-Géry;Int_01357;Int_00298;22;
+Rue du Temple;Int_00652;Int_01145;12;
+Rue Georges Clemenceau;Int_00690;Int_00689;126;
+Rue Georges Clemenceau;Int_00689;Int_00690;126;
+Rue Georges Clemenceau;Int_00689;Int_00127;98;
+Rue Georges Clemenceau;Int_00127;Int_00689;98;
+Rue de Cambrai;Int_00864;Int_00862;341;
+Rue de Cambrai;Int_00862;Int_00927;100;
+Rue Albert Schweitzer;Int_00861;Int_00863;29;
+Avenue Fernand Lobbedez;Int_00031;Int_01325;76;
+Avenue Fernand Lobbedez;Int_01325;Int_01326;16;
+Rue Arthur Delétoille;Int_01325;Int_00939;4;
+Rue Arthur Delétoille;Int_00939;Int_01360;117;
+Rue Bocquet Flochel;Int_00532;Int_01041;71;
+Rue des 3 Visages;Int_00372;Int_00381;35;
+Rue des 3 Visages;Int_00381;Int_00372;35;
+Rue Watteau;Int_00870;Int_01021;257;19;21;23
+Rue Watteau;Int_01021;Int_00870;257;
+Rue Watteau;Int_01021;Int_00835;21;19;21;23
+Rue Watteau;Int_00835;Int_01021;21;
+Rue Fragonard;Int_00867;Int_00869;26;
+Rue Fragonard;Int_00869;Int_00867;26;
+Rue Fragonard;Int_00869;Int_00871;40;
+Rue Fragonard;Int_00871;Int_00869;40;
+Rue Chardin;Int_00835;Int_00875;301;
+Rue Chardin;Int_00875;Int_00835;301;
+Rue d'Elquenterie;Int_00109;Int_01296;27;
+Rue d'Elquenterie;Int_01296;Int_00109;27;
+Rue d'Elquenterie;Int_00872;Int_00109;26;
+Rue d'Elquenterie;Int_00109;Int_00872;26;
+Rue Sainte-Marguerite;Int_00203;Int_00084;47;
+Voie Paul Claudel;Int_00158;Int_00882;63;
+Voie Paul Claudel;Int_00882;Int_00158;63;
+Rue Ampère;Int_00883;Int_00147;94;2;6
+Rue Ampère;Int_00147;Int_00883;94;
+Rue Ampère;Int_00147;Int_01015;142;2;6
+Rue Ampère;Int_01015;Int_00147;142;
+Avenue Jean Zay;Int_00141;Int_00142;317;20;2A;2B
+Avenue Jean Zay;Int_00142;Int_00141;317;
+Avenue Jean Zay;Int_00142;Int_00137;40;20;2A;2B
+Avenue Jean Zay;Int_00137;Int_00142;40;
+Rue Willy Brandt;Int_00136;Int_01274;46;9
+Rue Willy Brandt;Int_01274;Int_00136;46;
+Rue Willy Brandt;Int_01274;Int_01273;384;9
+Rue Willy Brandt;Int_01273;Int_01274;384;
+Rue Gabriel Hanot;Int_00886;Int_00887;180;2;4
+Rue Gabriel Hanot;Int_00887;Int_00886;180;
+Rue Copernic;Int_01328;Int_00157;59;14
+Rue Copernic;Int_00157;Int_01328;59;
+Rue de Cambrai;Int_00888;Int_00932;316;
+Rue de Cambrai;Int_00914;Int_00103;15;
+Rue Berthe Warret;Int_00180;Int_00183;90;
+Rue Berthe Warret;Int_00183;Int_00180;90;
+Avenue de l'Hippodrome;Int_00868;Int_00992;85;
+Avenue de l'Hippodrome;Int_00992;Int_00868;85;
+Avenue de l'Hippodrome;Int_00992;Int_00154;75;
+Avenue de l'Hippodrome;Int_00154;Int_00992;75;
+Chemin Rural de Duisans à Arras;Int_00890;Int_00891;255;
+Chemin Rural de Duisans à Arras;Int_00891;Int_00890;255;
+Rue Lamartine;Int_00892;Int_00236;30;
+Rue du Dépôt;Int_00818;Int_00846;78;
+Rue du Dépôt;Int_00846;Int_00818;78;
+Rue du Dépôt;Int_00846;Int_00838;75;
+Rue du Dépôt;Int_00838;Int_00846;75;
+Rue du Dépôt;Int_00838;Int_00800;19;
+Rue du Dépôt;Int_00800;Int_00838;19;
+Rue François Hennebique;Int_00897;Int_00898;94;
+Rue François Hennebique;Int_00898;Int_00897;94;
+Rue Côme;Int_00900;Int_00592;230;
+Rue Côme;Int_00592;Int_00900;230;
+Rue Nelson Mandela;Int_00903;Int_00164;63;2;5;34
+Rue Nelson Mandela;Int_00164;Int_00903;63;5
+Rue Nelson Mandela;Int_00164;Int_00163;123;2;5;34
+Rue Nelson Mandela;Int_00163;Int_00164;123;5
+Rue Nelson Mandela;Int_00163;Int_00402;19;2;5;34
+Rue Nelson Mandela;Int_00402;Int_00163;19;5
+Rue des Blancs Monts;Int_00465;Int_00906;15;
+Rue Anatole France;Int_00909;Int_00908;31;
+Rue Anatole France;Int_00908;Int_00909;31;
+Rue Anatole France;Int_00910;Int_00909;10;
+Rue Anatole France;Int_00909;Int_00910;10;
+Rue des Trois Marteaux;Int_00922;Int_01431;26;
+Rue des Trois Marteaux;Int_01431;Int_00361;12;
+Rue des Roitelets;Int_00274;Int_00275;147;
+Rue des Roitelets;Int_00275;Int_00274;147;
+Rue des Roitelets;Int_00275;Int_00273;75;
+Rue des Roitelets;Int_00273;Int_00275;75;
+Boulevard du Général de Gaulle;Int_00223;Int_00837;152;
+Rue Van Gogh;Int_00146;Int_00145;106;1;7;9;15;17;23;25;31;33;43
+Rue Van Gogh;Int_00145;Int_00146;106;1;7;9;15;17;23;25;31;33;43
+Rue Van Gogh;Int_00146;Int_01261;128;1;7;9;15;17;23;25;31;33;43
+Rue Van Gogh;Int_01261;Int_00146;128;
+Rue Van Gogh;Int_01261;Int_00144;31;1;7;9;15;17;23;25;31;33;43
+Rue Van Gogh;Int_00144;Int_01261;31;
+Rue Louis Legay;Int_00091;Int_00087;28;
+Rue Calmette;Int_00481;Int_00484;134;
+Rue Calmette;Int_00484;Int_00481;134;
+Rue Eugène Pottier;Int_00322;Int_00177;8;
+Rue Saint-Aubert;Int_00050;Int_00325;58;
+Rue Ernestale;Int_01321;Int_00046;49;
+Rue Ernestale;Int_00046;Int_00201;19;
+Rue Méaulens;Int_00106;Int_01271;30;
+Rue Méaulens;Int_01271;Int_00106;30;
+Rue Méaulens;Int_00547;Int_00376;68;
+Rue Méaulens;Int_00376;Int_00426;37;
+Rue Méaulens;Int_00426;Int_00377;44;
+Rue Méaulens;Int_00377;Int_00106;99;
+Grande Rue du Rivage;Int_00929;Int_00376;82;
+Avenue Paul Michonneau;Int_00087;Int_00088;39;20
+Boulevard Faidherbe;Int_00341;Int_01291;79;24
+Rue Charles Péguy;Int_00606;Int_01061;91;
+Rue Charles Péguy;Int_01061;Int_00606;91;
+Rue Charles Péguy;Int_01061;Int_01049;89;
+Rue Charles Péguy;Int_01049;Int_01061;89;
+Rue Victor Hugo;Int_00228;Int_00175;75;
+Boulevard de Strasbourg;Int_00255;Int_00253;32;
+Mail des Rosati;Int_00933;Int_00935;155;
+Avenue Paul Michonneau;Int_00089;Int_01029;19;20
+Boulevard Robert Schuman;Int_00063;Int_00563;74;
+Boulevard Robert Schuman;Int_01290;Int_00060;77;
+Rue de la Fraternité;Int_00508;Int_01140;174;
+Avenue Fernand Lobbedez;Int_00940;Int_01111;10;
+Avenue Fernand Lobbedez;Int_01111;Int_00940;10;
+Avenue Fernand Lobbedez;Int_00940;Int_01110;29;
+Avenue Fernand Lobbedez;Int_00029;Int_00941;55;
+Avenue Fernand Lobbedez;Int_00941;Int_00940;11;
+Rue Pasteur;Int_00951;Int_00569;15;
+Rue Pasteur;Int_00569;Int_00951;15;
+Rue Pasteur;Int_00569;Int_00021;74;
+Rue Pasteur;Int_00021;Int_00569;74;
+Rue Pasteur;Int_00950;Int_00951;28;
+Boulevard Carnot;Int_00248;Int_00245;102;
+Rue Paul Perrin;Int_00334;Int_00092;108;
+Rue des Teinturiers;Int_00418;Int_00424;100;
+Rue des Teinturiers;Int_00424;Int_00418;100;
+Rue Pierre Bérégovoy;Int_01115;Int_01345;108;
+Rue Émile Zola;Int_00766;Int_01035;127;
+Rue Émile Zola;Int_01035;Int_00766;127;
+Rue Émile Zola;Int_01035;Int_00763;31;
+Rue Émile Zola;Int_00763;Int_01035;31;
+Rue Galilée;Int_01016;Int_00151;87;
+Rue Galilée;Int_00151;Int_01016;87;
+Boulevard de la Liberté;Int_00508;Int_00055;242;
+Avenue Winston Churchill;Int_00462;Int_01330;99;58;60;114;116;157
+Avenue Winston Churchill;Int_01330;Int_00462;99;157
+Place du Pont de Cité;Int_00073;Int_01298;32;
+Boulevard du Général de Gaulle;Int_00962;Int_01036;96;
+Boulevard du Président Allende;Int_01082;Int_00880;174;11;13
+Boulevard Robert Schuman;Int_01251;Int_00969;14;
+Boulevard Robert Schuman;Int_00969;Int_00095;14;
+Avenue Maréchal de Lattre de Tassigny;Int_00639;Int_00970;58;
+Avenue Maréchal de Lattre de Tassigny;Int_00970;Int_00639;58;
+Rue Saint-Michel;Int_00972;Int_00971;48;
+Boulevard Vauban;Int_00188;Int_00173;61;
+Boulevard Vauban;Int_00173;Int_00974;132;
+Boulevard Vauban;Int_00975;Int_01413;31;
+Rue André Corette;Int_00533;Int_00811;61;
+Rue André Corette;Int_00811;Int_00533;61;
+Rue Nelson Mandela;Int_00905;Int_00982;17;2;5;34
+Rue Nelson Mandela;Int_00981;Int_00905;16;2;5;34
+Rue Nelson Mandela;Int_00983;Int_00982;39;2;5;34
+Avenue des Atrébates;Int_00901;Int_00902;9;1;2;3;4;5;6;8;9;10;11;12;13;14;15;16;17;18;19;20;21;22;23;24;25;26;27;29;30;31;33;35;37;39;41;43;45;47
+Avenue des Atrébates;Int_00902;Int_00901;9;2;4;6;8;10;12;14;16;18;20;22;24;26;30
+Rue des Chardonnerets;Int_00988;Int_00277;119;
+Rue des Chardonnerets;Int_00277;Int_00988;119;
+Rue des Chardonnerets;Int_00277;Int_00278;81;
+Rue des Chardonnerets;Int_00278;Int_00277;81;
+Rue des Fauvettes;Int_00989;Int_00259;67;
+Rue des Fauvettes;Int_00259;Int_00989;67;
+Rue Copernic;Int_00995;Int_00157;52;14
+Rue Copernic;Int_00157;Int_00995;52;
+Rue Hans Geiger;Int_01301;Int_00713;26;
+Rue Hans Geiger;Int_00713;Int_01301;26;
+Rue Hans Geiger;Int_00713;Int_00889;239;
+Rue Hans Geiger;Int_00889;Int_00713;239;
+Rue de Berlin;Int_00996;Int_00130;46;
+Rue de Berlin;Int_00130;Int_00996;46;
+Rue de Berlin;Int_00130;Int_00129;13;
+Rue de Berlin;Int_00129;Int_00130;13;
+Rue de Berlin;Int_00129;Int_00695;133;
+Rue de Berlin;Int_00695;Int_00129;133;
+Rue de Berlin;Int_00695;Int_00703;54;
+Rue de Berlin;Int_00703;Int_00695;54;
+Rue de Berlin;Int_00703;Int_00859;66;
+Rue de Berlin;Int_00859;Int_00703;66;
+Rue de Cambrai;Int_00696;Int_00861;115;
+Rue de Cambrai;Int_00861;Int_00685;238;
+Rue de Cambrai;Int_00685;Int_01421;8;
+Avenue Fernand Lobbedez;Int_01000;Int_00804;24;
+Avenue Fernand Lobbedez;Int_00804;Int_01000;24;
+Avenue Fernand Lobbedez;Int_00804;Int_00027;5;
+Avenue Fernand Lobbedez;Int_00027;Int_00804;5;
+Avenue Fernand Lobbedez;Int_00999;Int_01162;36;
+Avenue Fernand Lobbedez;Int_01000;Int_00999;46;
+Rue de Madrid;Int_01007;Int_01008;53;
+Rue de Madrid;Int_01008;Int_01007;53;
+Rue Debussy;Int_01439;Int_01009;21;
+Rue Debussy;Int_01009;Int_01010;20;
+Rue Matisse;Int_01311;Int_01063;175;1;3;5;7;8;9;11;13;15
+Rue Matisse;Int_01063;Int_01311;175;8
+Rue Voltaire;Int_01014;Int_01189;24;4;31
+Rue Voltaire;Int_01189;Int_01014;24;31
+Rue Voltaire;Int_01189;Int_01055;55;4;31
+Rue Voltaire;Int_01055;Int_01189;55;31
+Rue Voltaire;Int_01055;Int_00621;19;4;31
+Rue Voltaire;Int_00621;Int_01055;19;31
+Rue Voltaire;Int_00621;Int_00610;80;4;31
+Rue Voltaire;Int_00610;Int_00621;80;31
+Rue Voltaire;Int_01011;Int_01014;19;4;31
+Rue Voltaire;Int_01014;Int_01012;14;4;31
+Rue Fragonard;Int_00871;Int_01065;3;
+Rue Fragonard;Int_01065;Int_00871;3;
+Rue Fragonard;Int_01065;Int_01017;29;
+Rue Fragonard;Int_01017;Int_01065;29;
+Rue Fragonard;Int_01017;Int_01018;80;
+Rue Fragonard;Int_01018;Int_01017;80;
+Allée François Boucher;Int_01021;Int_01019;249;
+Allée François Boucher;Int_01019;Int_01021;249;
+Avenue Winston Churchill;Int_00959;Int_00072;27;58;60;114;116;157
+Boulevard Faidherbe;Int_00086;Int_01004;62;24
+Rue Abel Bergaigne;Int_01024;Int_01081;128;
+Rue Émile Breton;Int_00642;Int_00636;64;
+Rue Émile Breton;Int_00636;Int_00642;64;
+Rue Émile Breton;Int_00636;Int_00653;227;
+Place des États d'Artois;Int_01347;Int_00040;24;
+Place de la Vacquerie;Int_01324;Int_01027;29;28
+Place de la Vacquerie;Int_01027;Int_00214;2;28
+Rue Wacquez-Glasson;Int_00328;Int_01348;49;
+Rue Wacquez-Glasson;Int_01348;Int_00328;49;
+Rue Wacquez-Glasson;Int_01348;Int_01354;44;
+Rue Wacquez-Glasson;Int_01354;Int_01348;44;
+Rue Wacquez-Glasson;Int_01354;Int_01349;96;
+Rue Wacquez-Glasson;Int_01349;Int_01354;96;
+Rue Wacquez-Glasson;Int_01349;Int_00328;4;
+Rue Wacquez-Glasson;Int_00328;Int_01349;4;
+Avenue Paul Michonneau;Int_01426;Int_00573;150;20
+Avenue Paul Michonneau;Int_00573;Int_00089;12;20
+Avenue Paul Michonneau;Int_01028;Int_00343;57;20
+Cour d'Honneur;Int_01032;Int_01032;148;
+Cour d'Honneur;Int_01032;Int_01032;148;
+Place Guy Mollet;Int_00366;Int_00367;34;
+Place Guy Mollet;Int_00367;Int_00366;34;
+Rue Paul Langevin;Int_00187;Int_00143;157;
+Rue Paul Langevin;Int_00143;Int_00187;157;
+Rue Paul Langevin;Int_00143;Int_00142;87;
+Rue Paul Langevin;Int_00142;Int_00143;87;
+Rue Chanzy;Int_01237;Int_00251;85;
+Boulevard du Général de Gaulle;Int_01036;Int_00223;32;
+Rue du 8 Mai 1945;Int_00905;Int_00983;37;
+Rue du 8 Mai 1945;Int_00983;Int_00905;37;
+Rue du 8 Mai 1945;Int_00983;Int_00904;45;
+Rue du 8 Mai 1945;Int_00904;Int_00983;45;
+Rue du 8 Mai 1945;Int_00904;Int_00984;32;
+Rue du 8 Mai 1945;Int_00984;Int_01039;9;
+Rue du 8 Mai 1945;Int_01039;Int_00400;53;
+Rue du 8 Mai 1945;Int_00400;Int_01038;54;
+Rue du 8 Mai 1945;Int_01038;Int_01037;9;
+Rue du 8 Mai 1945;Int_01037;Int_00904;35;
+Résidence Docteur Henri Duflot;Int_00730;Int_00730;346;
+Rue d'Artois;Int_00728;Int_00739;39;
+Rue d'Artois;Int_00739;Int_00728;39;
+Boulevard de la Liberté;Int_01112;Int_01340;77;
+Rue Dambrine;Int_01253;Int_00453;23;
+Rue Dambrine;Int_00453;Int_01253;23;
+Rue Dambrine;Int_00453;Int_01096;168;
+Rue Dambrine;Int_01096;Int_00453;168;
+Rue Dambrine;Int_01096;Int_00169;51;
+Rue Dambrine;Int_00169;Int_01096;51;
+Boulevard du Président Allende;Int_00304;Int_00965;100;11;13
+Rue Bocquet Flochel;Int_01396;Int_00532;163;
+Avenue Maréchal de Lattre de Tassigny;Int_01033;Int_00639;31;
+Boulevard de Strasbourg;Int_01042;Int_01309;79;
+Boulevard de Strasbourg;Int_01139;Int_00243;11;
+Boulevard de Strasbourg;Int_00243;Int_01423;55;
+Boulevard Carnot;Int_00948;Int_00005;70;
+Boulevard de Strasbourg;Int_01043;Int_00246;12;
+Boulevard de Strasbourg;Int_00246;Int_01138;55;
+Boulevard de Strasbourg;Int_00848;Int_00244;11;
+Boulevard Faidherbe;Int_00256;Int_01351;98;24
+Rue Louis Blanc;Int_00105;Int_00104;24;
+Rue Louis Blanc;Int_00104;Int_00105;24;
+Rue d'Achicourt;Int_00149;Int_01050;247;
+Rue d'Achicourt;Int_01050;Int_00149;247;
+Rue des Champs;Int_01050;Int_00232;26;
+Rue Michelet;Int_00504;Int_00053;152;
+Rue Michelet;Int_00053;Int_00504;152;
+Voie Bossuet;Int_00882;Int_01056;83;14
+Voie Bossuet;Int_01056;Int_00882;83;
+Voie Bossuet;Int_01056;Int_01057;46;14
+Voie Bossuet;Int_01057;Int_01056;46;
+Rue Antoine de Saint-Exupéry;Int_01058;Int_00158;11;
+Rue Antoine de Saint-Exupéry;Int_00158;Int_01058;11;
+Rue Antoine de Saint-Exupéry;Int_00158;Int_00509;72;
+Rue Antoine de Saint-Exupéry;Int_00509;Int_00158;72;
+Rue Antoine de Saint-Exupéry;Int_00509;Int_01441;55;
+Rue Antoine de Saint-Exupéry;Int_01441;Int_00509;55;
+Allée de l'Ordinaire;Int_01052;Int_01060;50;21;85
+Allée de l'Ordinaire;Int_01060;Int_01052;50;
+Rue Albert Camus;Int_00620;Int_00618;147;
+Rue Albert Camus;Int_00618;Int_00620;147;
+Rue Albert Camus;Int_00618;Int_00613;186;
+Rue Albert Camus;Int_00613;Int_00618;186;
+Rue Albert Camus;Int_00613;Int_01133;74;
+Rue Albert Camus;Int_01133;Int_00613;74;
+Square Delacroix;Int_01065;Int_00869;81;1
+Square Delacroix;Int_00869;Int_01065;81;
+Rue Jeanne d'Arc;Int_00239;Int_00237;91;
+Rue Jeanne d'Arc;Int_00237;Int_00239;91;
+Boulevard Vauban;Int_01195;Int_00081;46;
+Rue de la Piscine;Int_01320;Int_01319;33;
+Rue de la Piscine;Int_01319;Int_01320;33;
+Avenue Fernand Lobbedez;Int_00028;Int_00999;28;
+Avenue Fernand Lobbedez;Int_00999;Int_00028;28;
+Avenue du Maréchal Leclerc;Int_01149;Int_00012;45;
+Rue Saint-Michel;Int_00022;Int_00023;20;
+Rue Saint-Michel;Int_00023;Int_00022;20;
+Boulevard Carnot;Int_01076;Int_01350;123;
+Rue Léon Say;Int_00815;Int_00814;77;
+Rue Léon Say;Int_00814;Int_00815;77;
+Rue Léon Say;Int_00814;Int_00805;93;
+Rue Léon Say;Int_00805;Int_00814;93;
+Rue Léon Say;Int_00805;Int_00811;68;
+Rue Léon Say;Int_00811;Int_00805;68;
+Rue Léon Say;Int_00811;Int_01221;92;
+Rue Léon Say;Int_01221;Int_00811;92;
+Avenue du Maréchal Leclerc;Int_00009;Int_01044;134;
+Avenue du Maréchal Leclerc;Int_01044;Int_00009;134;
+Rue des Grives;Int_00826;Int_00830;36;
+Rue des Grives;Int_00830;Int_00826;36;
+Rue Utrillo;Int_00284;Int_00153;37;
+Rue Gustave Colin;Int_00688;Int_01397;136;
+Rue Gustave Colin;Int_01397;Int_00688;136;
+Rue de Cambrai;Int_00709;Int_00998;7;
+Rue de Cambrai;Int_00998;Int_00709;7;
+Rue du Béguinage;Int_01088;Int_01089;88;
+Rue du Béguinage;Int_01089;Int_01088;88;
+Rue Maître Adam;Int_00506;Int_00507;62;
+Rue Maître Adam;Int_00507;Int_00505;89;
+Rue Jean Racine;Int_01134;Int_01093;43;
+Rue Jean Racine;Int_01093;Int_01134;43;
+Rue Jean Racine;Int_01093;Int_00604;98;
+Rue Jean Racine;Int_00604;Int_01093;98;
+Rue Jean Racine;Int_00604;Int_01135;35;
+Rue Jean Racine;Int_01135;Int_00604;35;
+Rue Montaigne;Int_01091;Int_00611;9;
+Rue Montaigne;Int_00611;Int_01091;9;
+Rue Montaigne;Int_00611;Int_00615;107;
+Rue Montaigne;Int_00615;Int_00611;107;
+Rue Montaigne;Int_00615;Int_00911;73;
+Rue Montaigne;Int_00911;Int_00615;73;
+Rue Montaigne;Int_00911;Int_00599;61;
+Rue Montaigne;Int_00599;Int_00911;61;
+Rue Montaigne;Int_00605;Int_00626;41;
+Rue Montaigne;Int_00626;Int_00605;41;
+Rue Montaigne;Int_00626;Int_01061;22;
+Rue Montaigne;Int_01061;Int_00626;22;
+Rue Montaigne;Int_00601;Int_01091;85;
+Rue Montaigne;Int_01091;Int_00601;85;
+Square Buffon;Int_01093;Int_01209;105;2;4;6;8
+Rue Fénelon;Int_01054;Int_01055;72;
+Rue Fénelon;Int_01055;Int_01054;72;
+Rue Posteau;Int_01095;Int_01094;11;1
+Rue Posteau;Int_01094;Int_01030;9;1
+Rue Utrillo;Int_01202;Int_00268;104;
+Rue Utrillo;Int_00268;Int_01202;104;
+Rue Utrillo;Int_00268;Int_01080;129;
+Rue Utrillo;Int_01080;Int_00268;129;
+Rue du 8 Mai 1945;Int_01109;Int_01108;19;
+Allée Saint-Michel;Int_01074;Int_01438;82;
+Allée Saint-Michel;Int_01438;Int_01074;82;
+Rue de la République;Int_00645;Int_01034;33;
+Avenue Paul Michonneau;Int_01171;Int_01287;97;20
+Rue des Criquets;Int_00781;Int_00793;164;
+Rue des Criquets;Int_00793;Int_00781;164;
+Rue Pasteur;Int_00951;Int_00949;23;
+Rue Victor Leroy;Int_01113;Int_00566;221;
+Rue Victor Leroy;Int_00566;Int_01113;221;
+Rue Baudimont;Int_00399;Int_01342;8;13;23;28
+Rue Roger Salengro;Int_01343;Int_00073;13;13
+Rue Sainte-Croix;Int_00373;Int_01392;58;
+Rue Sainte-Croix;Int_01392;Int_00373;58;
+Rue de Saint-Quentin;Int_00636;Int_00637;87;
+Rue de Saint-Quentin;Int_00637;Int_00636;87;
+Rue de Saint-Quentin;Int_00637;Int_00529;155;
+Rue de Saint-Quentin;Int_00529;Int_00637;155;
+Rue Willy Brandt;Int_00886;Int_01240;5;9
+Rue Willy Brandt;Int_01240;Int_00886;5;
+Petite Rue Saint-Géry;Int_01119;Int_00298;57;
+Petite Rue Saint-Géry;Int_00298;Int_01119;57;
+Place du Maréchal Foch;Int_01237;Int_00250;68;
+Rue de Lolliette;Int_01126;Int_00342;14;
+Rue de Lolliette;Int_00342;Int_01126;14;
+Rue Ernest Renan;Int_01161;Int_00866;284;
+Rue Ernest Renan;Int_00866;Int_01161;284;
+Rue Ernest Renan;Int_00866;Int_00771;26;
+Rue Ernest Renan;Int_00771;Int_00866;26;
+Rue Ernest Renan;Int_00771;Int_01222;19;
+Rue Ernest Renan;Int_01222;Int_00771;19;
+Rue Frédéric Degeorge;Int_00232;Int_00233;259;
+Rue Frédéric Degeorge;Int_00233;Int_00235;190;
+Rue Frédéric Degeorge;Int_00235;Int_00233;190;
+Place de l'Europe;Int_00683;Int_00693;16;
+Rue de Bruxelles;Int_00698;Int_00684;217;
+Avenue John Fitzgerald Kennedy;Int_00183;Int_00963;74;1;245;255;259
+Avenue John Fitzgerald Kennedy;Int_00963;Int_00183;74;
+Rue des Pervenches;Int_00155;Int_00190;75;
+Rue des Pervenches;Int_00190;Int_00155;75;
+Rue des Pervenches;Int_00190;Int_01067;122;
+Rue des Pervenches;Int_01067;Int_00190;122;
+Rue Lurçat;Int_00260;Int_00264;33;2;4;6;8;10;12;14;16;18;20;22
+Rue Lurçat;Int_00264;Int_00260;33;
+Rue Lurçat;Int_00264;Int_00267;76;2;4;6;8;10;12;14;16;18;20;22
+Rue Lurçat;Int_00267;Int_00264;76;
+Rue Lurçat;Int_00267;Int_00265;99;2;4;6;8;10;12;14;16;18;20;22
+Rue Lurçat;Int_00265;Int_00267;99;
+Rue George Sand;Int_01400;Int_00512;141;
+Rue George Sand;Int_00512;Int_01400;141;
+Rue George Sand;Int_00512;Int_00069;65;
+Rue George Sand;Int_00069;Int_00512;65;
+Rue George Sand;Int_00069;Int_00510;59;
+Rue George Sand;Int_00510;Int_00069;59;
+Rue George Sand;Int_00510;Int_00513;157;
+Rue George Sand;Int_00513;Int_00510;157;
+Rue Pierre Loti;Int_00602;Int_01256;74;
+Rue Pierre Loti;Int_01256;Int_00602;74;
+Rue Alphonse Daudet;Int_00068;Int_01133;14;
+Rue Alphonse Daudet;Int_01133;Int_00068;14;
+Rue Alphonse Daudet;Int_01133;Int_00625;122;
+Rue Alphonse Daudet;Int_00625;Int_01133;122;
+Rue Alphonse Daudet;Int_00625;Int_00624;121;
+Rue Alphonse Daudet;Int_00624;Int_00625;121;
+Rue Alphonse Daudet;Int_00624;Int_00514;51;
+Rue Alphonse Daudet;Int_00514;Int_00624;51;
+Rue Alphonse Daudet;Int_00514;Int_00607;64;
+Rue Alphonse Daudet;Int_00607;Int_00514;64;
+Rue Alphonse Daudet;Int_00607;Int_00908;77;
+Rue Alphonse Daudet;Int_00908;Int_00607;77;
+Rue Alphonse Daudet;Int_00908;Int_00516;37;
+Rue Alphonse Daudet;Int_00516;Int_00908;37;
+Rue Alphonse Daudet;Int_00516;Int_01210;43;
+Rue Alphonse Daudet;Int_01210;Int_00516;43;
+Rue Alexandre Georges;Int_00638;Int_00641;12;
+Rue Alexandre Georges;Int_00641;Int_00638;12;
+Rue Alexandre Georges;Int_00641;Int_00640;64;
+Rue Alexandre Georges;Int_00640;Int_00641;64;
+Rue Alexandre Georges;Int_00640;Int_00647;50;
+Rue Alexandre Georges;Int_00647;Int_00640;50;
+Rue des Augustines;Int_00413;Int_00414;45;
+Rue des Augustines;Int_00414;Int_00415;24;
+Rue des Augustines;Int_00415;Int_00412;42;
+Rue des Augustines;Int_00412;Int_00410;56;
+Rue des Augustines;Int_00410;Int_00526;12;
+Boulevard Robert Schuman;Int_00836;Int_00063;128;
+Boulevard Robert Schuman;Int_00064;Int_00567;196;
+Rue Ernestale;Int_00201;Int_00044;81;
+Grand'Place;Int_01260;Int_01260;183;
+Grand'Place;Int_01260;Int_01260;183;
+Grand'Place;Int_00016;Int_01143;149;
+Rue du Docteur Baude;Int_00661;Int_01075;46;
+Rue du Docteur Baude;Int_01075;Int_00661;46;
+Rue de Cambrai;Int_00842;Int_00855;14;
+Rue Gaston Debray;Int_00101;Int_00102;20;
+Rue Gaston Debray;Int_00102;Int_00101;20;
+Rue de la République;Int_00654;Int_00637;54;
+Rue de la République;Int_00649;Int_00654;7;
+Rue de la République;Int_00654;Int_00649;7;
+Rue du Temple;Int_00531;Int_00680;89;
+Rue du Temple;Int_00680;Int_00531;89;
+Rue du Temple;Int_00680;Int_00675;90;
+Rue du Temple;Int_00675;Int_00680;90;
+Rue du Temple;Int_01254;Int_00664;19;
+Rue du Temple;Int_00664;Int_01254;19;
+Rue du Temple;Int_01255;Int_01187;61;
+Rue du Temple;Int_01187;Int_01255;61;
+Rue du Temple;Int_01187;Int_00035;19;
+Rue du Temple;Int_00035;Int_01187;19;
+Rue du Temple;Int_00035;Int_00865;7;
+Rue du Temple;Int_00865;Int_00035;7;
+Piste cyclable dangereuse, étroite avec des bordures et des cédez le passage à chaque carrefour.;Int_00939;Int_00942;150;
+Piste cyclable dangereuse, étroite avec des bordures et des cédez le passage à chaque carrefour.;Int_00942;Int_00939;150;
+Piste cyclable dangereuse, étroite avec des bordures et des cédez le passage à chaque carrefour.;Int_00942;Int_01111;24;
+Piste cyclable dangereuse, étroite avec des bordures et des cédez le passage à chaque carrefour.;Int_01111;Int_00942;24;
+Avenue Fernand Lobbedez;Int_00945;Int_00012;8;
+Avenue Fernand Lobbedez;Int_00012;Int_00945;8;
+Avenue du Maréchal Leclerc;Int_00012;Int_01084;58;
+Rue Alexandre Georges;Int_00682;Int_00679;55;
+Rue Alexandre Georges;Int_00679;Int_00682;55;
+Rue Alexandre Georges;Int_00679;Int_00678;34;
+Rue Alexandre Georges;Int_00678;Int_00679;34;
+Rue Alexandre Georges;Int_00678;Int_00634;52;
+Rue Alexandre Georges;Int_00634;Int_00678;52;
+Rue Alexandre Georges;Int_00634;Int_00651;192;
+Rue Alexandre Georges;Int_00651;Int_00634;192;
+Rue Alexandre Georges;Int_00651;Int_00638;51;
+Rue Alexandre Georges;Int_00638;Int_00651;51;
+Rue Fragonard;Int_01018;Int_01019;13;
+Rue Fragonard;Int_01019;Int_01018;13;
+Rue Fragonard;Int_01019;Int_01020;9;
+Rue Fragonard;Int_01020;Int_01019;9;
+Rue Fragonard;Int_01020;Int_00875;102;
+Rue Fragonard;Int_00875;Int_01020;102;
+Route de Bucquoy;Int_01262;Int_01263;159;
+Route de Bucquoy;Int_01263;Int_01262;159;
+Route de Bucquoy;Int_01263;Int_01221;164;
+Route de Bucquoy;Int_01221;Int_01263;164;
+Route de Bucquoy;Int_01221;Int_00533;51;
+Route de Bucquoy;Int_00533;Int_01221;51;
+Route de Bucquoy;Int_00533;Int_00800;9;
+Route de Bucquoy;Int_00800;Int_00533;9;
+Route de Bucquoy;Int_00800;Int_00817;139;
+Route de Bucquoy;Int_00817;Int_00800;139;
+Route de Bucquoy;Int_00817;Int_00790;43;
+Route de Bucquoy;Int_00790;Int_00817;43;
+Rue des Capucins;Int_00196;Int_00317;37;
+Rue des Capucins;Int_00317;Int_00230;97;
+Rue Désiré Delansorne;Int_00040;Int_00042;81;20
+Impasse du Commandant Dumetz;Int_00762;Int_00765;63;
+Impasse du Commandant Dumetz;Int_00765;Int_00762;63;
+Place Paul Verlaine;Int_01164;Int_01163;57;12
+Place Paul Verlaine;Int_01163;Int_01164;57;
+Place Paul Verlaine;Int_01163;Int_00516;39;12
+Place Paul Verlaine;Int_00516;Int_01163;39;
+Rue du Puits Saint-Josse;Int_00324;Int_00323;57;
+Rue Abel Bergaigne;Int_01081;Int_00001;86;
+Rue Saint-Aubert;Int_00352;Int_01099;22;
+Rue Saint-Aubert;Int_01099;Int_00354;19;
+Rue Saint-Aubert;Int_00354;Int_00353;19;
+Rue Saint-Aubert;Int_00353;Int_00050;39;
+Rue Fontenelle;Int_00178;Int_00179;180;
+Rue Fontenelle;Int_00179;Int_00178;180;
+Rue de Grigny;Int_00171;Int_00189;126;
+Rue de Grigny;Int_00189;Int_00171;126;
+Rue de la Batterie;Int_01169;Int_01356;16;
+Rue de la Batterie;Int_01356;Int_01169;16;
+Rue d'Amiens;Int_00120;Int_00350;78;
+Rue d'Amiens;Int_00350;Int_00045;32;
+Boulevard de Strasbourg;Int_01173;Int_01139;126;
+Boulevard de Strasbourg;Int_00251;Int_01174;40;
+Boulevard de Strasbourg;Int_01175;Int_00885;34;
+Boulevard de Strasbourg;Int_00885;Int_00952;9;
+Boulevard de Strasbourg;Int_01174;Int_01175;13;
+Boulevard Faidherbe;Int_01353;Int_00885;23;24
+Rue Gambetta;Int_00111;Int_00920;33;
+Rue Gambetta;Int_00920;Int_00111;33;
+Rue Gambetta;Int_00920;Int_00921;29;
+Rue Gambetta;Int_00921;Int_00920;29;
+Rue Gambetta;Int_01106;Int_01170;12;
+Rue Gambetta;Int_01170;Int_01106;12;
+Rue Gambetta;Int_01170;Int_00044;55;
+Rue Gambetta;Int_00044;Int_01170;55;
+Rue Émile Legrelle;Int_00297;Int_00326;11;
+Rue Émile Legrelle;Int_00326;Int_00295;53;
+Rue Pasteur;Int_00961;Int_00247;99;
+Rue Pierre Curie;Int_00667;Int_00669;103;
+Rue Pierre Curie;Int_00669;Int_00667;103;
+Rue Pierre Curie;Int_00676;Int_00667;42;
+Rue Pierre Curie;Int_00667;Int_00676;42;
+Rue Pierre Curie;Int_00673;Int_00676;61;
+Rue Pierre Curie;Int_00676;Int_00673;61;
+Petite Rue Saint-Étienne;Int_00313;Int_00314;5;
+Petite Rue Saint-Étienne;Int_00314;Int_00317;40;
+Rue Victor Hugo;Int_00117;Int_00228;36;
+Rue Victor Hugo;Int_00228;Int_00117;36;
+Rue du 29 Juillet;Int_01295;Int_01411;27;
+Rue du 29 Juillet;Int_01411;Int_01296;121;
+Rue Émile Breton;Int_00653;Int_00643;63;
+Rue Frédéric Degeorge;Int_00947;Int_00241;5;
+Rue Frédéric Degeorge;Int_00241;Int_00947;5;
+Carrefour d'Hagerue;Int_00230;Int_00928;30;
+Rue Lebrun;Int_00282;Int_00263;35;
+Rue Lebrun;Int_00263;Int_00282;35;
+Place de la Préfecture;Int_00398;Int_01341;111;
+Rue Saint-Nicaise;Int_00349;Int_00350;75;
+Rue Méaulens;Int_00381;Int_00405;68;
+Rue Méaulens;Int_00405;Int_00381;68;
+Rue Méaulens;Int_00405;Int_00539;60;
+Rue Méaulens;Int_00539;Int_00405;60;
+Rue Méaulens;Int_00539;Int_00427;22;
+Rue Méaulens;Int_00427;Int_00539;22;
+Rue des Cigales;Int_00784;Int_00777;28;
+Rue des Cigales;Int_00777;Int_00784;28;
+Rue du Pré;Int_00553;Int_00550;138;
+Quai du Rivage;Int_00915;Int_00916;48;
+Quai du Rivage;Int_00916;Int_00915;48;
+Rue Ernest Delannoy;Int_00217;Int_00215;38;
+Rue Ampère;Int_00503;Int_00145;45;2;6
+Rue Ampère;Int_00145;Int_00503;45;
+Rue Ampère;Int_00148;Int_01191;45;2;6
+Rue Ampère;Int_01191;Int_01015;59;2;6
+Rue du 29 Juillet;Int_00043;Int_01298;14;
+Piste inconfortable avec des bordures, des montagnes russes et des trous;Int_01194;Int_00947;208;
+Piste inconfortable avec des bordures, des montagnes russes et des trous;Int_00947;Int_01193;54;
+Rue George Sand;Int_00511;Int_00907;4;
+Rue George Sand;Int_00907;Int_00511;4;
+Rue George Sand;Int_00907;Int_00509;39;
+Rue George Sand;Int_00509;Int_00907;39;
+Rue George Sand;Int_00513;Int_00511;36;
+Rue Théophile Gautier;Int_00511;Int_00515;30;
+Rue Hoffbauer;Int_00870;Int_00867;147;
+Rue du Vert Soufflet;Int_00985;Int_00420;72;
+Boulevard Faidherbe;Int_01390;Int_00097;184;24
+Rue du Crinchon;Int_00543;Int_00561;50;
+Rue du Crinchon;Int_00561;Int_00543;50;
+Rue du Crinchon;Int_00561;Int_00558;45;
+Rue du Crinchon;Int_00558;Int_00561;45;
+Rue du Crinchon;Int_00558;Int_00559;59;
+Rue du Crinchon;Int_00559;Int_00558;59;
+Place de l'Ancien Rivage;Int_00545;Int_00548;28;
+Place de l'Ancien Rivage;Int_00548;Int_00542;42;
+Rue du Moulinet;Int_00547;Int_00549;64;
+Rue du Moulinet;Int_00549;Int_00545;32;
+Rue Paul Doumer;Int_00075;Int_00212;27;
+Rue Paul Doumer;Int_00212;Int_00211;27;
+Rue Paul Doumer;Int_00211;Int_00213;3;
+Rue Paul Doumer;Int_00213;Int_00076;34;
+Rue Paul Doumer;Int_00076;Int_00375;40;
+Rue Paul Doumer;Int_00375;Int_00850;30;
+Boulevard Vauban;Int_01203;Int_00174;47;
+Place des Potiers;Int_01071;Int_00410;30;
+Rue des Cailloux;Int_00557;Int_00564;115;
+Rue du Vivier;Int_01415;Int_00520;44;
+Rue Pierre Corneille;Int_00597;Int_00913;165;
+Rue Pierre Corneille;Int_00913;Int_00597;165;
+Rue Pierre Corneille;Int_00913;Int_00609;63;
+Rue Pierre Corneille;Int_00609;Int_00913;63;
+Rue Pierre Corneille;Int_00609;Int_00623;104;
+Rue Pierre Corneille;Int_00623;Int_00609;104;
+Rue Pierre Corneille;Int_00623;Int_00599;103;
+Rue Pierre Corneille;Int_00599;Int_00623;103;
+Rue Voltaire;Int_00610;Int_00617;63;4;31
+Rue Voltaire;Int_00617;Int_00610;63;31
+Rue Voltaire;Int_00617;Int_00608;65;4;31
+Rue Voltaire;Int_00608;Int_00617;65;31
+Rue Voltaire;Int_00608;Int_00600;81;4;31
+Rue Voltaire;Int_00600;Int_00608;81;31
+Rue Voltaire;Int_00600;Int_00616;85;4;31
+Rue Voltaire;Int_00616;Int_00600;85;31
+Rue Voltaire;Int_00616;Int_00161;30;4;31
+Rue Voltaire;Int_00161;Int_00616;30;31
+Place Paul Verlaine;Int_01163;Int_01211;57;12
+Place Paul Verlaine;Int_01211;Int_01163;57;
+Place Paul Verlaine;Int_01211;Int_01157;37;12
+Place Paul Verlaine;Int_01157;Int_01211;37;
+Rue Gustave Colin;Int_00702;Int_00688;61;
+Rue du Marché au Filé;Int_00369;Int_00370;55;
+Rue Chateaubriand;Int_00596;Int_00598;26;9;11;13;15
+Rue Chateaubriand;Int_00598;Int_00596;26;
+Rue d'Amiens;Int_00045;Int_00344;146;
+Rue d'Amiens;Int_00344;Int_00045;146;
+Rue d'Amiens;Int_00344;Int_01188;42;
+Rue d'Amiens;Int_01188;Int_00344;42;
+Rue de Cambrai;Int_00699;Int_00914;185;
+Rue de Cambrai;Int_01213;Int_01214;32;
+Rue de Cambrai;Int_00853;Int_00857;68;
+Square Jeanne Pater;Int_01212;Int_01212;33;
+Square Jeanne Pater;Int_01212;Int_01212;33;
+Quartier Baudimont;Int_01219;Int_01282;138;
+Quartier Baudimont;Int_01282;Int_01219;138;
+Place des Héros;Int_00300;Int_01128;16;
+Place Émile-Didier;Int_00866;Int_01051;31;
+Place Émile-Didier;Int_01051;Int_00866;31;
+Place Émile-Didier;Int_01051;Int_01222;26;
+Place Émile-Didier;Int_01222;Int_01051;26;
+Place Émile-Didier;Int_01222;Int_00866;81;
+Place Émile-Didier;Int_00866;Int_01222;81;
+Rue Adam de la Halle;Int_00171;Int_00233;127;
+Rue Adam de la Halle;Int_00233;Int_00171;127;
+Rue Adam de la Halle;Int_00233;Int_00149;65;
+Rue Adam de la Halle;Int_00149;Int_00233;65;
+Boulevard du Président Allende;Int_00181;Int_00966;11;11;13
+Avenue du Maréchal Leclerc;Int_00643;Int_00008;7;
+Avenue du Maréchal Leclerc;Int_00008;Int_00643;7;
+Rue de Cambrai;Int_00650;Int_00644;22;
+Rue de Cambrai;Int_00644;Int_00650;22;
+Rue Émile Breton;Int_00647;Int_00642;53;
+Rue Émile Breton;Int_00642;Int_00647;53;
+Quartier Baudimont;Int_01097;Int_01220;58;
+Quartier Baudimont;Int_01220;Int_01097;58;
+Quartier Baudimont;Int_01220;Int_01219;246;
+Quartier Baudimont;Int_01219;Int_01220;246;
+Avenue Winston Churchill;Int_01335;Int_00899;102;58;60;114;116;157
+Avenue Winston Churchill;Int_00899;Int_01332;200;58;60;114;116;157
+Place de la Préfecture;Int_00398;Int_00399;31;
+Place de la Préfecture;Int_00399;Int_00398;31;
+Rue Berthe Warret;Int_00135;Int_00845;122;
+Rue Saint-Michel;Int_00126;Int_00024;13;
+Rue Saint-Michel;Int_00024;Int_00126;13;
+Avenue du Maréchal Leclerc;Int_00849;Int_00002;19;
+Quartier Baudimont;Int_01282;Int_01233;10;
+Quartier Baudimont;Int_01233;Int_01282;10;
+Quartier Baudimont;Int_01233;Int_01232;124;
+Quartier Baudimont;Int_01232;Int_01233;124;
+Quartier Baudimont;Int_01233;Int_01231;188;
+Quartier Baudimont;Int_01231;Int_01233;188;
+Quartier Baudimont;Int_01220;Int_01428;93;
+Quartier Baudimont;Int_01428;Int_01220;93;
+Quartier Baudimont;Int_01428;Int_01428;270;
+Quartier Baudimont;Int_01428;Int_01428;270;
+Rue du 29 Juillet;Int_01297;Int_00043;72;
+Rue du 29 Juillet;Int_01296;Int_01297;11;
+Rue du 29 Juillet;Int_01297;Int_01296;11;
+Square Louise Weiss;Int_00396;Int_00398;99;
+Allée du 7e Chasseur;Int_01121;Int_01122;99;61;81;101
+Allée du Bastion de la Reine;Int_01059;Int_01121;109;146
+Rue Camille Corot;Int_00670;Int_00671;66;
+Rue Camille Corot;Int_00671;Int_00670;66;
+Rue Camille Corot;Int_00671;Int_00668;19;
+Rue Camille Corot;Int_00668;Int_00671;19;
+Rue Camille Corot;Int_00668;Int_00672;16;
+Rue Camille Corot;Int_00672;Int_00668;16;
+Rue Camille Corot;Int_00672;Int_00674;24;
+Rue Camille Corot;Int_00674;Int_00672;24;
+Rue Camille Corot;Int_00674;Int_01383;30;
+Rue Camille Corot;Int_01383;Int_00674;30;
+Allée du Général Girard;Int_01123;Int_01124;42;187;208;272;335
+Allée du Général Girard;Int_01124;Int_01123;42;187;335
+Place d'Armes;Int_00896;Int_01124;137;49;101;127;153;327;397
+Place d'Armes;Int_01124;Int_00896;137;
+Allée de la Citadelle;Int_01053;Int_01217;107;65;99;222;360;525
+Allée de la Citadelle;Int_01217;Int_01053;107;222;360
+Allée de la Citadelle;Int_01312;Int_01236;22;65;99;222;360;525
+Allée de la Citadelle;Int_01236;Int_01312;22;222;360
+Allée de l'Ordinaire;Int_01060;Int_01059;64;21;85
+Allée du 7e Chasseur;Int_01122;Int_01125;25;61;81;101
+Allée du 7e Chasseur;Int_01125;Int_01122;25;
+Place d'Armes;Int_00896;Int_01376;107;49;101;127;153;327;397
+Place d'Armes;Int_01376;Int_00896;107;
+Allée du 7e Chasseur;Int_01125;Int_01376;7;61;81;101
+Allée du 7e Chasseur;Int_01376;Int_01125;7;
+Rue Ronsard;Int_01048;Int_00611;9;
+Rue Ronsard;Int_00611;Int_01048;9;
+Rue Ronsard;Int_01091;Int_00612;35;
+Rue Ronsard;Int_00612;Int_01091;35;
+Rue Ronsard;Int_00612;Int_00626;44;
+Rue Ronsard;Int_00626;Int_00612;44;
+Boulevard Crespel;Int_00226;Int_00225;87;
+Boulevard Crespel;Int_00225;Int_01248;72;
+Rue Roger Salengro;Int_00078;Int_00098;90;13
+Rue Pierre Bérégovoy;Int_01424;Int_00078;50;
+Rue Jean Racine;Int_01135;Int_00161;16;
+Rue Jean Racine;Int_00161;Int_01135;16;
+Place des Héros;Int_01129;Int_00953;103;
+Place des Héros;Int_00953;Int_01129;103;
+Place du Maréchal Foch;Int_00250;Int_00248;29;
+Place du Maréchal Foch;Int_01068;Int_01120;130;
+Rue Émile Legrelle;Int_00247;Int_00297;37;
+Petit Chemin des Augustines;Int_00803;Int_00801;108;
+Petit Chemin des Augustines;Int_00801;Int_00794;37;
+Avenue John Fitzgerald Kennedy;Int_00179;Int_00191;104;1;245;255;259
+Avenue John Fitzgerald Kennedy;Int_00191;Int_00179;104;
+Avenue John Fitzgerald Kennedy;Int_00191;Int_01155;138;1;245;255;259
+Avenue John Fitzgerald Kennedy;Int_01155;Int_00191;138;
+Boulevard Crespel;Int_01281;Int_00041;34;
+Avenue John Fitzgerald Kennedy;Int_00963;Int_00182;13;1;245;255;259
+Avenue John Fitzgerald Kennedy;Int_00182;Int_00963;13;
+Rue Jean Lecanuet;Int_00937;Int_00936;20;
+Rue Jean Lecanuet;Int_00936;Int_00937;20;
+Rue Jean Lecanuet;Int_00936;Int_00935;16;
+Rue Jean Lecanuet;Int_00935;Int_00936;16;
+Rue Jean Lecanuet;Int_00935;Int_00575;37;
+Rue Jean Lecanuet;Int_00575;Int_00935;37;
+Rue Jean Lecanuet;Int_00573;Int_00937;127;
+Rue Jean Lecanuet;Int_00937;Int_00573;127;
+Rue d'Amiens;Int_00964;Int_00181;13;
+Rue d'Amiens;Int_00181;Int_00964;13;
+Rue Chanzy;Int_00251;Int_00253;18;
+Voie Notre-Dame-de-Lorette;Int_00067;Int_00586;19;
+Voie Notre-Dame-de-Lorette;Int_00586;Int_00067;19;
+Voie Notre-Dame-de-Lorette;Int_00586;Int_01098;85;
+Voie Notre-Dame-de-Lorette;Int_01098;Int_00586;85;
+Voie Notre-Dame-de-Lorette;Int_01098;Int_00309;66;
+Voie Notre-Dame-de-Lorette;Int_00309;Int_01098;66;
+Grand'Place;Int_01431;Int_01249;51;
+Grand'Place;Int_01249;Int_01431;51;
+Grand'Place;Int_01249;Int_01250;113;
+Grand'Place;Int_01250;Int_01249;113;
+Rue Ronville;Int_01313;Int_00247;143;
+Rue Ronville;Int_00247;Int_01313;143;
+Boulevard Crespel;Int_01248;Int_00227;7;
+Boulevard Crespel;Int_01182;Int_00170;80;
+Boulevard Crespel;Int_00170;Int_01184;92;
+Place Victor Hugo;Int_00117;Int_00193;70;
+Place Victor Hugo;Int_00193;Int_00110;61;
+Rue Braque;Int_01201;Int_00152;13;1;3;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;23;25
+Rue Braque;Int_00152;Int_01201;13;6;8;10;12;14;16;18;20
+Rue Émile Zola;Int_00660;Int_01069;153;
+Rue Émile Zola;Int_01069;Int_00660;153;
+Rue de la Taillerie;Int_01127;Int_01129;59;
+Rue de la Taillerie;Int_01129;Int_01127;59;
+Boulevard Georges Besnier;Int_01369;Int_00308;82;
+Boulevard Georges Besnier;Int_00072;Int_00100;40;
+Rue Méaulens;Int_00427;Int_00547;19;
+Boulevard Carnot;Int_00005;Int_00082;221;
+Impasse des Trois Faucilles;Int_00326;Int_01266;6;
+Impasse des Trois Faucilles;Int_01266;Int_00326;6;
+Place d'Armes;Int_01376;Int_00895;41;49;101;127;153;327;397
+Place d'Armes;Int_00895;Int_01376;41;
+Rue des Chênes;Int_00726;Int_00716;104;
+Rue Philippe Eeckhout;Int_01229;Int_01230;39;
+Rue Philippe Eeckhout;Int_01230;Int_01229;39;
+Place de la Vacquerie;Int_00020;Int_00216;40;28
+Place de la Vacquerie;Int_00020;Int_01027;64;28
+Place de la Vacquerie;Int_01027;Int_00020;64;
+Rue Jean-Baptiste Delaporte;Int_01270;Int_00128;39;
+Rue Émile Legrelle;Int_00295;Int_00296;61;
+Rue Émile Legrelle;Int_00296;Int_01119;53;
+Avenue des Fusillés;Int_00391;Int_00133;75;
+Avenue des Fusillés;Int_00133;Int_00391;75;
+Rue Aristide Briand;Int_00118;Int_00115;90;
+Rue Alexis Halette;Int_00506;Int_00958;249;
+Place Paul Verlaine;Int_01211;Int_00165;56;12
+Place Paul Verlaine;Int_00165;Int_01211;56;
+Boulevard Robert Schuman;Int_00567;Int_00065;50;
+Boulevard Robert Schuman;Int_00938;Int_00836;187;
+Boulevard Robert Schuman;Int_01064;Int_00938;34;
+Boulevard du Général de Gaulle;Int_00079;Int_00874;227;
+Boulevard Crespel;Int_00041;Int_01279;47;
+Boulevard Crespel;Int_01184;Int_01278;5;
+Boulevard Crespel;Int_01278;Int_00195;23;
+Rue des Trois Filloires;Int_00555;Int_00557;44;
+Avenue Paul Michonneau;Int_01287;Int_00416;13;20
+Avenue Paul Michonneau;Int_00416;Int_01427;10;20
+Mail des Rosati;Int_00936;Int_00934;155;
+Boulevard Faidherbe;Int_01004;Int_01005;14;24
+Boulevard Faidherbe;Int_01006;Int_00087;25;24
+Boulevard Faidherbe;Int_01005;Int_01006;7;24
+Rue Saint-Michel;Int_01166;Int_00099;67;
+Rue Saint-Michel;Int_00099;Int_01438;3;
+Rue Saint-Michel;Int_01438;Int_00917;76;
+Rue Saint-Michel;Int_01003;Int_01166;13;
+Rue des Rosati;Int_00918;Int_00978;9;
+Rue des Rosati;Int_00978;Int_00090;198;
+Rue des Rosati;Int_00022;Int_00918;18;
+Rue Saint-Michel;Int_00917;Int_00022;36;
+Rue Constant Dutilleux;Int_00832;Int_00022;14;
+Rue Saint-Michel;Int_00972;Int_00126;34;
+Rue Saint-Michel;Int_00126;Int_00972;34;
+Avenue du Maréchal Leclerc;Int_01084;Int_01149;14;
+Place du Chanoine Aymard;Int_01303;Int_01302;12;
+Place du Chanoine Aymard;Int_01302;Int_01303;12;
+Place du Chanoine Aymard;Int_01302;Int_01364;11;
+Place du Chanoine Aymard;Int_01364;Int_01302;11;
+Boulevard Carnot;Int_00244;Int_01305;88;
+Boulevard Carnot;Int_01305;Int_00948;47;
+Avenue John Fitzgerald Kennedy;Int_00192;Int_00139;24;1;245;255;259
+Avenue John Fitzgerald Kennedy;Int_00139;Int_00192;24;
+Avenue John Fitzgerald Kennedy;Int_01155;Int_00051;44;1;245;255;259
+Avenue John Fitzgerald Kennedy;Int_00051;Int_01155;44;
+Avenue John Fitzgerald Kennedy;Int_00051;Int_00968;79;1;245;255;259
+Avenue John Fitzgerald Kennedy;Int_00968;Int_00051;79;
+Rue Baudimont;Int_01308;Int_00073;31;13;23;28
+Rue Roger Salengro;Int_01246;Int_01436;51;13
+Rue Roger Salengro;Int_01436;Int_01343;44;13
+Rue de l'Abbé Halluin;Int_00175;Int_00176;130;
+Place du Maréchal Foch;Int_01350;Int_00249;15;
+Place du Maréchal Foch;Int_00248;Int_01350;17;
+Boulevard Carnot;Int_01192;Int_00006;4;
+Boulevard Vauban;Int_01194;Int_01195;5;
+Boulevard Vauban;Int_01247;Int_00976;3;
+Boulevard du Général de Gaulle;Int_01365;Int_00987;199;
+Boulevard du Général de Gaulle;Int_00986;Int_01258;236;
+Allée de la Citadelle;Int_01236;Int_01123;14;65;99;222;360;525
+Allée de la Citadelle;Int_01123;Int_01236;14;222;360
+Allée de la Citadelle;Int_01217;Int_01267;10;65;99;222;360;525
+Allée de la Citadelle;Int_01267;Int_01217;10;222;360
+Allée de la Citadelle;Int_01267;Int_01216;15;65;99;222;360;525
+Allée de la Citadelle;Int_01216;Int_01267;15;222;360
+Avenue du Mémorial des Fusillés;Int_01419;Int_00281;50;
+Avenue du Mémorial des Fusillés;Int_00281;Int_01419;50;
+Rue de la Briqueterie;Int_01001;Int_01002;19;
+Rue Marietta Martin;Int_01271;Int_00105;47;
+Rue Marietta Martin;Int_00105;Int_01271;47;
+Rue du Marché au Filé;Int_00371;Int_00372;20;
+Rue des Rosati;Int_01318;Int_00585;15;
+Rue des Rosati;Int_00585;Int_01318;15;
+Rue des Rosati;Int_00585;Int_01204;15;
+Rue des Rosati;Int_01204;Int_00585;15;
+Rue des Rosati;Int_00576;Int_01318;71;
+Rue des Rosati;Int_01318;Int_00576;71;
+Rue de la Piscine;Int_00064;Int_01319;35;
+Rue de la Piscine;Int_01319;Int_00064;35;
+Rue Saint-Aubert;Int_00177;Int_00206;44;
+Rue Thérèse Wang;Int_01323;Int_01226;131;
+Rue Roger Salengro;Int_00098;Int_01246;30;13
+Route de Bapaume;Int_01161;Int_01160;11;
+Route de Bapaume;Int_01160;Int_01161;11;
+Route de Bapaume;Int_01315;Int_00717;332;
+Route de Bapaume;Int_00717;Int_01315;332;
+Place du Maréchal Foch;Int_01120;Int_00252;14;
+Rue Constant Dutilleux;Int_00952;Int_01176;30;
+Avenue Fernand Lobbedez;Int_00030;Int_00029;56;
+Avenue Fernand Lobbedez;Int_00029;Int_00030;56;
+Route de Bapaume;Int_01160;Int_01159;24;
+Route de Bapaume;Int_01159;Int_01160;24;
+Avenue Fernand Lobbedez;Int_01110;Int_00029;37;
+Avenue Fernand Lobbedez;Int_00628;Int_00026;25;
+Avenue Fernand Lobbedez;Int_00026;Int_00628;25;
+Avenue du Maréchal Leclerc;Int_01327;Int_01366;11;
+Avenue du Maréchal Leclerc;Int_01366;Int_01327;11;
+Avenue Fernand Lobbedez;Int_00026;Int_01141;12;
+Avenue Fernand Lobbedez;Int_01141;Int_00026;12;
+Avenue Fernand Lobbedez;Int_01141;Int_00945;45;
+Avenue Fernand Lobbedez;Int_00945;Int_01141;45;
+Boulevard de Strasbourg;Int_01309;Int_00251;46;
+Avenue Paul Michonneau;Int_01029;Int_00093;54;20
+Carrefour Jean Monnet;Int_00095;Int_00093;43;
+Rue du Docteur-Robert-Siauve;Int_00721;Int_01323;77;
+Cours de Verdun;Int_01167;Int_01200;136;
+Boulevard Crespel;Int_00392;Int_00393;52;
+Avenue Winston Churchill;Int_01047;Int_01310;57;58;60;114;116;157
+Avenue du Maréchal Leclerc;Int_00977;Int_01416;3;
+Avenue du Maréchal Leclerc;Int_01416;Int_00977;3;
+Rue Désiré Delansorne;Int_00049;Int_00040;24;20
+Avenue du Maréchal Leclerc;Int_01044;Int_00011;18;
+Avenue du Maréchal Leclerc;Int_00011;Int_01044;18;
+Avenue du Maréchal Leclerc;Int_00011;Int_01045;6;
+Avenue du Maréchal Leclerc;Int_01045;Int_00011;6;
+Avenue du Maréchal Leclerc;Int_01045;Int_01327;8;
+Avenue du Maréchal Leclerc;Int_01327;Int_01045;8;
+Place du Théâtre;Int_00385;Int_01321;35;
+Place du Théâtre;Int_01321;Int_00385;35;
+Carrefour Dwight Eisenhower;Int_01329;Int_00019;29;
+Carrefour Dwight Eisenhower;Int_00019;Int_01329;29;
+Avenue Winston Churchill;Int_01310;Int_00071;114;58;60;114;116;157
+Avenue Winston Churchill;Int_00460;Int_00466;129;58;60;114;116;157
+Avenue Winston Churchill;Int_00466;Int_01333;180;58;60;114;116;157
+Avenue Winston Churchill;Int_01333;Int_01196;160;58;60;114;116;157
+Avenue Winston Churchill;Int_01196;Int_00959;165;58;60;114;116;157
+Rue Baudimont;Int_01338;Int_01337;14;13;23;28
+Place Quincaille;Int_01363;Int_01116;29;
+Place Quincaille;Int_01116;Int_01363;29;
+Place Quincaille;Int_01116;Int_01361;3;
+Place Quincaille;Int_01361;Int_01116;3;
+Place Quincaille;Int_01361;Int_00419;17;
+Place Quincaille;Int_00419;Int_01361;17;
+Place Quincaille;Int_00419;Int_01283;4;
+Place Quincaille;Int_01283;Int_00419;4;
+Place Quincaille;Int_01283;Int_00421;7;
+Place Quincaille;Int_00421;Int_01283;7;
+Place Quincaille;Int_00421;Int_01363;13;
+Place Quincaille;Int_01363;Int_00421;13;
+Boulevard Faidherbe;Int_00885;Int_00256;36;24
+Rue de Douai;Int_01100;Int_01352;3;2
+Rue de Douai;Int_01352;Int_01100;3;
+Boulevard Faidherbe;Int_00021;Int_01176;70;24
+Rue de Douai;Int_01355;Int_00534;191;2
+Rue de Douai;Int_00534;Int_01355;191;
+Rue Pierre Bérégovoy;Int_00955;Int_00077;10;
+Carrefour Dwight Eisenhower;Int_01242;Int_01079;27;
+Carrefour Dwight Eisenhower;Int_01079;Int_01242;27;
+Rond-Point Georges Pompidou;Int_01375;Int_01077;61;
+Rond-Point Georges Pompidou;Int_01077;Int_01375;61;
+Rond-Point Georges Pompidou;Int_00039;Int_00038;30;
+Rond-Point Georges Pompidou;Int_00038;Int_00039;30;
+Carrefour Dwight Eisenhower;Int_00876;Int_01078;9;
+Carrefour Dwight Eisenhower;Int_01078;Int_00876;9;
+Carrefour Dwight Eisenhower;Int_00878;Int_01242;6;
+Carrefour Dwight Eisenhower;Int_01242;Int_00878;6;
+Rue de Douai;Int_01026;Int_00950;27;2
+Rue de Douai;Int_00950;Int_01026;27;
+Rue de Douai;Int_00971;Int_01026;104;2
+Rue de Douai;Int_01026;Int_00971;104;
+Rue Arthur Delétoille;Int_00944;Int_00657;41;
+Place des Héros;Int_01359;Int_01128;96;
+Place des Héros;Int_01128;Int_01359;96;
+Place Émile-Didier;Int_01051;Int_00771;12;
+Place Émile-Didier;Int_00771;Int_01051;12;
+Impasse des Chariottes;Int_01224;Int_01225;13;
+Impasse des Chariottes;Int_01225;Int_01224;13;
+Impasse des Chariottes;Int_00539;Int_01224;5;
+Impasse des Chariottes;Int_01224;Int_00539;5;
+Petite Rue Saint-Géry;Int_01358;Int_01359;10;
+Petite Rue Saint-Géry;Int_01359;Int_01358;10;
+Petite Rue Saint-Géry;Int_01357;Int_01358;9;
+Petite Rue Saint-Géry;Int_01358;Int_01357;9;
+Avenue des Fusillés;Int_01437;Int_00390;18;
+Avenue des Fusillés;Int_00390;Int_01437;18;
+Rue Gambetta;Int_00243;Int_01377;50;
+Rue Gambetta;Int_01377;Int_00243;50;
+Grand'Place;Int_00338;Int_00016;29;
+Place des Héros;Int_01235;Int_00953;15;
+Place des Héros;Int_00953;Int_01235;15;
+Rue des Teinturiers;Int_00956;Int_00427;74;
+Rue des Teinturiers;Int_00427;Int_00956;74;
+Rue Paul Doumer;Int_01288;Int_00389;26;
+Rue Maximilien Robespierre;Int_00387;Int_00383;37;
+Rue Saint-Aubert;Int_00382;Int_00177;3;
+Rue Marietta Martin;Int_00105;Int_01031;10;
+Rue Marietta Martin;Int_01031;Int_00105;10;
+Rue des Teinturiers;Int_00424;Int_00956;42;
+Rue des Teinturiers;Int_00956;Int_00424;42;
+Rue Paul Doumer;Int_01322;Int_01288;10;
+Rue Pierre Bérégovoy;Int_00960;Int_01344;17;
+Rue Gambetta;Int_01418;Int_00111;37;
+Rue Gambetta;Int_00111;Int_01418;37;
+Boulevard du Président Allende;Int_00966;Int_01300;108;11;13
+Boulevard du Président Allende;Int_01300;Int_00345;64;11;13
+Boulevard du Président Allende;Int_00345;Int_01082;204;11;13
+Allée Saint-Michel;Int_01304;Int_01074;35;
+Allée Saint-Michel;Int_01074;Int_01304;35;
+Rue Pierre Bérégovoy;Int_01362;Int_01115;19;
+Rue Pierre Bérégovoy;Int_00077;Int_01362;59;
+Boulevard Georges Besnier;Int_00100;Int_01367;147;
+Boulevard du Général de Gaulle;Int_00224;Int_01437;15;
+Boulevard du Général de Gaulle;Int_01437;Int_01365;26;
+Avenue du Maréchal Leclerc;Int_01366;Int_00002;6;
+Avenue du Maréchal Leclerc;Int_00002;Int_01366;6;
+Boulevard Georges Besnier;Int_01370;Int_01339;59;
+Boulevard Georges Besnier;Int_01371;Int_01370;22;
+Boulevard Georges Besnier;Int_01368;Int_01243;72;
+Boulevard Georges Besnier;Int_01367;Int_01368;29;
+Boulevard Georges Besnier;Int_01243;Int_01369;16;
+Impasse des Dominicains;Int_01373;Int_01372;12;
+Impasse des Dominicains;Int_01372;Int_01373;12;
+Impasse des Dominicains;Int_00336;Int_01373;3;
+Impasse des Dominicains;Int_01373;Int_00336;3;
+Rue de Cambrai;Int_00709;Int_01087;28;
+Rue Désiré Delansorne;Int_00208;Int_00049;45;20
+Rue Désiré Delansorne;Int_00049;Int_00208;45;
+Boulevard Robert Schuman;Int_00563;Int_01251;30;
+Rue du Docteur-Robert-Siauve;Int_00957;Int_01323;140;
+Rue de Cambrai;Int_00025;Int_00101;46;
+Rue Willy Brandt;Int_01375;Int_01240;54;9
+Rue Émile Zola;Int_00528;Int_00660;17;
+Rue Émile Zola;Int_00660;Int_00528;17;
+Rue Gambetta;Int_01377;Int_01313;9;
+Rue Gambetta;Int_01313;Int_01377;9;
+Rue du Docteur Baude;Int_00665;Int_00661;88;
+Rue du Docteur Baude;Int_00661;Int_00665;88;
+Boulevard du Général de Gaulle;Int_00874;Int_01040;113;
+Boulevard Georges Besnier;Int_01339;Int_01380;16;
+Rue Camille Corot;Int_01383;Int_00677;4;
+Rue Camille Corot;Int_00677;Int_01383;4;
+Rue Camille Corot;Int_00677;Int_00681;23;
+Rue Camille Corot;Int_00681;Int_00677;23;
+Rue Camille Corot;Int_00681;Int_00675;62;
+Rue Camille Corot;Int_00675;Int_00681;62;
+Rue Ozanam;Int_00666;Int_01306;57;
+Rue Ozanam;Int_01307;Int_00635;22;
+Rue du Docteur Baude;Int_01075;Int_00666;66;
+Rue du Docteur Baude;Int_00666;Int_01075;66;
+Rue Édouard Branly;Int_00632;Int_00630;71;
+Rue Édouard Branly;Int_00630;Int_00632;71;
+Rue Édouard Branly;Int_00628;Int_00632;158;
+Rue Édouard Branly;Int_00632;Int_00628;158;
+Rue du Temple;Int_00034;Int_01254;71;
+Rue du Temple;Int_01254;Int_00034;71;
+Rue Malpeaux;Int_00659;Int_01070;71;
+Rue Malpeaux;Int_01070;Int_00659;71;
+Rue Malpeaux;Int_00661;Int_00659;56;
+Rue Malpeaux;Int_00659;Int_00661;56;
+Rue Malpeaux;Int_00629;Int_00661;106;
+Rue Malpeaux;Int_00661;Int_00629;106;
+Rue de Cambrai;Int_00705;Int_01215;85;
+Rue de Cambrai;Int_01316;Int_00648;15;
+Rue de Cambrai;Int_00648;Int_01316;15;
+Rue de Cambrai;Int_00644;Int_01316;16;
+Rue de Cambrai;Int_01316;Int_00644;16;
+Rue Gustave Colin;Int_01180;Int_00648;56;
+Rue Ozanam;Int_01381;Int_00658;54;
+Rue Ozanam;Int_00662;Int_01382;57;
+Rue d'Amiens;Int_00394;Int_00120;120;
+Rue de Châteaudun;Int_00119;Int_01384;108;
+Rue Sainte-Claire;Int_00045;Int_01385;27;
+Rue Sainte-Claire;Int_01385;Int_00045;27;
+Rue de la Paix;Int_01085;Int_00351;10;
+Rue Guynemer;Int_00633;Int_01386;52;
+Rue des Capucins;Int_01177;Int_00318;47;
+Rue Arthur Delétoille;Int_01360;Int_00944;64;
+Rue Arthur Delétoille;Int_00944;Int_01360;64;
+Rue Charcot;Int_01387;Int_00629;71;
+Rue de Saint-Quentin;Int_01388;Int_00528;26;
+Rue de Saint-Quentin;Int_00528;Int_01388;26;
+Rue du Commandant Dumetz;Int_01389;Int_00028;50;
+Rue du Commandant Dumetz;Int_00028;Int_01389;50;
+Place de Marseille;Int_00189;Int_00234;13;
+Place de Marseille;Int_00234;Int_00189;13;
+Place de Marseille;Int_00234;Int_00172;50;
+Place de Marseille;Int_00172;Int_00234;50;
+Rue d'Achicourt;Int_00001;Int_00946;96;
+Rue d'Achicourt;Int_00946;Int_00001;96;
+Rue d'Achicourt;Int_00892;Int_00893;16;
+Rue d'Achicourt;Int_00893;Int_00892;16;
+Boulevard Faidherbe;Int_01291;Int_00092;23;24
+Boulevard Faidherbe;Int_00092;Int_01390;16;24
+Boulevard Faidherbe;Int_01391;Int_00086;86;24
+Boulevard Faidherbe;Int_01289;Int_00339;24;24
+Boulevard Faidherbe;Int_00339;Int_01391;15;24
+Rue Sainte-Croix;Int_01392;Int_00411;19;
+Rue Sainte-Croix;Int_00411;Int_01392;19;
+Rue des Fours;Int_01317;Int_01178;9;16
+Rue des Fours;Int_00115;Int_01317;81;16
+Rue Saint-Michel;Int_01445;Int_00023;21;
+Rue Saint-Michel;Int_00023;Int_01445;21;
+Rue Berthe Warret;Int_00845;Int_00134;105;
+Rue Berthe Warret;Int_00134;Int_00180;20;
+Rue Berthe Warret;Int_00180;Int_00134;20;
+Rue Adam de la Halle;Int_01393;Int_00171;94;
+Rue Adam de la Halle;Int_00171;Int_01393;94;
+Boulevard Crespel;Int_01183;Int_01186;174;
+Rue d'Achicourt;Int_00893;Int_00149;219;
+Rue d'Achicourt;Int_00149;Int_00893;219;
+Avenue John Fitzgerald Kennedy;Int_01205;Int_00192;12;1;245;255;259
+Avenue John Fitzgerald Kennedy;Int_00192;Int_01205;12;
+Boulevard du Président Allende;Int_01395;Int_01083;39;11;13
+Boulevard du Président Allende;Int_00186;Int_01395;33;11;13
+Rue Paul Doumer;Int_00040;Int_01442;69;
+Rue du Marché au Filé;Int_00368;Int_00369;41;
+Rue des Dominicains;Int_00336;Int_00334;30;
+Rue des Carabiniers d'Artois;Int_00346;Int_00347;98;
+Rue des Carabiniers d'Artois;Int_00347;Int_00346;98;
+Rue des Carabiniers d'Artois;Int_01181;Int_00346;80;
+Avenue John Fitzgerald Kennedy;Int_00968;Int_01205;12;1;245;255;259
+Avenue John Fitzgerald Kennedy;Int_01205;Int_00968;12;
+Rue Braque;Int_00192;Int_00257;68;1;3;5;6;7;8;9;10;11;12;13;14;15;16;17;18;19;20;21;23;25
+Rue Braque;Int_00257;Int_00192;68;6;8;10;12;14;16;18;20
+Rue Bocquet Flochel;Int_00532;Int_00035;99;
+Rue de Bruxelles;Int_00700;Int_00686;73;
+Rue de Bruxelles;Int_00692;Int_01131;120;
+Rue de Bruxelles;Int_01130;Int_00698;22;
+Rue Deroeux Rebout;Int_01245;Int_01244;37;
+Rue Deroeux Rebout;Int_01244;Int_01245;37;
+Rue Deroeux Rebout;Int_00677;Int_01245;55;
+Rue Deroeux Rebout;Int_01245;Int_00677;55;
+Rue Aristide Briand;Int_00115;Int_00919;49;
+Rue Paul Doumer;Int_00833;Int_01322;23;
+Rue Georges Clemenceau;Int_00705;Int_01137;71;
+Rue Georges Clemenceau;Int_01137;Int_00705;71;
+Rue Dambrine;Int_00185;Int_01172;19;
+Rue Willy Brandt;Int_01276;Int_01264;129;9
+Rue Willy Brandt;Int_01264;Int_01276;129;
+Rue Willy Brandt;Int_01276;Int_01273;16;9
+Rue des Louez-Dieu;Int_00325;Int_00324;15;
+Rue Baudimont;Int_01337;Int_01399;30;13;23;28
+Rue George Sand;Int_01133;Int_01400;85;
+Rue George Sand;Int_01400;Int_01133;85;
+Rue Auguste Dumand;Int_00453;Int_00973;172;
+Rue Auguste Dumand;Int_00973;Int_00453;172;
+Rue Auguste Dumand;Int_00460;Int_01334;8;
+Avenue Winston Churchill;Int_01332;Int_00070;43;58;60;114;116;157
+Avenue Winston Churchill;Int_00070;Int_01108;17;58;60;114;116;157
+Rue Grassin Baledans;Int_00931;Int_01275;17;
+Rue Grassin Baledans;Int_01401;Int_00931;102;
+Place Mère Térésa;Int_00160;Int_01238;7;
+Place Mère Térésa;Int_01238;Int_00160;7;
+Place Mère Térésa;Int_01239;Int_00159;13;
+Place Mère Térésa;Int_00159;Int_01239;13;
+Place Mère Térésa;Int_00159;Int_01440;28;
+Place Mère Térésa;Int_01440;Int_00159;28;
+Rue Elie Wiesel;Int_00595;Int_01208;19;
+Rue Elie Wiesel;Int_01208;Int_00595;19;
+Avenue Paul Michonneau;Int_01072;Int_00524;77;20
+Rue Baudimont;Int_00505;Int_00399;161;13;23;28
+Rue des Augustines;Int_00526;Int_00408;49;
+Rue des Augustines;Int_00408;Int_00522;11;
+Rue des Augustines;Int_00522;Int_00409;60;
+Rue des Augustines;Int_00409;Int_00403;81;
+Avenue Fernand Lobbedez;Int_01403;Int_01420;20;
+Avenue Fernand Lobbedez;Int_01420;Int_01403;20;
+Boulevard de Strasbourg;Int_00253;Int_01173;10;
+Rue Pasteur;Int_00254;Int_00961;11;
+Grand'Place;Int_01404;Int_01143;12;
+Grand'Place;Int_01143;Int_01404;12;
+Rue du Berry;Int_00957;Int_00750;80;
+Rue du Berry;Int_00750;Int_00957;80;
+Rue du Berry;Int_00750;Int_00719;92;
+Rue du Berry;Int_00719;Int_00750;92;
+Rue de l'Abbé Lemire;Int_00756;Int_00740;269;
+Rue de l'Abbé Lemire;Int_00740;Int_00756;269;
+Rue de l'Abbé Lemire;Int_00740;Int_00132;116;
+Rue de l'Abbé Lemire;Int_00132;Int_00740;116;
+Rue du Temple;Int_00033;Int_00756;99;
+Rue du Temple;Int_00756;Int_00033;99;
+Rue du Temple;Int_00658;Int_00034;149;
+Rue du Temple;Int_00034;Int_00658;149;
+Rue de Douai;Int_00950;Int_00949;12;2
+Rue de Douai;Int_00949;Int_00950;12;
+Boulevard Carnot;Int_01158;Int_00230;31;
+Avenue Fernand Lobbedez;Int_01405;Int_00645;77;
+Rue Georges Bernard;Int_00655;Int_00646;59;
+Rue Georges Bernard;Int_00646;Int_00655;59;
+Rue de la République;Int_00655;Int_01406;27;
+Rue de la République;Int_01406;Int_00655;27;
+Rue de la République;Int_01407;Int_01408;33;
+Rue de la République;Int_01408;Int_01407;33;
+Rue de la République;Int_01406;Int_01407;31;
+Rue de la République;Int_01407;Int_01406;31;
+Rue de la République;Int_01227;Int_00655;42;
+Rue de la République;Int_01034;Int_01227;19;
+Rue de Cambrai;Int_00854;Int_00856;10;
+Route de Bapaume;Int_00036;Int_01161;9;
+Route de Bapaume;Int_01161;Int_00036;9;
+Route de Bapaume;Int_01159;Int_01315;32;
+Route de Bapaume;Int_01315;Int_01159;32;
+Place Guy Mollet;Int_00367;Int_00373;27;
+Place Guy Mollet;Int_00373;Int_00367;27;
+Grand'Place;Int_00014;Int_01404;9;
+Grand'Place;Int_01404;Int_00014;9;
+Rue des Platanes;Int_01409;Int_00733;8;
+Rue des Platanes;Int_00733;Int_01409;8;
+Rue du Puits Saint-Josse;Int_00323;Int_00321;10;
+Rue Saint-Étienne;Int_00315;Int_00311;25;
+Impasse des Carmes;Int_00920;Int_01165;9;
+Impasse des Carmes;Int_01165;Int_00920;9;
+Rue de la Croix-Rouge;Int_00199;Int_00198;14;
+Rue de la Croix-Rouge;Int_00198;Int_00199;14;
+Rue des Jésuites;Int_00199;Int_00200;21;
+Rue des Jésuites;Int_00200;Int_00199;21;
+Place de la Halle aux Poissons;Int_01117;Int_01118;42;
+Place de la Halle aux Poissons;Int_01118;Int_01117;42;
+Place de la Halle aux Poissons;Int_01118;Int_01154;6;
+Place de la Halle aux Poissons;Int_01154;Int_01118;6;
+Place de la Halle aux Poissons;Int_01154;Int_01252;6;
+Place de la Halle aux Poissons;Int_01252;Int_01154;6;
+Place de la Halle aux Poissons;Int_01252;Int_00124;6;
+Place de la Halle aux Poissons;Int_00124;Int_01252;6;
+Place de la Halle aux Poissons;Int_00124;Int_01153;6;
+Place de la Halle aux Poissons;Int_01153;Int_00124;6;
+Place de la Halle aux Poissons;Int_01153;Int_01152;6;
+Place de la Halle aux Poissons;Int_01152;Int_01153;6;
+Place de la Halle aux Poissons;Int_01152;Int_00123;6;
+Place de la Halle aux Poissons;Int_00123;Int_01152;6;
+Place de la Halle aux Poissons;Int_00123;Int_01151;6;
+Place de la Halle aux Poissons;Int_01151;Int_00123;6;
+Place de la Halle aux Poissons;Int_01151;Int_00122;6;
+Place de la Halle aux Poissons;Int_00122;Int_01151;6;
+Place de la Halle aux Poissons;Int_00122;Int_01150;6;
+Place de la Halle aux Poissons;Int_01150;Int_00122;6;
+Place de la Halle aux Poissons;Int_01150;Int_00121;6;
+Place de la Halle aux Poissons;Int_00121;Int_01150;6;
+Place de la Halle aux Poissons;Int_00121;Int_01117;7;
+Place de la Halle aux Poissons;Int_01117;Int_00121;7;
+Résidence Joseph Brongniart;Int_00568;Int_00583;14;
+Résidence Joseph Brongniart;Int_00583;Int_00568;14;
+Rue du Four Saint-Adrien;Int_00404;Int_00403;30;
+Rue des Porteurs;Int_00518;Int_01412;35;
+Rue de l'Égalité;Int_00056;Int_01378;61;
+Boulevard Vauban;Int_01413;Int_01203;79;
+Rue du Vivier;Int_00519;Int_01415;24;
+Avenue du Maréchal Leclerc;Int_01416;Int_00009;10;
+Avenue du Maréchal Leclerc;Int_00009;Int_01416;10;
+Place de Tchécoslovaquie;Int_00059;Int_01374;18;
+Place de Tchécoslovaquie;Int_01374;Int_00059;18;
+Place de Tchécoslovaquie;Int_00057;Int_00058;19;
+Place de Tchécoslovaquie;Int_00058;Int_00057;19;
+Rue de Douai;Int_00949;Int_01104;28;2
+Rue de Douai;Int_01104;Int_00949;28;
+Rue de Douai;Int_01293;Int_01120;20;2
+Rue de Douai;Int_01120;Int_01293;20;
+Rue des Rosati;Int_00577;Int_00090;72;
+Rue des Rosati;Int_00090;Int_00577;72;
+Carrefour Dwight Eisenhower;Int_01079;Int_01329;15;
+Carrefour Dwight Eisenhower;Int_01329;Int_01079;15;
+Carrefour Dwight Eisenhower;Int_00877;Int_00876;26;
+Carrefour Dwight Eisenhower;Int_00876;Int_00877;26;
+Rue Nelson Mandela;Int_00982;Int_00903;16;2;5;34
+Rue du 8 Mai 1945;Int_00980;Int_00905;31;
+Rue du 8 Mai 1945;Int_00905;Int_00980;31;
+Rue Voltaire;Int_00161;Int_01136;10;4;31
+Rue Voltaire;Int_01136;Int_00161;10;31
+Rue Voltaire;Int_01136;Int_00599;104;4;31
+Rue Voltaire;Int_00599;Int_01136;104;31
+Rue Voltaire;Int_00599;Int_01090;90;4;31
+Rue Voltaire;Int_01090;Int_00599;90;31
+Rue de Cambrai;Int_01146;Int_00025;22;
+Rue de Cambrai;Int_00855;Int_00854;12;
+Rue Pierre Bérégovoy;Int_01344;Int_01299;6;
+Boulevard Crespel;Int_00195;Int_01281;12;
+Carrefour Dwight Eisenhower;Int_00019;Int_00877;13;
+Carrefour Dwight Eisenhower;Int_00877;Int_00019;13;
+Rond-Point Georges Pompidou;Int_00038;Int_01375;17;
+Rond-Point Georges Pompidou;Int_01375;Int_00038;17;
+Rue Willy Brandt;Int_01264;Int_00886;63;9
+Rue Willy Brandt;Int_00886;Int_01264;63;
+Rue Copernic;Int_01022;Int_01259;6;14
+Rue Copernic;Int_01259;Int_01022;6;
+Rue Copernic;Int_01259;Int_01328;36;14
+Rue Copernic;Int_01328;Int_01259;36;
+Rue Ampère;Int_01191;Int_00503;35;2;6
+Rue Ampère;Int_00503;Int_01191;35;
+Rue des Bleuets;Int_00881;Int_00469;72;4
+Rue des Bleuets;Int_00469;Int_00881;72;
+Rue des Bleuets;Int_00469;Int_00537;50;4
+Rue des Bleuets;Int_00537;Int_00469;50;
+Rue Molière;Int_00440;Int_01066;13;
+Rue Molière;Int_01066;Int_00440;13;
+Avenue de l'Hippodrome;Int_00168;Int_00154;14;
+Avenue de l'Hippodrome;Int_00154;Int_00168;14;
+Rue Utrillo;Int_01080;Int_00284;11;
+Avenue de l'Hippodrome;Int_00155;Int_00168;10;
+Avenue de l'Hippodrome;Int_00168;Int_00155;10;
+Rue Georges Auphelle;Int_00152;Int_00169;229;
+Rue Georges Auphelle;Int_00169;Int_00152;229;
+Avenue Winston Churchill;Int_01108;Int_01047;118;58;60;114;116;157
+Avenue Winston Churchill;Int_01331;Int_00466;4;58;60;114;116;157
+Avenue Winston Churchill;Int_00466;Int_01331;4;157
+Avenue Winston Churchill;Int_01330;Int_01331;7;58;60;114;116;157
+Avenue Winston Churchill;Int_01331;Int_01330;7;157
+Rue Hans Geiger;Int_00997;Int_01301;103;
+Rue Hans Geiger;Int_01301;Int_00997;103;
+Rue Georges Clemenceau;Int_01137;Int_00690;38;
+Rue Georges Clemenceau;Int_00690;Int_01137;38;
+Rue de Cambrai;Int_01214;Int_00705;23;
+Rue de Cambrai;Int_00101;Int_00699;109;
+Boulevard du Général de Gaulle;Int_00182;Int_00962;13;
+Route de Bapaume;Int_00037;Int_00717;210;
+Route de Bapaume;Int_00717;Int_00037;210;
+Rue de Douai;Int_01103;Int_01102;12;2
+Rue de Douai;Int_01102;Int_01103;12;
+Boulevard Carnot;Int_00081;Int_00241;160;
+Boulevard Vauban;Int_00240;Int_00975;11;
+Rue de Douai;Int_01104;Int_01103;12;2
+Rue de Douai;Int_01103;Int_01104;12;
+Place de Tchécoslovaquie;Int_00053;Int_00309;22;
+Place de Tchécoslovaquie;Int_00309;Int_00053;22;
+Rue de Douai;Int_01102;Int_01101;12;2
+Rue de Douai;Int_01101;Int_01102;12;
+Rue de Douai;Int_01101;Int_01025;12;2
+Rue de Douai;Int_01025;Int_01101;12;
+Avenue Pierre Bolle;Int_00723;Int_00535;79;
+Avenue Pierre Bolle;Int_00535;Int_00723;79;
+Avenue Pierre Bolle;Int_00535;Int_00753;72;
+Avenue Pierre Bolle;Int_00753;Int_00535;72;
+Rue Ampère;Int_01015;Int_00148;15;2;6
+Rue du Temple;Int_01417;Int_00652;102;
+Rue du Temple;Int_00652;Int_01417;102;
+Rue Gambetta;Int_01314;Int_01418;12;
+Rue Gambetta;Int_01418;Int_01314;12;
+Boulevard Crespel;Int_01186;Int_00133;10;
+Rue Paul Doumer;Int_00850;Int_00833;17;
+Avenue du Mémorial des Fusillés;Int_01223;Int_01419;80;
+Avenue du Mémorial des Fusillés;Int_01419;Int_01223;80;
+Rue Bocquet Flochel;Int_01041;Int_01148;18;
+Avenue Fernand Lobbedez;Int_01326;Int_00030;22;
+Avenue Fernand Lobbedez;Int_01420;Int_00031;56;
+Avenue Fernand Lobbedez;Int_00031;Int_01420;56;
+Avenue Fernand Lobbedez;Int_01111;Int_00028;25;
+Avenue Fernand Lobbedez;Int_00028;Int_01111;25;
+Rue de Bruxelles;Int_00687;Int_00683;72;
+Boulevard de Strasbourg;Int_01423;Int_00848;33;
+Boulevard Crespel;Int_01185;Int_00392;108;
+Rue d'Amiens;Int_01188;Int_01257;20;
+Rue d'Amiens;Int_01257;Int_01188;20;
+Avenue Jean Zay;Int_00967;Int_00138;27;20;2A;2B
+Avenue Jean Zay;Int_00138;Int_00967;27;
+Rue Pierre Bérégovoy;Int_01299;Int_01424;62;
+Rue du Marché au Filé;Int_00370;Int_00371;17;
+Rue aux Foulons;Int_00559;Int_00916;33;
+Rue aux Foulons;Int_00916;Int_00559;33;
+Rue du Crinchon;Int_01113;Int_00564;39;
+Rue du Crinchon;Int_00564;Int_01113;39;
+Rue du Crinchon;Int_00564;Int_00565;52;
+Rue du Crinchon;Int_00565;Int_00564;52;
+Rue du Crinchon;Int_00565;Int_00559;41;
+Rue du Crinchon;Int_00559;Int_00565;41;
+Rue Jean Bodel;Int_00585;Int_01425;77;
+Rue Jean Bodel;Int_01425;Int_00585;77;
+Rue des Agaches;Int_00050;Int_01346;33;
+Avenue John Fitzgerald Kennedy;Int_00139;Int_01206;96;1;245;255;259
+Avenue John Fitzgerald Kennedy;Int_01206;Int_00139;96;
+Avenue Paul Michonneau;Int_01427;Int_01028;57;20
+Avenue Paul Michonneau;Int_01286;Int_00571;11;20
+Avenue Paul Michonneau;Int_00571;Int_01426;13;20
+Avenue Paul Michonneau;Int_01430;Int_01286;43;20
+Place du 33e Régiment;Int_01294;Int_01295;15;
+Rue Saint-Maurice;Int_01410;Int_00417;66;
+Boulevard Crespel;Int_01277;Int_01183;5;
+Quartier Baudimont;Int_01231;Int_01097;34;
+Quartier Baudimont;Int_01097;Int_01231;34;
+Quartier Baudimont;Int_01232;Int_01220;17;
+Quartier Baudimont;Int_01220;Int_01232;17;
+Rue du Refuge Maroeuil;Int_00418;Int_01379;8;
+Rue du Vert Galant;Int_00357;Int_01402;5;
+Rue du Cardinal;Int_00331;Int_00337;55;
+Rue du Cardinal;Int_00337;Int_01429;21;
+Rue de Cambrai;Int_00998;Int_00018;167;
+Rue de Cambrai;Int_00018;Int_00998;167;
+Rue Molière;Int_01285;Int_01156;16;
+Rue Molière;Int_01156;Int_01285;16;
+Rue Molière;Int_01066;Int_01285;22;
+Rue Molière;Int_01285;Int_01066;22;
+Rue du Temple;Int_00675;Int_01417;75;
+Rue du Temple;Int_01417;Int_00675;75;
+Rue Baudimont;Int_01342;Int_01308;50;13;23;28
+Rue Pierre Bérégovoy;Int_01345;Int_00960;33;
+Avenue Paul Michonneau;Int_00088;Int_01430;31;20
+Place du Maréchal Foch;Int_01351;Int_01237;31;
+Cours de Verdun;Int_01199;Int_01433;96;
+Cours de Verdun;Int_01200;Int_01199;16;
+Cours de Verdun;Int_01432;Int_00195;9;
+Cours de Verdun;Int_01433;Int_01432;5;
+Rue de l'École Normale;Int_00345;Int_01142;7;
+Rue de l'École Normale;Int_01142;Int_00345;7;
+Avenue du Mémorial des Fusillés;Int_00281;Int_00837;5;
+Avenue du Mémorial des Fusillés;Int_00837;Int_00281;5;
+Boulevard du Général de Gaulle;Int_01258;Int_01228;6;
+Boulevard du Général de Gaulle;Int_01228;Int_00079;13;
+Boulevard du Général de Gaulle;Int_00837;Int_00986;8;
+Place du Maréchal Foch;Int_00252;Int_01351;15;
+Boulevard de Strasbourg;Int_00097;Int_01353;4;
+Boulevard du Général de Gaulle;Int_01434;Int_01394;203;
+Boulevard du Général de Gaulle;Int_00080;Int_01434;5;
+Boulevard du Général de Gaulle;Int_00987;Int_00080;11;
+Chemin Rural de Duisans à Arras;Int_00891;Int_01190;44;
+Chemin Rural de Duisans à Arras;Int_01190;Int_00891;44;
+Place de l'Ancien Rivage;Int_00542;Int_00543;12;
+Place de l'Ancien Rivage;Int_00543;Int_00542;12;
+Rue de Jérusalem;Int_00548;Int_00540;29;
+Rue de Jérusalem;Int_00540;Int_00548;29;
+Rue du Pré;Int_00552;Int_00553;28;
+Place de l'Ancien Rivage;Int_00929;Int_00545;31;
+Place du Maréchal Foch;Int_00249;Int_01068;8;
+Place du Maréchal Foch;Int_01068;Int_00249;8;
+Rue Louis Legay;Int_01292;Int_00091;94;
+Rue de la Piscine;Int_01241;Int_01320;38;
+Rue de la Piscine;Int_01320;Int_01241;38;
+Place de Tchécoslovaquie;Int_00058;Int_00059;13;
+Place de Tchécoslovaquie;Int_00059;Int_00058;13;
+Rue du Docteur Brassart;Int_01435;Int_00010;148;5
+Rue du Docteur Brassart;Int_00010;Int_01435;148;
+Rue d'Achicourt;Int_00946;Int_00892;59;
+Rue d'Achicourt;Int_00892;Int_00946;59;
+Place de Tchécoslovaquie;Int_00060;Int_00053;9;
+Place de Tchécoslovaquie;Int_00053;Int_00060;9;
+Place de Tchécoslovaquie;Int_01374;Int_00060;4;
+Place de Tchécoslovaquie;Int_00060;Int_01374;4;
+Place des États d'Artois;Int_01119;Int_01347;17;
+Rue du Temple;Int_00865;Int_00531;26;
+Rue du Temple;Int_00531;Int_00865;26;
+Rue Bocquet Flochel;Int_01148;Int_00865;9;
+Rue du Temple;Int_00664;Int_01255;15;
+Rue du Temple;Int_01255;Int_00664;15;
+Rue Saint-Aubert;Int_00325;Int_00382;93;
+Carrefour d'Hagerue;Int_00831;Int_00928;19;
+Boulevard Crespel;Int_00133;Int_01185;7;
+Boulevard Crespel;Int_00227;Int_01182;9;
+Boulevard Vauban;Int_00174;Int_01280;120;
+Rue de Douai;Int_01352;Int_01293;4;2
+Rue de Douai;Int_01293;Int_01352;4;
+Rue de Douai;Int_01025;Int_01100;12;2
+Rue de Douai;Int_01100;Int_01025;12;
+Rue Gambetta;Int_00921;Int_00290;17;
+Rue Gambetta;Int_00290;Int_00921;17;
+Rue Gambetta;Int_00290;Int_00204;60;
+Rue Gambetta;Int_00204;Int_00290;60;
+Rue Gambetta;Int_00204;Int_01106;21;
+Rue Gambetta;Int_01106;Int_00204;21;
+Rue du Temple;Int_01145;Int_00854;12;
+Rue Alexandre Ribot;Int_00723;Int_00721;103;
+Rue Alexandre Ribot;Int_00721;Int_00723;103;
+Rue Alexandre Ribot;Int_00721;Int_01226;116;
+Rue Alexandre Ribot;Int_01226;Int_00721;116;
+Rue Alexandre Ribot;Int_01226;Int_00530;57;
+Rue Alexandre Ribot;Int_00530;Int_01226;57;
+Rue de Bruxelles;Int_00693;Int_01130;27;
+Rue de Bruxelles;Int_00684;Int_00700;31;
+Rue de Bruxelles;Int_00686;Int_00692;26;
+Avenue Fernand Lobbedez;Int_01162;Int_01000;10;
+Rue des Bouleaux;Int_00726;Int_00745;41;
+Rue des Bouleaux;Int_00745;Int_00726;41;
+Boulevard de Strasbourg;Int_00207;Int_01042;8;
+Rue des Capucins;Int_00196;Int_01177;30;
+Rue des Capucins;Int_01177;Int_00196;30;
+Rue Paul Doumer;Int_01442;Int_00075;3;
+Rue Paul Doumer;Int_00075;Int_01442;3;
+Avenue Paul Michonneau;Int_00524;Int_01171;54;20
+Rue Saint-Michel;Int_01445;Int_01443;38;
+Rue Saint-Michel;Int_01443;Int_01444;33;
+Rue Saint-Michel;Int_01444;Int_00570;24;
+Rue Saint-Michel;Int_00570;Int_01445;47;
+Rue Paul Perrin;Int_01446;Int_01073;18;
+Square Saint-Jean;Int_01099;Int_01447;8;
+Square Saint-Jean;Int_01447;Int_01099;8;
+Boulevard Carnot;Int_00241;Int_00003;54;
+Rue Monge;Int_00150;Int_00487;62;
+Rue Monge;Int_00487;Int_00150;62;
+Place Mère Térésa;Int_01448;Int_00160;27;
+Place Mère Térésa;Int_00160;Int_01448;27;
+Place Mère Térésa;Int_01440;Int_00401;21;
+Place Mère Térésa;Int_00401;Int_01440;21;
+Place Mère Térésa;Int_00401;Int_01448;10;
+Place Mère Térésa;Int_01448;Int_00401;10;
+Place Mère Térésa;Int_01198;Int_01239;23;
+Place Mère Térésa;Int_01239;Int_01198;23;
+Place Mère Térésa;Int_01046;Int_00879;20;
+Place Mère Térésa;Int_00879;Int_01046;20;
+Place Mère Térésa;Int_00879;Int_01198;15;
+Place Mère Térésa;Int_01198;Int_00879;15;
+Rue de Cambrai;Int_00932;Int_00842;25;
+Rue de Cambrai;Int_01215;Int_01146;27;
+Avenue des Fusillés;Int_01450;Int_00391;241;
+Avenue des Fusillés;Int_00391;Int_01450;241;
+Avenue des Fusillés;Int_00390;Int_01450;55;
+Avenue des Fusillés;Int_01450;Int_00390;55;
