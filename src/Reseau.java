@@ -109,11 +109,9 @@ public class Reseau {
         Intersection d = intersection(depart);
         Intersection a = intersection(arrivee);
 
-        // Create arc from depart to arrivee
         Arc e1 = new Arc(d, a, NomRue, distance, adresses);
         d.getArcsSortants().add(e1);
 
-        // Create reverse arc from arrivee to depart (bidirectional)
         Arc e2 = new Arc(a, d, NomRue, distance, adresses);
         a.getArcsSortants().add(e2);
 
@@ -263,7 +261,7 @@ public class Reseau {
     }
 
     public Itineraire itineraireVersAdresse(Intersection depart, String numero, String rue) {
-        Adresse adresse = getAdresse(numero, rue); // <<< on utilise this.getAdresse
+        Adresse adresse = getAdresse(numero, rue);
         if (adresse == null) {
             System.err.println("Adresse introuvable : " + numero + " " + rue);
             return null;
@@ -287,7 +285,7 @@ public class Reseau {
         }
 
         Intersection intersectionAtteinte = meilleur.getArrivee();
-        List<Arc> chemin = new ArrayList<>(meilleur.getArcs()); // ou getArcs()
+        List<Arc> chemin = new ArrayList<>(meilleur.getArcs());
         chemin.add(arcAdresse);
 
         return new Itineraire(depart, intersectionAtteinte, chemin);
@@ -349,7 +347,7 @@ public class Reseau {
             adresses = new ArrayList<>(adresses);
             adresses.add(0, depot);
         }
-        // matrice des distances entre points (via djikstra)
+        // matrice des distances entre points (avec djikstra)
         Map<Adresse, Map<Adresse, Double>> dist = matriceDistances(adresses);
 
         // MST avec Prim
@@ -394,12 +392,10 @@ public class Reseau {
                 }
             }
         }
-        // 1) Ordre d'adresses via DFS
         List<Adresse> ordreAdresses = new ArrayList<>();
         Set<Adresse> visite = new HashSet<>();
         dfsMST(depot, mstAdj, visite, ordreAdresses);
 
-        // Si tu veux une tournée fermée (retour au dépôt) :
         ordreAdresses.add(depot);
 
         // 2) Transformer en liste d'itinéraires
@@ -433,20 +429,17 @@ public class Reseau {
     private Map<Adresse, Map<Adresse, Double>> matriceDistances(List<Adresse> adresses) {
         Map<Adresse, Map<Adresse, Double>> dist = new HashMap<>();
 
-        // Initialisation : une map interne vide pour chaque adresse
         for (Adresse a : adresses) {
             dist.put(a, new HashMap<>());
         }
 
-        // Chaque adresse est à distance 0 d'elle-même
         for (Adresse a : adresses) {
             dist.get(a).put(a, 0.0);
         }
 
-        // Distances symétriques entre paires d'adresses
         for (int i = 0; i < adresses.size(); i++) {
             Adresse ai = adresses.get(i);
-            Intersection interDepart = ai.getAr().getArrivee(); // ou getDepart(), mais reste cohérent
+            Intersection interDepart = ai.getAr().getArrivee();
 
             for (int j = i + 1; j < adresses.size(); j++) {
                 Adresse aj = adresses.get(j);
@@ -463,7 +456,6 @@ public class Reseau {
                     d = it.getDistanceTotale();
                 }
 
-                // Ici on est sûr que dist.get(ai) et dist.get(aj) ne sont PAS null
                 dist.get(ai).put(aj, d);
                 dist.get(aj).put(ai, d);
             }
@@ -481,7 +473,7 @@ public class Reseau {
 
         List<Adresse> voisins = adj.get(courant);
         if (voisins == null)
-            return; // sécurité au cas où
+            return;
 
         for (Adresse v : voisins) {
             if (!visite.contains(v)) {
